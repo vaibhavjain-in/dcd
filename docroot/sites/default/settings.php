@@ -210,21 +210,6 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'database' => 'dcd2014_1',
-      'username' => 'root',
-      'password' => 'redhat',
-      'host' => 'localhost',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
 
 /**
  * Access control for update.php script.
@@ -566,9 +551,6 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
-if (file_exists('/var/www/site-php')) {
-  require '/var/www/site-php/drupalcampdelhi/drupalcampdelhi-settings.inc';
-}
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/drupalcampdelhi/dcd2015_syncd-settings.inc';
 }
