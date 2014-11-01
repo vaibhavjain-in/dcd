@@ -21,7 +21,7 @@ function cod_profile_social_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Social Media',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_facebook_url',
       1 => 'field_linkedin_url',

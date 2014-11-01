@@ -3270,7 +3270,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['filters']['field_accepted_value']['table'] = 'field_data_field_accepted';
   $handler->display->display_options['filters']['field_accepted_value']['field'] = 'field_accepted_value';
   $handler->display->display_options['filters']['field_accepted_value']['value'] = array(
-    'accepted' => 'accepted',
+    'unprocessed' => 'unprocessed',
   );
   $handler->display->display_options['filters']['field_accepted_value']['group'] = 1;
   /* Filter criterion: Content: Experience level (field_experience) */
@@ -3350,6 +3350,89 @@ function cod_session_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'session' => 'session',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Status (field_accepted) */
+  $handler->display->display_options['filters']['field_accepted_value']['id'] = 'field_accepted_value';
+  $handler->display->display_options['filters']['field_accepted_value']['table'] = 'field_data_field_accepted';
+  $handler->display->display_options['filters']['field_accepted_value']['field'] = 'field_accepted_value';
+  $handler->display->display_options['filters']['field_accepted_value']['value'] = array(
+    'accepted' => 'accepted',
+  );
+  $handler->display->display_options['filters']['field_accepted_value']['group'] = 1;
+  /* Filter criterion: Content: Experience level (field_experience) */
+  $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
+  $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
+  $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
+  $handler->display->display_options['filters']['field_experience_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_experience_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_experience_value']['expose']['operator_id'] = 'field_experience_value_op';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['label'] = 'Experience level';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['operator'] = 'field_experience_value_op';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['identifier'] = 'field_experience_value';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    3 => 0,
+    5 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Global: Combine fields filter */
+  $handler->display->display_options['filters']['combine']['id'] = 'combine';
+  $handler->display->display_options['filters']['combine']['table'] = 'views';
+  $handler->display->display_options['filters']['combine']['field'] = 'combine';
+  $handler->display->display_options['filters']['combine']['operator'] = 'contains';
+  $handler->display->display_options['filters']['combine']['group'] = 1;
+  $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['label'] = 'Filter by Keyword';
+  $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    3 => 0,
+    5 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['combine']['fields'] = array(
+    'title' => 'title',
+    'body' => 'body',
+  );
+  /* Filter criterion: Content: Session Track (og_vocabulary) */
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['id'] = 'og_vocabulary_target_id';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['table'] = 'field_data_og_vocabulary';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['field'] = 'og_vocabulary_target_id';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['expose']['operator_id'] = 'og_vocabulary_target_id_op';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['expose']['label'] = 'Session Track';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['expose']['operator'] = 'og_vocabulary_target_id_op';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['expose']['identifier'] = 'og_vocabulary_target_id';
+  $handler->display->display_options['filters']['og_vocabulary_target_id']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    3 => 0,
+    5 => 0,
+    6 => 0,
+  );
   $handler->display->display_options['path'] = 'program/sessions/accepted';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Accepted Sessions';

@@ -22,8 +22,7 @@ function cod_community_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Community';
-  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['title'] = 'Attendees';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'All Attendees';
   $handler->display->display_options['access']['type'] = 'none';
@@ -32,6 +31,7 @@ function cod_community_views_default_views() {
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Search';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '48';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -89,21 +89,17 @@ function cod_community_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['content'] = 'No one has signed up for this event. Attendees will appear as they sign up.';
-  /* Relationship: OG membership: OG membership from User */
-  $handler->display->display_options['relationships']['og_membership_rel']['id'] = 'og_membership_rel';
-  $handler->display->display_options['relationships']['og_membership_rel']['table'] = 'users';
-  $handler->display->display_options['relationships']['og_membership_rel']['field'] = 'og_membership_rel';
   /* Field: User: Picture */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
-  /* Field: Field: First name */
+  /* Field: User: First name */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
-  /* Field: Field: Last name */
+  /* Field: User: Last name */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
@@ -115,19 +111,7 @@ function cod_community_views_default_views() {
   $handler->display->display_options['fields']['field_profile_org']['id'] = 'field_profile_org';
   $handler->display->display_options['fields']['field_profile_org']['table'] = 'field_data_field_profile_org';
   $handler->display->display_options['fields']['field_profile_org']['field'] = 'field_profile_org';
-  /* Contextual filter: OG membership: Group ID */
-  $handler->display->display_options['arguments']['gid']['id'] = 'gid';
-  $handler->display->display_options['arguments']['gid']['table'] = 'og_membership';
-  $handler->display->display_options['arguments']['gid']['field'] = 'gid';
-  $handler->display->display_options['arguments']['gid']['relationship'] = 'og_membership_rel';
-  $handler->display->display_options['arguments']['gid']['default_action'] = 'not found';
-  $handler->display->display_options['arguments']['gid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['gid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['gid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['gid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['gid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['gid']['validate']['type'] = 'og';
-  /* Filter criterion: Field: First name (field_profile_first) */
+  /* Filter criterion: User: First name (field_profile_first) */
   $handler->display->display_options['filters']['field_profile_first_value']['id'] = 'field_profile_first_value';
   $handler->display->display_options['filters']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['filters']['field_profile_first_value']['field'] = 'field_profile_first_value';
@@ -136,7 +120,7 @@ function cod_community_views_default_views() {
   $handler->display->display_options['filters']['field_profile_first_value']['expose']['label'] = 'First name';
   $handler->display->display_options['filters']['field_profile_first_value']['expose']['operator'] = 'field_profile_first_value_op';
   $handler->display->display_options['filters']['field_profile_first_value']['expose']['identifier'] = 'field_profile_first_value';
-  /* Filter criterion: Field: Last name (field_profile_last) */
+  /* Filter criterion: User: Last name (field_profile_last) */
   $handler->display->display_options['filters']['field_profile_last_value']['id'] = 'field_profile_last_value';
   $handler->display->display_options['filters']['field_profile_last_value']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['filters']['field_profile_last_value']['field'] = 'field_profile_last_value';
@@ -185,63 +169,10 @@ function cod_community_views_default_views() {
   /* Display: Community Page (Main) */
   $handler = $view->new_display('page', 'Community Page (Main)', 'page');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'picture' => 'picture',
-    'field_profile_first' => 'field_profile_first',
-    'field_profile_last' => 'field_profile_last',
-    'field_profile_org_1' => 'field_profile_org_1',
-    'field_profile_job_title' => 'field_profile_job_title',
-    'field_profile_interests' => 'field_profile_interests',
-  );
-  $handler->display->display_options['style_options']['default'] = 'field_profile_first';
-  $handler->display->display_options['style_options']['info'] = array(
-    'picture' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_profile_first' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_profile_last' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_profile_org_1' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_profile_job_title' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_profile_interests' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
-  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: User: Picture */
@@ -250,41 +181,39 @@ function cod_community_views_default_views() {
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
-  /* Field: Field: First name */
+  /* Field: User: First name */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
-  $handler->display->display_options['fields']['field_profile_first']['label'] = 'name';
+  $handler->display->display_options['fields']['field_profile_first']['label'] = '';
   $handler->display->display_options['fields']['field_profile_first']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_profile_first']['element_wrapper_type'] = 'span';
-  /* Field: Field: Last name */
+  /* Field: User: Last name */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
-  $handler->display->display_options['fields']['field_profile_last']['label'] = 'name';
+  $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_profile_last']['alter']['text'] = '[field_profile_first] [field_profile_last]';
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_profile_last']['element_wrapper_type'] = 'span';
-  /* Field: User: Organization */
-  $handler->display->display_options['fields']['field_profile_org_1']['id'] = 'field_profile_org_1';
-  $handler->display->display_options['fields']['field_profile_org_1']['table'] = 'field_data_field_profile_org';
-  $handler->display->display_options['fields']['field_profile_org_1']['field'] = 'field_profile_org';
-  $handler->display->display_options['fields']['field_profile_org_1']['element_label_colon'] = FALSE;
   /* Field: User: Job title */
   $handler->display->display_options['fields']['field_profile_job_title']['id'] = 'field_profile_job_title';
   $handler->display->display_options['fields']['field_profile_job_title']['table'] = 'field_data_field_profile_job_title';
   $handler->display->display_options['fields']['field_profile_job_title']['field'] = 'field_profile_job_title';
-  /* Field: User: Interests */
-  $handler->display->display_options['fields']['field_profile_interests']['id'] = 'field_profile_interests';
-  $handler->display->display_options['fields']['field_profile_interests']['table'] = 'field_data_field_profile_interests';
-  $handler->display->display_options['fields']['field_profile_interests']['field'] = 'field_profile_interests';
-  $handler->display->display_options['fields']['field_profile_interests']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_job_title']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_job_title']['element_label_colon'] = FALSE;
+  /* Field: User: Organization */
+  $handler->display->display_options['fields']['field_profile_org_1']['id'] = 'field_profile_org_1';
+  $handler->display->display_options['fields']['field_profile_org_1']['table'] = 'field_data_field_profile_org';
+  $handler->display->display_options['fields']['field_profile_org_1']['field'] = 'field_profile_org';
+  $handler->display->display_options['fields']['field_profile_org_1']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_org_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Field: First name (field_profile_first) */
+  /* Filter criterion: User: First name (field_profile_first) */
   $handler->display->display_options['filters']['field_profile_first_value']['id'] = 'field_profile_first_value';
   $handler->display->display_options['filters']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['filters']['field_profile_first_value']['field'] = 'field_profile_first_value';
@@ -294,7 +223,7 @@ function cod_community_views_default_views() {
   $handler->display->display_options['filters']['field_profile_first_value']['expose']['label'] = 'First name';
   $handler->display->display_options['filters']['field_profile_first_value']['expose']['operator'] = 'field_profile_first_value_op';
   $handler->display->display_options['filters']['field_profile_first_value']['expose']['identifier'] = 'field_profile_first_value';
-  /* Filter criterion: Field: Last name (field_profile_last) */
+  /* Filter criterion: User: Last name (field_profile_last) */
   $handler->display->display_options['filters']['field_profile_last_value']['id'] = 'field_profile_last_value';
   $handler->display->display_options['filters']['field_profile_last_value']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['filters']['field_profile_last_value']['field'] = 'field_profile_last_value';
@@ -304,6 +233,24 @@ function cod_community_views_default_views() {
   $handler->display->display_options['filters']['field_profile_last_value']['expose']['label'] = 'Last name';
   $handler->display->display_options['filters']['field_profile_last_value']['expose']['operator'] = 'field_profile_last_value_op';
   $handler->display->display_options['filters']['field_profile_last_value']['expose']['identifier'] = 'field_profile_last_value';
+  /* Filter criterion: User: Job title (field_profile_job_title) */
+  $handler->display->display_options['filters']['field_profile_job_title_value']['id'] = 'field_profile_job_title_value';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['table'] = 'field_data_field_profile_job_title';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['field'] = 'field_profile_job_title_value';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_profile_job_title_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['operator_id'] = 'field_profile_job_title_value_op';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['label'] = 'Job title';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['operator'] = 'field_profile_job_title_value_op';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['identifier'] = 'field_profile_job_title_value';
+  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    3 => 0,
+    5 => 0,
+    6 => 0,
+  );
   /* Filter criterion: User: Organization (field_profile_org) */
   $handler->display->display_options['filters']['field_profile_org_value']['id'] = 'field_profile_org_value';
   $handler->display->display_options['filters']['field_profile_org_value']['table'] = 'field_data_field_profile_org';
@@ -314,28 +261,21 @@ function cod_community_views_default_views() {
   $handler->display->display_options['filters']['field_profile_org_value']['expose']['label'] = 'Organization';
   $handler->display->display_options['filters']['field_profile_org_value']['expose']['operator'] = 'field_profile_org_value_op';
   $handler->display->display_options['filters']['field_profile_org_value']['expose']['identifier'] = 'field_profile_org_value';
-  /* Filter criterion: User: Job title (field_profile_job_title) */
-  $handler->display->display_options['filters']['field_profile_job_title_value']['id'] = 'field_profile_job_title_value';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['table'] = 'field_data_field_profile_job_title';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['field'] = 'field_profile_job_title_value';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['operator_id'] = 'field_profile_job_title_value_op';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['label'] = 'Job title';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['operator'] = 'field_profile_job_title_value_op';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['identifier'] = 'field_profile_job_title_value';
-  /* Filter criterion: User: Interests (field_profile_interests) */
-  $handler->display->display_options['filters']['field_profile_interests_value']['id'] = 'field_profile_interests_value';
-  $handler->display->display_options['filters']['field_profile_interests_value']['table'] = 'field_data_field_profile_interests';
-  $handler->display->display_options['filters']['field_profile_interests_value']['field'] = 'field_profile_interests_value';
-  $handler->display->display_options['filters']['field_profile_interests_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['operator_id'] = 'field_profile_interests_value_op';
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['label'] = 'Interests';
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['operator'] = 'field_profile_interests_value_op';
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['identifier'] = 'field_profile_interests_value';
-  $handler->display->display_options['path'] = 'node/%/community';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Community';
+  /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid']['id'] = 'rid';
+  $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid']['operator'] = 'empty';
+  $handler->display->display_options['filters']['rid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['rid']['group'] = 1;
+  $handler->display->display_options['path'] = 'attendees';
+  $handler->display->display_options['menu']['title'] = 'See Who\'s Coming';
+  $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -365,13 +305,13 @@ function cod_community_views_default_views() {
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
-  /* Field: Field: First name */
+  /* Field: User: First name */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['label'] = '';
   $handler->display->display_options['fields']['field_profile_first']['exclude'] = TRUE;
-  /* Field: Field: Last name */
+  /* Field: User: Last name */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
@@ -441,13 +381,13 @@ function cod_community_views_default_views() {
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
-  /* Field: Field: First name */
+  /* Field: User: First name */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['label'] = '';
   $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
-  /* Field: Field: Last name */
+  /* Field: User: Last name */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';

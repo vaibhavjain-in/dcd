@@ -39,7 +39,7 @@ function cod_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = 'Thank you to our <strong>amazing</strong> sponsors for contributing to this year\'s DrupalCamp Delhi! If you would like to become a sponsor, please visit our <a href="/become-sponsor">Become a Sponsor</a> page.    ';
+  $handler->display->display_options['header']['area']['content'] = 'Thank you to our <strong>amazing</strong> sponsors for contributing to this year\'s DrupalCamp Delhi! If you would like to become a sponsor, please visit our <a href="sponsors/become-sponsor">Become a Sponsor</a> page.    ';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';

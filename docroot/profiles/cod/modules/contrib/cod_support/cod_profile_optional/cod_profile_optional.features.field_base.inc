@@ -10,38 +10,6 @@
 function cod_profile_optional_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_dietary_needs'
-  $field_bases['field_dietary_needs'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_dietary_needs',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'Vegetarian' => 'Vegetarian',
-        'Vegan' => 'Vegan',
-        'Gluten free' => 'Gluten free',
-        'Halal' => 'Halal',
-        'Kosher' => 'Kosher',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_t_shirt_size'
   $field_bases['field_t_shirt_size'] = array(
     'active' => 1,
