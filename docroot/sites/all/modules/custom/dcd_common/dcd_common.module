@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * @file
+ * Module file for DCD common module.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function dcd_common_block_info() {
+  $blocks['dcd_welcome_user'] = array(
+    'info' => t('Welcome user'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function dcd_common_block_view($delta = '') {
+  global $user;
+  $block = array();
+  switch ($delta) {
+    case 'dcd_welcome_user':
+      $output  = '<div id="welcome-user-block" style="float: right;">';
+      if ($user->uid) {
+        // Get user picture or default image.
+        if ($user->picture != 0) {
+          $user_top_pic = file_load($user->picture)->uri;
+          // print_r($user_top_pic);die;
+          $user_pic = theme(
+            'image_style', array(
+              'path' => $user_top_pic,
+              'style_name' => 'welcome_user_image',
+              'alt' => '',
+              'title' => theme('username', array('account' => $user)),
+            )
+          );
+          $output .= $user_pic;
+        }
+        else {
+          // $user_top_pic = variable_get('user_picture_default', '');
+        }
+        $output .= t(' !username | !logout', array(
+          '!username' => theme('username', array('account' => $user)),
+          '!logout' => l(t('Logout'), 'user/logout'),
+          ));
+      }
+      else {
+        $dest = drupal_get_destination();
+        $output .= l(t('Login'), 'user/login', array('query' => $dest,));
+        // Print Register link only if allowed to do so.
+        if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
+          $output .= ' | ';
+          $output .= l(t('Register'), 'user/register', array('query' => $dest,));
+        }
+      }
+      $output .= '</div>';
+      $block['content'] = $output;
+      break;
+  }
+  return $block;
+}
