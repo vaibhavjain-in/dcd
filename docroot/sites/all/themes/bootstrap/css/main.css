@@ -13,7 +13,7 @@ header .container,  .dcd-header {position: relative;display: flex;width: 100%;}
 #block-block-4 {width: auto; display: inline;float: left;padding: 2em 0 0 1em;}
 #block-block-4 .dcd-info .info {font-family: 'Righteous', cursive; font-size: 25px; color: #fff;display: block;text-transform: uppercase;line-height: 30px}
 #block-block-4 .dcd-info .place {font-family: 'Changa One', cursive; font-size: 40px; color: #fff;display: block;text-transform: uppercase;line-height: 36px;letter-spacing: 2px;}
-#block-block-4 .dcd-info .date {font-size: 16px;color: #fff;}
+#block-block-4 .dcd-info .date {font-size: 16px;color: #444;}
 #block-user-login {width: 49%; position: absolute;right: 0;float: right;text-align: right;}
 #block-user-login .block-title, #block-user-login .form-item label, #block-user-login form ul {display: none;}
 #block-user-login .form-item {width: 30%; display: inline-block;margin-right: 5px;}
@@ -72,4 +72,46 @@ header .container,  .dcd-header {position: relative;display: flex;width: 100%;}
 #navbar{margin-bottom: 1px;}
 #welcome-user-block{position: absolute; right: 0; top: 10px; color: #bdbdbd;}
 #welcome-user-block a{color: #fff;}
-#block-dcd-common-dcd-welcome-user{position: static;}
+#block-dcd-common-dcd-welcome-user.view-display-id-page{position: static;}
+.view-cod-community-attendees{
+    display: inline-block; vertical-align: top; width: 100%; text-align: center;
+}
+.view-cod-community-attendees .views-row{
+    display: inline-block; vertical-align: top; width: 24%; padding: 4% 2%; box-sizing: border-box;
+}
+.view-cod-community-attendees .views-row .views-field-field-profile-last{
+    font-size: 15px; font-weight: bold;
+}
+.view-cod-community-attendees .views-row .views-field-field-profile-org-1{
+    font-size: 14px; color: #1383C6;
+}
+.view-cod-community-attendees .views-row img{max-height: 100px;}
+
+@media all and (min-width: 980px){
+    .logged-out{display: none;}
+}
+@media all and (max-width: 980px){
+    #block-user-login, #block-block-3{display: none;}
+}
+@media all and (max-width: 960px){
+    
+    .view-cod-community-attendees .views-row{
+        width: 31%;
+    }
+}
+@media all and (max-width: 640px){
+    .view-cod-sponsors .view-content .views-row{width: 100%; margin: 10px 0;}
+    .view-cod-community-attendees .views-row{
+        width: 48%;
+    }
+}
+@media all and (max-width: 566px){
+    .view-cod-community-attendees .views-row{
+        width: 98%;
+    }
+    #block-block-4{float: none !important; display: inline-block; vertical-align: top; padding: 20px 0;}
+    .navbar .dcd-header .logo{float: none !important; display: inline-block; vertical-align: top; margin: 40px 0 0; padding: 0;}
+    .dcd-header{display: inline-block; vertical-align: top; width: 100%; text-align: center;}
+    .dcd-header .region-navigation{display: inline-block; vertical-align: top; width: 100%;}
+    #welcome-user-block{top: 0;}
+}

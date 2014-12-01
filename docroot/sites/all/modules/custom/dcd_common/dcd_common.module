@@ -25,7 +25,11 @@ function dcd_common_block_view($delta = '') {
   $block = array();
   switch ($delta) {
     case 'dcd_welcome_user':
-      $output  = '<div id="welcome-user-block" style="float: right;">';
+      $user_class = 'logged-in';
+      if (!$user->uid) {
+        $user_class = 'logged-out';
+      }
+      $output  = '<div class="' . $user_class . '" id="welcome-user-block" style="float: right;">';
       if ($user->uid) {
         // Get user picture or default image.
         if ($user->picture != 0) {
