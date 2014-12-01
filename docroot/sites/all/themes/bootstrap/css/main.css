@@ -70,9 +70,9 @@ header .container,  .dcd-header {position: relative;display: flex;width: 100%;}
 .view-cod-sponsors h3{text-align: left;}
 .page-header{margin: 20px 0 0;}
 #navbar{margin-bottom: 1px;}
-#welcome-user-block{position: absolute; right: 0; top: 10px; color: #bdbdbd;}
+#welcome-user-block{position: absolute; right: 0; top: 10px; color: #fff;}
 #welcome-user-block a{color: #fff;}
-#block-dcd-common-dcd-welcome-user.view-display-id-page{position: static;}
+#block-dcd-common-dcd-welcome-user{position: static;}
 .view-cod-community-attendees{
     display: inline-block; vertical-align: top; width: 100%; text-align: center;
 }
@@ -87,7 +87,7 @@ header .container,  .dcd-header {position: relative;display: flex;width: 100%;}
 }
 .view-cod-community-attendees .views-row img{max-height: 100px;}
 
-@media all and (min-width: 980px){
+@media all and (min-width: 981px){
     .logged-out{display: none;}
 }
 @media all and (max-width: 980px){
