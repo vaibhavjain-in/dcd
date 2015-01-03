@@ -161,6 +161,11 @@
 
   </div>
 </div>
+<?php if (!empty($page['pre_footer'])):  ?>
+<div class="pre-footer-wrapper">
+  <?php print render($page['pre_footer']); ?>
+</div>
+<?php endif; ?>
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>

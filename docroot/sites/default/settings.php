@@ -210,6 +210,21 @@
  *   );
  * @endcode
  */
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'dcd2015_live',
+      'username' => 'root',
+      'password' => 'redhat',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.

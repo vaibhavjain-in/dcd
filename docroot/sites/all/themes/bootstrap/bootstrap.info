@@ -28,6 +28,7 @@ regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 regions[nav_left]    = 'Navigation Left'
 regions[nav_right]    = 'Navigation Right'
+regions[pre_footer]    = 'Pre Footer'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
