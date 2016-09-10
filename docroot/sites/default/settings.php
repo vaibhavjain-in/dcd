@@ -726,3 +726,8 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_H-AnZ08Dz0RILK3Ox_ElnFFNtYQBCQSbcL_ZNiJcYUUWvwqqCmyS3JaRIUnIKFbC5y621lcZ0g/sync';
+
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/drupalcampdelhi/drupalcampdelhi-settings.inc';
+}
+
