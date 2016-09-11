@@ -1,0 +1,14 @@
+uuid: d4fc2841-7b69-47a6-be6c-544afec0631e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_reviewer
+  module:
+    - user
+id: user_remove_role_action.content_reviewer
+label: 'Remove the Content Reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_reviewer

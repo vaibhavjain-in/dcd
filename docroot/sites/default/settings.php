@@ -86,7 +86,7 @@
  * );
  * @endcode
  */
- $databases = array();
+$databases = array();
 
 /**
  * Customizing database settings.
@@ -711,23 +711,14 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
-$databases['default']['default'] = array (
-  'database' => 'dcd',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
+
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_H-AnZ08Dz0RILK3Ox_ElnFFNtYQBCQSbcL_ZNiJcYUUWvwqqCmyS3JaRIUnIKFbC5y621lcZ0g/sync';
+
+$config_directories['sync'] = '../config/default';
 
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/drupalcampdelhi/drupalcampdelhi-settings.inc';
 }
-
