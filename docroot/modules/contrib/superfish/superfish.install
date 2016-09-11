@@ -56,7 +56,7 @@ function superfish_library_check() {
       return TRUE;
     }
   }
-  elseif (file_exists('sites/all/libraries/superfish/superfish.js') || file_exists('profiles/' . drupal_get_profile() . '/libraries/superfish/superfish.js')) {
+  elseif (file_exists('libraries/superfish/superfish.js') || file_exists('profiles/' . drupal_get_profile() . '/libraries/superfish/superfish.js')) {
     return TRUE;
   }
   return FALSE;
@@ -75,7 +75,7 @@ function superfish_library_version() {
     $directory = 'profiles/' . drupal_get_profile() . '/libraries/superfish';
   }
   else {
-    $directory = 'sites/all/libraries/superfish';
+    $directory = 'libraries/superfish';
   }
 
   // Get the library version.

@@ -36,7 +36,7 @@ class SuperfishSettingsForm extends ConfigFormBase {
       $directory = 'profiles/' . drupal_get_profile() . '/libraries/superfish';
     }
     else {
-      $directory = 'sites/all/libraries/superfish';
+      $directory = 'libraries/superfish';
     }
     if (file_exists($directory)) {
       $output = $directory . "/jquery.hoverIntent.minified.js\r\n" .

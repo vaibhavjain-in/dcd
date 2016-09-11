@@ -22,7 +22,7 @@ function superfish_effects() {
   if (file_exists('profiles/' . drupal_get_profile() . '/libraries/easing')) {
     $directory = 'profiles/' . drupal_get_profile() . '/libraries/easing';
   } else {
-    $directory = 'sites/all/libraries/easing';
+    $directory = 'libraries/easing';
   }
 
   if (file_exists($directory . '/jquery.easing.js')) {
