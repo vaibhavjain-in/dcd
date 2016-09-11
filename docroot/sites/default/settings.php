@@ -244,7 +244,7 @@ $databases = array();
  *   );
  * @endcode
  */
-$config_directories = array();
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/default';
 
 /**
  * Settings:
@@ -716,8 +716,6 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 }
 
 $settings['install_profile'] = 'standard';
-
-$config_directories['sync'] = '../config/default';
 
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/drupalcampdelhi/drupalcampdelhi-settings.inc';
