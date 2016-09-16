@@ -1,0 +1,25 @@
+uuid: 131aadda-f08f-4877-a1b0-549eb2251452
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4079fe53-3188-477c-a3b1-ee4017183155'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: hosting
+theme: bartik
+region: footer_fifth
+weight: -6
+provider: null
+plugin: 'block_content:4079fe53-3188-477c-a3b1-ee4017183155'
+settings:
+  id: 'block_content:4079fe53-3188-477c-a3b1-ee4017183155'
+  label: Hosting
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

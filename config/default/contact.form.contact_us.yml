@@ -5,6 +5,6 @@ dependencies: {  }
 id: contact_us
 label: 'Contact Us'
 recipients:
-  - joshi.rohit100@gmail.com
+  - drupalcampdelhi@gmail.com
 reply: ''
 weight: 0

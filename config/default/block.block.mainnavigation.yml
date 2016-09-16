@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: bartik
 region: primary_menu
-weight: null
+weight: -8
 provider: null
 plugin: 'superfish:main'
 settings:
