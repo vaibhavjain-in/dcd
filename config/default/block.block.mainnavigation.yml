@@ -23,7 +23,7 @@ settings:
   depth: '0'
   menu_type: horizontal
   style: none
-  arrow: 1
+  arrow: 0
   shadow: 1
   speed: fast
   delay: '800'
