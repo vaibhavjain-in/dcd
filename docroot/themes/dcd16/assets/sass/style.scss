@@ -56,5 +56,77 @@
 @import "../../bootstrap/stylesheets/bootstrap/responsive-utilities";
 
 @import "menu";
+@import "footer";
+@import "banner";
+@import "whenwherewho";
+@import "social";
 
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+  font-size: 4.5em;
+  font-weight: bold;
+  color: $gray-darkest;
+  text-align: center;
+  &.page-header {
+    border: none;
+  }
+}
+
+h2.block-title {
+  font-size: 4em;
+  text-align: center;
+  margin: 30px 50px 50px;
+  font-weight: bold;
+  padding: 13px 0 0;
+  color: #009de0;
+  text-transform: uppercase;
+}
+
+.blue-button {
+  display: inline-block;
+  background: $brand-primary;
+  padding: 10px 20px 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 100%;
+  @include transition(all .25s);
+  &:hover {
+    background: $brand-secondary;
+    color: $brand-primary;
+    text-decoration: none;
+  }
+}
+
+
+.region-content {
+  padding: 100px 0;
+}
+
+.content {
+  .field--name-body {
+    position: relative;
+    text-align: justify;
+    &:before {
+      content: '';
+      width: 40%;
+      height: 130%;
+      position: absolute;
+      z-index: -1;
+      background: $brand-secondary;
+      top: -15%;
+      left: -2%;
+      @include transition(all .25s);
+    }
+    &:hover {
+      &:before {
+        width: 104%;
+        opacity: 0.5;
+      }
+    }
+  }
+}

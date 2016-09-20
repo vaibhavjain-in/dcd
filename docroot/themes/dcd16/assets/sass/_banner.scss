@@ -1,0 +1,32 @@
+#block-frontbanner {
+  background: url(../images/banner-1.png) no-repeat;
+  background-size: cover;
+  height: 560px;
+  position: relative;
+  color: $white;
+  .field--name-body {
+    height: 100%;
+    display: table;
+    width: 100%;
+    .banner-inner {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bold;
+      display: table-cell;
+      width: 100%;
+      vertical-align: middle;
+      padding-left: 12%;
+      .header {
+        font-size: 9em;
+      }
+      .subtext {
+        font-size: 5em;
+        margin: 0 0 0 8px;
+      }
+    }
+  }
+  img {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+}

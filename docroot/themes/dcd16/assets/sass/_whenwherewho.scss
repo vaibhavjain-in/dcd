@@ -1,0 +1,60 @@
+#block-whenwherewho {
+  margin-left: -3%;
+  margin-right: -3%;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 100px 0 0;
+  .card {
+    padding: 3%;
+  }
+  .card-inner {
+    height: 300px;
+    @include box-shadow(0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23));
+    border-radius: 5px;
+    @include transition(all .25s);
+    &:hover {
+      margin-top: -15px;
+    }
+  }
+  iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .imp-dates .card-inner {
+    padding: 20px;
+    text-align: center;
+    .buttons a {
+      margin: 10px 0;
+    }
+  }
+  .camp-date.date-data {
+    font-size: 28px;
+  }
+  .session-date.date-data {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .venue .card-inner {
+    padding: 5px;
+  }
+  .keynote .card-inner {
+    background: url(../images/Keynote-Dries-Buytaert.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 5px solid #fff;
+    p {
+      background: $brand-secondary;
+      color: #000;
+      position: absolute;
+      width: 100%;
+      bottom: 15px;
+      padding: 15px 10px 10px;
+      font-size: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 100%;
+      @include opacity(0.8);
+    }
+  }
+}
