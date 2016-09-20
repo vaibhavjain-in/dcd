@@ -9125,22 +9125,22 @@ button.close {
 }
 
 /* line 1, ../assets/sass/_social.scss */
-#block-action {
+#block-socialwidgets {
   background: #fdfdfd;
   padding: 30px 0 100px;
 }
 /* line 4, ../assets/sass/_social.scss */
-#block-action .plugin {
+#block-socialwidgets .plugin {
   padding: 0 5%;
   text-align: center;
 }
 /* line 7, ../assets/sass/_social.scss */
-#block-action .plugin iframe {
+#block-socialwidgets .plugin iframe {
   max-width: 100%;
   max-height: 100%;
 }
 /* line 13, ../assets/sass/_social.scss */
-#block-action .twitter > div {
+#block-socialwidgets .twitter > div {
   background: #f6f7f9;
   padding: 15px;
   width: 340px;
