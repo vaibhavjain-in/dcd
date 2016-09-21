@@ -24,8 +24,11 @@
     });
   }
 
-  // $(document).ready(function($) {
-
-  // });
+  $(document).ready(function($) {
+    $('#block-dcd16-main-menu li a:not(.dropdown-toggle)').click(function(event) {
+      $('#block-dcd16-main-menu').removeClass('main-menu-show');
+      $('.c-hamburger').removeClass('is-active');
+    });
+  });
 
 })(jQuery, Drupal);

@@ -4,6 +4,7 @@ global-styling:
       css/style.css: {}
   js:
     js/custom-menu.js: {}
+    js/forms.js: {}
 
 bootstrap-scripts:
   js:

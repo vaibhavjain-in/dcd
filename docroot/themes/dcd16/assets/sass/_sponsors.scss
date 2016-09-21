@@ -1,0 +1,42 @@
+@import "variables";
+
+#block-views-block-sponsors-block-1 {
+  padding: 30px 0 100px;
+  .view-content {
+    text-align: center;
+  }
+  .views-row {
+    display: inline-block;
+    float: none;
+    margin-right: -5px;
+    .img-responsive {
+      margin: auto;
+
+    }
+    &.Platinum {
+      img {
+        max-height: 220px;
+        width: auto;
+      }
+    }
+    &.Silver {
+      img {
+        max-height: 180px;
+        width: auto;
+      }
+    }
+    &.Bronze {
+      img {
+        max-height: 140px;
+        width: auto;
+      }
+    }
+  }
+  h3 {
+    font-size: 3em;
+    margin: 30px 0 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
