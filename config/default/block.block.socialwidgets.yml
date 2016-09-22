@@ -1,0 +1,25 @@
+uuid: 2edce062-a137-4832-a8f3-f9b2ac6eb100
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2e8431ad-d044-42b4-b537-12c537ea6288'
+  module:
+    - block_content
+  theme:
+    - dcd16
+id: socialwidgets
+theme: dcd16
+region: content_full
+weight: -9
+provider: null
+plugin: 'block_content:2e8431ad-d044-42b4-b537-12c537ea6288'
+settings:
+  id: 'block_content:2e8431ad-d044-42b4-b537-12c537ea6288'
+  label: Action!
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

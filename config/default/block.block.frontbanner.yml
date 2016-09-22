@@ -1,0 +1,25 @@
+uuid: 5f000bb0-6be4-403f-9b1b-f0feefa86157
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5ddf61d4-a1b9-4779-8b87-17f6a291ad9f'
+  module:
+    - block_content
+  theme:
+    - dcd16
+id: frontbanner
+theme: dcd16
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:5ddf61d4-a1b9-4779-8b87-17f6a291ad9f'
+settings:
+  id: 'block_content:5ddf61d4-a1b9-4779-8b87-17f6a291ad9f'
+  label: 'Front banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
