@@ -1,0 +1,22 @@
+uuid: 31b16b26-3f26-430b-9009-84f2a23f35d8
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - dcd16
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: dcd16_help
+theme: dcd16
+region: '-1'
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

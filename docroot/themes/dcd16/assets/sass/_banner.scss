@@ -1,0 +1,142 @@
+@import "variables";
+
+#block-frontbanner {
+  background: url(../images/banner-1.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $white;
+  height: 135px;
+  .field--name-body {
+    height: 100%;
+    display: table;
+    width: 100%;
+    .banner-inner {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bold;
+      display: table-cell;
+      width: 100%;
+      vertical-align: middle;
+      padding-left: 12%;
+      .header {
+        font-size: 6em;
+        line-height: 100%;
+        padding: 15px 0 0;
+      }
+      .subtext {
+        display: none;
+      }
+    }
+  }
+  img {
+    position: absolute;
+    height: 145px;
+    top: 10px;
+    right: 50px;
+  }
+}
+
+.path-frontpage {
+  #block-frontbanner {
+    height: 560px;
+    .banner-inner {
+      .header {
+        font-size: 9em;
+        padding: 0;
+        line-height: inherit;
+      }
+      .subtext {
+        display: block;
+        font-size: 5em;
+        margin: 0 0 0 8px;
+      }
+    }
+    img {
+      top: 20px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .path-frontpage #block-frontbanner {
+    height: 400px;
+    img {
+      width: 400px;
+      top: 15px;
+      right: 20px;
+    }
+    .banner-inner {
+      .header {
+        font-size: 7em;
+      }
+      .subtext {
+        font-size: 3em;
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .path-frontpage #block-frontbanner {
+    height: 280px;
+    img {
+      width: 275px;
+    }
+    .banner-inner {
+      padding-left: 8%;
+      .header {
+        font-size: 5em;
+      }
+      .subtext {
+        font-size: 2em;
+        margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  #block-frontbanner {
+    height: 73px;
+    .field--name-body .banner-inner {
+      padding: 0;
+      text-align: center;
+      .header {
+        font-size: 3em;
+      }
+    }
+    img {
+      height: 73px;
+      right: 20px;
+    }
+  }
+  .path-frontpage #block-frontbanner {
+    text-align: center;
+    height: auto;
+    padding-top: 50px;
+    img {
+      position: relative;
+      left: 0;
+      top: 55px;
+    }
+    .banner-inner {
+      display: block;
+      padding: 0;
+      .header {
+      }
+      .subtext {
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  #block-frontbanner {
+    .field--name-body .banner-inner {
+      .header {
+        font-size: 2.5em;
+      }
+    }
+    img {
+      height: 73px;
+      right: 5px;
+    }
+  }
+}

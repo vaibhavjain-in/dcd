@@ -1,0 +1,25 @@
+uuid: 9a6702f9-41d0-440c-9e03-f9b502002243
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9bc9e49b-2139-4a43-8e56-752dfb716182'
+  module:
+    - block_content
+  theme:
+    - dcd16
+id: menuhamburgertrigger
+theme: dcd16
+region: navigation
+weight: -9
+provider: null
+plugin: 'block_content:9bc9e49b-2139-4a43-8e56-752dfb716182'
+settings:
+  id: 'block_content:9bc9e49b-2139-4a43-8e56-752dfb716182'
+  label: 'Menu Hamburger Trigger'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
