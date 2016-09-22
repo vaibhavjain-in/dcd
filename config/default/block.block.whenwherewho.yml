@@ -1,9 +1,9 @@
-uuid: e2ae8ec9-1073-4d50-ab27-c19d3e682cdd
+uuid: 064aded5-0246-438b-b118-bcfb11897c14
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:aeb58fdd-f213-4212-b131-e2720ceaa466'
+    - 'block_content:basic:a15c1705-ed85-4a1f-a598-252ef807c33e'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: whenwherewho
 theme: dcd16
 region: content
-weight: -3
+weight: -5
 provider: null
-plugin: 'block_content:aeb58fdd-f213-4212-b131-e2720ceaa466'
+plugin: 'block_content:a15c1705-ed85-4a1f-a598-252ef807c33e'
 settings:
-  id: 'block_content:aeb58fdd-f213-4212-b131-e2720ceaa466'
+  id: 'block_content:a15c1705-ed85-4a1f-a598-252ef807c33e'
   label: 'When Where Who'
   provider: block_content
   label_display: '0'
