@@ -9,7 +9,7 @@ _core:
 id: dcd16_local_actions
 theme: dcd16
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: local_actions_block
 settings:

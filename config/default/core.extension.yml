@@ -9,6 +9,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  contact_block: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -30,6 +31,7 @@ module:
   page_cache: 0
   path: 0
   quickedit: 0
+  r4032login: 0
   rdf: 0
   search: 0
   shortcut: 0

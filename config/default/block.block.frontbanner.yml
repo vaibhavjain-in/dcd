@@ -1,9 +1,9 @@
-uuid: 5f000bb0-6be4-403f-9b1b-f0feefa86157
+uuid: 23ecc6f4-6147-41fc-b8fa-c688a1daf5a7
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:5ddf61d4-a1b9-4779-8b87-17f6a291ad9f'
+    - 'block_content:basic:d14fd007-5af9-46cb-89f3-dc96295d968c'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: frontbanner
 theme: dcd16
 region: header
-weight: -9
+weight: -10
 provider: null
-plugin: 'block_content:5ddf61d4-a1b9-4779-8b87-17f6a291ad9f'
+plugin: 'block_content:d14fd007-5af9-46cb-89f3-dc96295d968c'
 settings:
-  id: 'block_content:5ddf61d4-a1b9-4779-8b87-17f6a291ad9f'
+  id: 'block_content:d14fd007-5af9-46cb-89f3-dc96295d968c'
   label: 'Front banner'
   provider: block_content
   label_display: '0'

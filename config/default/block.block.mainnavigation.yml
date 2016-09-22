@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: bartik
 region: primary_menu
-weight: null
+weight: -8
 provider: null
 plugin: 'superfish:main'
 settings:
@@ -23,7 +23,7 @@ settings:
   depth: '0'
   menu_type: horizontal
   style: none
-  arrow: 1
+  arrow: 0
   shadow: 1
   speed: fast
   delay: '800'

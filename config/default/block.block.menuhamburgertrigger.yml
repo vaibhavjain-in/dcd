@@ -1,9 +1,9 @@
-uuid: 9a6702f9-41d0-440c-9e03-f9b502002243
+uuid: ed51bfaa-f233-4cae-a3e0-294af8c3b0af
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:9bc9e49b-2139-4a43-8e56-752dfb716182'
+    - 'block_content:basic:78947e4d-5dbb-47db-bab1-26a391c83ff9'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: menuhamburgertrigger
 theme: dcd16
 region: navigation
-weight: -9
+weight: -10
 provider: null
-plugin: 'block_content:9bc9e49b-2139-4a43-8e56-752dfb716182'
+plugin: 'block_content:78947e4d-5dbb-47db-bab1-26a391c83ff9'
 settings:
-  id: 'block_content:9bc9e49b-2139-4a43-8e56-752dfb716182'
+  id: 'block_content:78947e4d-5dbb-47db-bab1-26a391c83ff9'
   label: 'Menu Hamburger Trigger'
   provider: block_content
   label_display: '0'
