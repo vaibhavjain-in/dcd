@@ -6,11 +6,9 @@
  * added to the main element, and a target element is included.
  */
 (function ($, Drupal) {
-
-  "use strict";
-
   $(document).ready(function($) {
     $('.form-item .form-control').each(function(index, el) {
+      console.log($(this).val());
       if ($.trim($(this).val()) !== '') {
         $(this).parents('.form-item').addClass('focus');
       }
