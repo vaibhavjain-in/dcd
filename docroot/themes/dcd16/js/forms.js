@@ -8,7 +8,6 @@
 (function ($, Drupal) {
   $(document).ready(function($) {
     $('.form-item .form-control').each(function(index, el) {
-      console.log($(this).val());
       if ($.trim($(this).val()) !== '') {
         $(this).parents('.form-item').addClass('focus');
       }
