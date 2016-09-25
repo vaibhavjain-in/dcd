@@ -1,5 +1,5 @@
 .path-user {
-  h1.page-header {
+  &.user-logged-in h1.page-header {
     display: none;
   }
   article {
@@ -14,7 +14,7 @@
       text-align: center;
       display: inline-block;
       font-family: 'Josefin Sans', sans-serif;
-      margin-bottom: 0;
+      margin: 0 15px;
     }
     .field--type-image {
       img {
@@ -24,6 +24,9 @@
     .field--name-field-drupal-profile {
       font-size: 20px;
       margin: 40px 0;
+      a {
+        word-wrap: break-word;
+      }
     }
     .field--name-field-organization,
     .field--name-field-designation,
