@@ -1,6 +1,6 @@
 uuid: 0cd2ae21-ee68-4381-8f34-f6d2babb2167
 name: 'Drupal Camp Delhi'
-mail: joshi.rohit100@gmail.com
+mail: drupalcampdelhi.com@gmail.com
 slogan: ''
 page:
   403: ''
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''
