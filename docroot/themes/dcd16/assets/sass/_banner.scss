@@ -1,3 +1,4 @@
+@import "compass/css3/";
 @import "variables";
 
 #block-frontbanner {
@@ -6,6 +7,14 @@
   position: relative;
   color: $white;
   height: 135px;
+  a {
+    color: $white;
+    text-decoration: none;
+    @include transition(all 0.28s ease);
+    &:hover, &:focus {
+      @include text-shadow(0px 0px 200px $white);
+    }
+  }
   .field--name-body {
     height: 100%;
     display: table;

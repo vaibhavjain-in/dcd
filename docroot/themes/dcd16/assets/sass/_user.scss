@@ -1,0 +1,36 @@
+.path-user {
+  h1.page-header {
+    display: none;
+  }
+  article {
+    text-align: center;
+    .field {
+      margin: 40px 0;
+    }
+    .field--name-field-first-name, .field--name-field-last-name {
+      font-size: 4.5em;
+      font-weight: bold;
+      color: #2e2e2e;
+      text-align: center;
+      display: inline-block;
+      font-family: 'Josefin Sans', sans-serif;
+      margin-bottom: 0;
+    }
+    .field--type-image {
+      img {
+        margin: auto;
+      }
+    }
+    .field--name-field-drupal-profile {
+      font-size: 20px;
+      margin: 40px 0;
+    }
+    .field--name-field-organization,
+    .field--name-field-designation,
+    .field--name-field-phone,
+    .field--name-field-facebook-link,
+    .field--name-field-twitter-link {
+      @include tabular-field();
+    }
+  }
+}

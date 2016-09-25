@@ -8926,65 +8926,70 @@ ul.nav.nav-tabs li.active a:hover {
 }
 
 @media (max-width: 640px) {
-  /* line 131, ../assets/sass/_generalall.scss */
+  /* line 153, ../assets/sass/_generalall.scss */
   h1 {
     font-size: 3.5em;
   }
 
-  /* line 134, ../assets/sass/_generalall.scss */
+  /* line 156, ../assets/sass/_generalall.scss */
   h2.block-title {
     font-size: 3.5em;
     margin: 15px 10px;
   }
 
-  /* line 138, ../assets/sass/_generalall.scss */
+  /* line 160, ../assets/sass/_generalall.scss */
   .page-header {
     padding-bottom: 0;
     margin: 30px 0 20px;
   }
 
-  /* line 142, ../assets/sass/_generalall.scss */
+  /* line 164, ../assets/sass/_generalall.scss */
   .region-content {
     padding: 15px 0;
   }
 
-  /* line 145, ../assets/sass/_generalall.scss */
+  /* line 167, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body {
     padding: 15px 0;
   }
-  /* line 147, ../assets/sass/_generalall.scss */
+  /* line 169, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body p {
     margin: 15px 0;
   }
 }
-/* line 3, ../assets/sass/_forms.scss */
+/* line 4, ../assets/sass/_forms.scss */
 form {
   max-width: 600px;
   margin: 30px auto;
 }
-/* line 6, ../assets/sass/_forms.scss */
+/* line 7, ../assets/sass/_forms.scss */
 form .form-item {
   width: 100%;
 }
-/* line 8, ../assets/sass/_forms.scss */
+/* line 9, ../assets/sass/_forms.scss */
 form .form-item .form-control {
   width: 100%;
 }
-/* line 13, ../assets/sass/_forms.scss */
+/* line 14, ../assets/sass/_forms.scss */
 form:not(.node-form) label {
   display: none;
 }
 /* line 17, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield, form:not(.node-form) .form-item.form-type-textarea, form:not(.node-form) .form-item.form-type-password {
+form:not(.node-form) .form-item {
   margin: 0 0 30px;
+}
+/* line 19, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield, form:not(.node-form) .form-item.form-type-textarea, form:not(.node-form) .form-item.form-type-password, form:not(.node-form) .form-item.form-type-url, form:not(.node-form) .form-item.form-type-email {
   border-bottom: 1px solid #555555;
   position: relative;
 }
-/* line 23, ../assets/sass/_forms.scss */
+/* line 26, ../assets/sass/_forms.scss */
 form:not(.node-form) .form-item.form-type-textfield input.form-control,
 form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea input.form-control,
 form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password input.form-control,
-form:not(.node-form) .form-item.form-type-password textarea.form-control {
+form:not(.node-form) .form-item.form-type-password textarea.form-control, form:not(.node-form) .form-item.form-type-url input.form-control,
+form:not(.node-form) .form-item.form-type-url textarea.form-control, form:not(.node-form) .form-item.form-type-email input.form-control,
+form:not(.node-form) .form-item.form-type-email textarea.form-control {
   display: block;
   background: none;
   padding: 0;
@@ -8992,8 +8997,9 @@ form:not(.node-form) .form-item.form-type-password textarea.form-control {
   border-color: transparent;
   line-height: 1.9;
   color: transparent;
-  -webkit-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
   transition: all 0.28s ease;
   box-shadow: none;
   margin: 0;
@@ -9001,49 +9007,69 @@ form:not(.node-form) .form-item.form-type-password textarea.form-control {
   width: 100%;
   outline: none;
 }
-/* line 38, ../assets/sass/_forms.scss */
+/* line 41, ../assets/sass/_forms.scss */
 form:not(.node-form) .form-item.form-type-textfield input.form-control::-webkit-input-placeholder,
 form:not(.node-form) .form-item.form-type-textfield textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-textarea input.form-control::-webkit-input-placeholder,
 form:not(.node-form) .form-item.form-type-textarea textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-password input.form-control::-webkit-input-placeholder,
-form:not(.node-form) .form-item.form-type-password textarea.form-control::-webkit-input-placeholder {
+form:not(.node-form) .form-item.form-type-password textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-url input.form-control::-webkit-input-placeholder,
+form:not(.node-form) .form-item.form-type-url textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-email input.form-control::-webkit-input-placeholder,
+form:not(.node-form) .form-item.form-type-email textarea.form-control::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 42, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password textarea.form-control {
+/* line 45, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password textarea.form-control, form:not(.node-form) .form-item.form-type-url textarea.form-control, form:not(.node-form) .form-item.form-type-email textarea.form-control {
   height: 6rem;
 }
-/* line 45, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield label, form:not(.node-form) .form-item.form-type-textarea label, form:not(.node-form) .form-item.form-type-password label {
+/* line 48, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield label, form:not(.node-form) .form-item.form-type-textarea label, form:not(.node-form) .form-item.form-type-password label, form:not(.node-form) .form-item.form-type-url label, form:not(.node-form) .form-item.form-type-email label {
   display: block;
   position: absolute;
   pointer-events: none;
   z-index: 1;
   font-weight: normal;
-  -webkit-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
   transition: all 0.28s ease;
   top: 1px;
 }
-/* line 56, ../assets/sass/_forms.scss */
+/* line 59, ../assets/sass/_forms.scss */
 form:not(.node-form) .form-item.form-type-textfield.focus input.form-control,
 form:not(.node-form) .form-item.form-type-textfield.focus textarea.form-control, form:not(.node-form) .form-item.form-type-textarea.focus input.form-control,
 form:not(.node-form) .form-item.form-type-textarea.focus textarea.form-control, form:not(.node-form) .form-item.form-type-password.focus input.form-control,
-form:not(.node-form) .form-item.form-type-password.focus textarea.form-control {
+form:not(.node-form) .form-item.form-type-password.focus textarea.form-control, form:not(.node-form) .form-item.form-type-url.focus input.form-control,
+form:not(.node-form) .form-item.form-type-url.focus textarea.form-control, form:not(.node-form) .form-item.form-type-email.focus input.form-control,
+form:not(.node-form) .form-item.form-type-email.focus textarea.form-control {
   outline: none;
   color: inherit;
 }
-/* line 61, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield.focus label, form:not(.node-form) .form-item.form-type-textarea.focus label, form:not(.node-form) .form-item.form-type-password.focus label {
+/* line 64, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield.focus label, form:not(.node-form) .form-item.form-type-textarea.focus label, form:not(.node-form) .form-item.form-type-password.focus label, form:not(.node-form) .form-item.form-type-url.focus label, form:not(.node-form) .form-item.form-type-email.focus label {
   top: -15px;
   font-size: 85%;
   color: #009de0;
 }
-/* line 69, ../assets/sass/_forms.scss */
+/* line 72, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-select label {
+  display: block;
+}
+/* line 75, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-select select {
+  border: none;
+  border-bottom: 1px solid #555;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 83, ../assets/sass/_forms.scss */
 form:not(.node-form) .form-item.form-type-item label {
   display: inline-block;
   min-width: 200px;
 }
-/* line 76, ../assets/sass/_forms.scss */
+/* line 90, ../assets/sass/_forms.scss */
 form .form-actions {
   text-align: center;
   margin-top: 70px;
@@ -9156,8 +9182,9 @@ form .form-actions {
 }
 /* line 111, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul {
-  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
   font-size: 14px;
   position: fixed;
@@ -9170,13 +9197,15 @@ form .form-actions {
   display: inline-block;
   background: #fff;
   padding-top: 100px;
+  -moz-box-shadow: 0px 0 11px #777777;
   -webkit-box-shadow: 0px 0 11px #777777;
   box-shadow: 0px 0 11px #777777;
 }
 /* line 113, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul * {
-  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 /* line 127, ../assets/sass/_menu.scss */
@@ -9197,8 +9226,9 @@ form .form-actions {
   left: 0;
   z-index: -1;
   background: #ffe5b1;
-  -webkit-transition: width 0.25s;
+  -moz-transition: width 0.25s;
   -o-transition: width 0.25s;
+  -webkit-transition: width 0.25s;
   transition: width 0.25s;
 }
 /* line 143, ../assets/sass/_menu.scss */
@@ -9334,7 +9364,7 @@ article .field--name-field-track {
   margin: 2px 0;
   border-spacing: 2px 0;
 }
-/* line 16, ../assets/sass/_node.scss */
+/* line 131, ../assets/sass/_generalall.scss */
 article .field--name-field-ski > div,
 article .field--name-field-track > div {
   display: table-cell;
@@ -9343,12 +9373,12 @@ article .field--name-field-track > div {
   border: 2px solid #ffe5b1;
   vertical-align: middle;
 }
-/* line 23, ../assets/sass/_node.scss */
+/* line 138, ../assets/sass/_generalall.scss */
 article .field--name-field-ski .field--label,
 article .field--name-field-track .field--label {
   text-transform: uppercase;
 }
-/* line 26, ../assets/sass/_node.scss */
+/* line 141, ../assets/sass/_generalall.scss */
 article .field--name-field-ski .field--item,
 article .field--name-field-ski .field__items,
 article .field--name-field-track .field--item,
@@ -9356,7 +9386,84 @@ article .field--name-field-track .field__items {
   background: transparent;
 }
 
-/* line 3, ../assets/sass/_banner.scss */
+/* line 2, ../assets/sass/_user.scss */
+.path-user h1.page-header {
+  display: none;
+}
+/* line 5, ../assets/sass/_user.scss */
+.path-user article {
+  text-align: center;
+}
+/* line 7, ../assets/sass/_user.scss */
+.path-user article .field {
+  margin: 40px 0;
+}
+/* line 10, ../assets/sass/_user.scss */
+.path-user article .field--name-field-first-name, .path-user article .field--name-field-last-name {
+  font-size: 4.5em;
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 0;
+}
+/* line 20, ../assets/sass/_user.scss */
+.path-user article .field--type-image img {
+  margin: auto;
+}
+/* line 24, ../assets/sass/_user.scss */
+.path-user article .field--name-field-drupal-profile {
+  font-size: 20px;
+  margin: 40px 0;
+}
+/* line 28, ../assets/sass/_user.scss */
+.path-user article .field--name-field-organization,
+.path-user article .field--name-field-designation,
+.path-user article .field--name-field-phone,
+.path-user article .field--name-field-facebook-link,
+.path-user article .field--name-field-twitter-link {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 2px 0;
+  border-spacing: 2px 0;
+}
+/* line 131, ../assets/sass/_generalall.scss */
+.path-user article .field--name-field-organization > div,
+.path-user article .field--name-field-designation > div,
+.path-user article .field--name-field-phone > div,
+.path-user article .field--name-field-facebook-link > div,
+.path-user article .field--name-field-twitter-link > div {
+  display: table-cell;
+  background: #ffe5b1;
+  padding: 3px 20px;
+  border: 2px solid #ffe5b1;
+  vertical-align: middle;
+}
+/* line 138, ../assets/sass/_generalall.scss */
+.path-user article .field--name-field-organization .field--label,
+.path-user article .field--name-field-designation .field--label,
+.path-user article .field--name-field-phone .field--label,
+.path-user article .field--name-field-facebook-link .field--label,
+.path-user article .field--name-field-twitter-link .field--label {
+  text-transform: uppercase;
+}
+/* line 141, ../assets/sass/_generalall.scss */
+.path-user article .field--name-field-organization .field--item,
+.path-user article .field--name-field-organization .field__items,
+.path-user article .field--name-field-designation .field--item,
+.path-user article .field--name-field-designation .field__items,
+.path-user article .field--name-field-phone .field--item,
+.path-user article .field--name-field-phone .field__items,
+.path-user article .field--name-field-facebook-link .field--item,
+.path-user article .field--name-field-facebook-link .field__items,
+.path-user article .field--name-field-twitter-link .field--item,
+.path-user article .field--name-field-twitter-link .field__items {
+  background: transparent;
+}
+
+/* line 4, ../assets/sass/_banner.scss */
 #block-frontbanner {
   background: url(../images/banner-1.png) no-repeat;
   background-size: cover;
@@ -9364,13 +9471,26 @@ article .field--name-field-track .field__items {
   color: #ffffff;
   height: 135px;
 }
-/* line 9, ../assets/sass/_banner.scss */
+/* line 10, ../assets/sass/_banner.scss */
+#block-frontbanner a {
+  color: #ffffff;
+  text-decoration: none;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+/* line 14, ../assets/sass/_banner.scss */
+#block-frontbanner a:hover, #block-frontbanner a:focus {
+  text-shadow: 0px 0px 200px #ffffff;
+}
+/* line 18, ../assets/sass/_banner.scss */
 #block-frontbanner .field--name-body {
   height: 100%;
   display: table;
   width: 100%;
 }
-/* line 13, ../assets/sass/_banner.scss */
+/* line 22, ../assets/sass/_banner.scss */
 #block-frontbanner .field--name-body .banner-inner {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
@@ -9379,17 +9499,17 @@ article .field--name-field-track .field__items {
   vertical-align: middle;
   padding-left: 8%;
 }
-/* line 20, ../assets/sass/_banner.scss */
+/* line 29, ../assets/sass/_banner.scss */
 #block-frontbanner .field--name-body .banner-inner .header {
   font-size: 6em;
   line-height: 100%;
   padding: 15px 0 0;
 }
-/* line 25, ../assets/sass/_banner.scss */
+/* line 34, ../assets/sass/_banner.scss */
 #block-frontbanner .field--name-body .banner-inner .subtext {
   display: none;
 }
-/* line 30, ../assets/sass/_banner.scss */
+/* line 39, ../assets/sass/_banner.scss */
 #block-frontbanner img {
   position: absolute;
   height: 145px;
@@ -9397,115 +9517,115 @@ article .field--name-field-track .field__items {
   right: 50px;
 }
 
-/* line 39, ../assets/sass/_banner.scss */
+/* line 48, ../assets/sass/_banner.scss */
 .path-frontpage #block-frontbanner {
   height: 560px;
 }
-/* line 42, ../assets/sass/_banner.scss */
+/* line 51, ../assets/sass/_banner.scss */
 .path-frontpage #block-frontbanner .banner-inner .header {
   font-size: 9em;
   padding: 0;
   line-height: inherit;
 }
-/* line 47, ../assets/sass/_banner.scss */
+/* line 56, ../assets/sass/_banner.scss */
 .path-frontpage #block-frontbanner .banner-inner .subtext {
   display: block;
   font-size: 5em;
   margin: 0 0 0 8px;
 }
-/* line 53, ../assets/sass/_banner.scss */
+/* line 62, ../assets/sass/_banner.scss */
 .path-frontpage #block-frontbanner img {
   top: 20px;
   height: auto;
 }
 
 @media (max-width: 1200px) {
-  /* line 61, ../assets/sass/_banner.scss */
+  /* line 70, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner {
     height: 400px;
   }
-  /* line 63, ../assets/sass/_banner.scss */
+  /* line 72, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner img {
     width: 400px;
     top: 15px;
     right: 20px;
   }
-  /* line 69, ../assets/sass/_banner.scss */
+  /* line 78, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner .banner-inner .header {
     font-size: 7em;
   }
-  /* line 72, ../assets/sass/_banner.scss */
+  /* line 81, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner .banner-inner .subtext {
     font-size: 3em;
   }
 }
 @media (max-width: 960px) {
-  /* line 79, ../assets/sass/_banner.scss */
+  /* line 88, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner {
     height: 280px;
   }
-  /* line 81, ../assets/sass/_banner.scss */
+  /* line 90, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner img {
     width: 275px;
   }
-  /* line 84, ../assets/sass/_banner.scss */
+  /* line 93, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner .banner-inner {
     padding-left: 8%;
   }
-  /* line 86, ../assets/sass/_banner.scss */
+  /* line 95, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner .banner-inner .header {
     font-size: 5em;
   }
-  /* line 89, ../assets/sass/_banner.scss */
+  /* line 98, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner .banner-inner .subtext {
     font-size: 2em;
     margin: 0;
   }
 }
 @media (max-width: 640px) {
-  /* line 97, ../assets/sass/_banner.scss */
+  /* line 106, ../assets/sass/_banner.scss */
   #block-frontbanner {
     height: 73px;
   }
-  /* line 99, ../assets/sass/_banner.scss */
+  /* line 108, ../assets/sass/_banner.scss */
   #block-frontbanner .field--name-body .banner-inner {
     padding: 0;
     text-align: center;
   }
-  /* line 102, ../assets/sass/_banner.scss */
+  /* line 111, ../assets/sass/_banner.scss */
   #block-frontbanner .field--name-body .banner-inner .header {
     font-size: 3em;
   }
-  /* line 106, ../assets/sass/_banner.scss */
+  /* line 115, ../assets/sass/_banner.scss */
   #block-frontbanner img {
     height: 73px;
     right: 20px;
   }
 
-  /* line 111, ../assets/sass/_banner.scss */
+  /* line 120, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner {
     text-align: center;
     height: auto;
     padding-top: 50px;
   }
-  /* line 115, ../assets/sass/_banner.scss */
+  /* line 124, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner img {
     position: relative;
     left: 0;
     top: 55px;
   }
-  /* line 120, ../assets/sass/_banner.scss */
+  /* line 129, ../assets/sass/_banner.scss */
   .path-frontpage #block-frontbanner .banner-inner {
     display: block;
     padding: 0;
   }
 }
 @media (max-width: 480px) {
-  /* line 133, ../assets/sass/_banner.scss */
+  /* line 142, ../assets/sass/_banner.scss */
   #block-frontbanner .field--name-body .banner-inner .header {
     font-size: 2.5em;
   }
-  /* line 137, ../assets/sass/_banner.scss */
+  /* line 146, ../assets/sass/_banner.scss */
   #block-frontbanner img {
     height: 73px;
     right: 5px;
@@ -9525,11 +9645,13 @@ article .field--name-field-track .field__items {
 /* line 11, ../assets/sass/_whenwherewho.scss */
 #block-whenwherewho .card-inner {
   height: 300px;
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
-  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 /* line 16, ../assets/sass/_whenwherewho.scss */
@@ -9585,8 +9707,8 @@ article .field--name-field-track .field__items {
   text-align: center;
   text-transform: uppercase;
   line-height: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
-  filter: alpha(opacity=80);
 }
 
 @media (max-width: 1200px) {

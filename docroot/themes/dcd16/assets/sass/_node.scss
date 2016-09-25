@@ -8,24 +8,6 @@ article {
   }
   .field--name-field-ski,
   .field--name-field-track {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    margin: 2px 0;
-    border-spacing: 2px 0;
-    > div {
-      display: table-cell;
-      background: $brand-secondary;
-      padding: 3px 20px;
-      border: 2px solid $brand-secondary;
-      vertical-align: middle;
-    }
-    .field--label {
-      text-transform: uppercase;
-    }
-    .field--item,
-    .field__items {
-      background: transparent;
-    }
+    @include tabular-field();
   }
 }
