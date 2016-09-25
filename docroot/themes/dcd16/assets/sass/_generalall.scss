@@ -41,6 +41,51 @@ h2.block-title {
   }
 }
 
+ul.nav.nav-tabs {
+  border: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  &:before,
+  &:after {
+    content: none;
+  }
+  li {
+    display: table-cell;
+    float: none;
+    a {
+      display: block;
+      border: none;
+      background: $brand-secondary;
+      text-align: center;
+      color: $brand-primary;
+      text-transform: uppercase;
+      opacity: 0.8;
+      border-radius: 3px;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      &:hover {
+        background: $brand-secondary;
+        opacity: 1;
+      }
+    }
+    &.active {
+      a,
+      a:hover {
+        opacity: 1;
+        border: none;
+        background: $brand-primary;
+        color: $brand-secondary;
+      }
+    }
+  }
+}
+
+.view-empty {
+  text-align: center;
+}
+
 .google-card {
   @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1));
   border-radius: 2px;
@@ -59,23 +104,6 @@ h2.block-title {
     text-align: justify;
     max-width: 800px;
     margin: auto;
-    // &:before {
-    //   content: '';
-    //   width: 40%;
-    //   height: 130%;
-    //   position: absolute;
-    //   z-index: -1;
-    //   background: $brand-secondary;
-    //   top: -15%;
-    //   left: -2%;
-    //   @include transition(all .25s);
-    // }
-    // &:hover {
-    //   &:before {
-    //     width: 104%;
-    //     opacity: 0.5;
-    //   }
-    // }
   }
 }
 

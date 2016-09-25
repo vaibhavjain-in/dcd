@@ -6,9 +6,6 @@
  * added to the main element, and a target element is included.
  */
 (function ($, Drupal) {
-
-  "use strict";
-
   $(document).ready(function($) {
     $('.form-item .form-control').each(function(index, el) {
       if ($.trim($(this).val()) !== '') {

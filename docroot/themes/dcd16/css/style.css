@@ -8839,6 +8839,55 @@ h2.block-title {
 }
 
 /* line 44, ../assets/sass/_generalall.scss */
+ul.nav.nav-tabs {
+  border: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 49, ../assets/sass/_generalall.scss */
+ul.nav.nav-tabs:before, ul.nav.nav-tabs:after {
+  content: none;
+}
+/* line 53, ../assets/sass/_generalall.scss */
+ul.nav.nav-tabs li {
+  display: table-cell;
+  float: none;
+}
+/* line 56, ../assets/sass/_generalall.scss */
+ul.nav.nav-tabs li a {
+  display: block;
+  border: none;
+  background: #ffe5b1;
+  text-align: center;
+  color: #009de0;
+  text-transform: uppercase;
+  opacity: 0.8;
+  border-radius: 3px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 68, ../assets/sass/_generalall.scss */
+ul.nav.nav-tabs li a:hover {
+  background: #ffe5b1;
+  opacity: 1;
+}
+/* line 74, ../assets/sass/_generalall.scss */
+ul.nav.nav-tabs li.active a,
+ul.nav.nav-tabs li.active a:hover {
+  opacity: 1;
+  border: none;
+  background: #009de0;
+  color: #ffe5b1;
+}
+
+/* line 85, ../assets/sass/_generalall.scss */
+.view-empty {
+  text-align: center;
+}
+
+/* line 89, ../assets/sass/_generalall.scss */
 .google-card {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -8850,12 +8899,12 @@ h2.block-title {
   margin: 20px 0;
 }
 
-/* line 52, ../assets/sass/_generalall.scss */
+/* line 97, ../assets/sass/_generalall.scss */
 .region-content {
   padding: 100px 0;
 }
 
-/* line 57, ../assets/sass/_generalall.scss */
+/* line 102, ../assets/sass/_generalall.scss */
 .content .field--name-body {
   position: relative;
   text-align: justify;
@@ -8863,7 +8912,7 @@ h2.block-title {
   margin: auto;
 }
 
-/* line 84, ../assets/sass/_generalall.scss */
+/* line 112, ../assets/sass/_generalall.scss */
 .path-frontpage .content .field--name-body {
   background: url(../images/map-india2.jpg) no-repeat 50% 50%;
   background-size: contain;
@@ -8871,39 +8920,39 @@ h2.block-title {
   font-size: 17px;
   line-height: 30px;
 }
-/* line 90, ../assets/sass/_generalall.scss */
+/* line 118, ../assets/sass/_generalall.scss */
 .path-frontpage .content .field--name-body p {
   margin: 25px 0;
 }
 
 @media (max-width: 640px) {
-  /* line 103, ../assets/sass/_generalall.scss */
+  /* line 131, ../assets/sass/_generalall.scss */
   h1 {
     font-size: 3.5em;
   }
 
-  /* line 106, ../assets/sass/_generalall.scss */
+  /* line 134, ../assets/sass/_generalall.scss */
   h2.block-title {
     font-size: 3.5em;
     margin: 15px 10px;
   }
 
-  /* line 110, ../assets/sass/_generalall.scss */
+  /* line 138, ../assets/sass/_generalall.scss */
   .page-header {
     padding-bottom: 0;
     margin: 30px 0 20px;
   }
 
-  /* line 114, ../assets/sass/_generalall.scss */
+  /* line 142, ../assets/sass/_generalall.scss */
   .region-content {
     padding: 15px 0;
   }
 
-  /* line 117, ../assets/sass/_generalall.scss */
+  /* line 145, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body {
     padding: 15px 0;
   }
-  /* line 119, ../assets/sass/_generalall.scss */
+  /* line 147, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body p {
     margin: 15px 0;
   }
@@ -8914,25 +8963,34 @@ form {
   margin: 30px auto;
 }
 /* line 6, ../assets/sass/_forms.scss */
-form label {
+form .form-item {
+  width: 100%;
+}
+/* line 8, ../assets/sass/_forms.scss */
+form .form-item .form-control {
+  width: 100%;
+}
+/* line 13, ../assets/sass/_forms.scss */
+form:not(.node-form) label {
   display: none;
 }
-/* line 9, ../assets/sass/_forms.scss */
-form .form-item {
+/* line 17, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield, form:not(.node-form) .form-item.form-type-textarea, form:not(.node-form) .form-item.form-type-password {
   margin: 0 0 30px;
   border-bottom: 1px solid #555555;
   position: relative;
 }
-/* line 13, ../assets/sass/_forms.scss */
-form .form-item input.form-control,
-form .form-item textarea.form-control {
+/* line 23, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield input.form-control,
+form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea input.form-control,
+form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password input.form-control,
+form:not(.node-form) .form-item.form-type-password textarea.form-control {
   display: block;
   background: none;
   padding: 0;
   border-width: 0;
   border-color: transparent;
   line-height: 1.9;
-  width: 100%;
   color: transparent;
   -webkit-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
@@ -8940,19 +8998,22 @@ form .form-item textarea.form-control {
   box-shadow: none;
   margin: 0;
   height: 3rem;
-  width: 35rem;
+  width: 100%;
+  outline: none;
 }
-/* line 28, ../assets/sass/_forms.scss */
-form .form-item input.form-control::-webkit-input-placeholder,
-form .form-item textarea.form-control::-webkit-input-placeholder {
+/* line 38, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield input.form-control::-webkit-input-placeholder,
+form:not(.node-form) .form-item.form-type-textfield textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-textarea input.form-control::-webkit-input-placeholder,
+form:not(.node-form) .form-item.form-type-textarea textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-password input.form-control::-webkit-input-placeholder,
+form:not(.node-form) .form-item.form-type-password textarea.form-control::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 32, ../assets/sass/_forms.scss */
-form .form-item textarea.form-control {
+/* line 42, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password textarea.form-control {
   height: 6rem;
 }
-/* line 35, ../assets/sass/_forms.scss */
-form .form-item label {
+/* line 45, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield label, form:not(.node-form) .form-item.form-type-textarea label, form:not(.node-form) .form-item.form-type-password label {
   display: block;
   position: absolute;
   pointer-events: none;
@@ -8963,21 +9024,30 @@ form .form-item label {
   transition: all 0.28s ease;
   top: 1px;
 }
-/* line 46, ../assets/sass/_forms.scss */
-form .form-item.focus input {
+/* line 56, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield.focus input.form-control,
+form:not(.node-form) .form-item.form-type-textfield.focus textarea.form-control, form:not(.node-form) .form-item.form-type-textarea.focus input.form-control,
+form:not(.node-form) .form-item.form-type-textarea.focus textarea.form-control, form:not(.node-form) .form-item.form-type-password.focus input.form-control,
+form:not(.node-form) .form-item.form-type-password.focus textarea.form-control {
   outline: none;
   color: inherit;
 }
-/* line 50, ../assets/sass/_forms.scss */
-form .form-item.focus label {
+/* line 61, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-textfield.focus label, form:not(.node-form) .form-item.form-type-textarea.focus label, form:not(.node-form) .form-item.form-type-password.focus label {
   top: -15px;
   font-size: 85%;
   color: #009de0;
 }
-/* line 57, ../assets/sass/_forms.scss */
+/* line 69, ../assets/sass/_forms.scss */
+form:not(.node-form) .form-item.form-type-item label {
+  display: inline-block;
+  min-width: 200px;
+}
+/* line 76, ../assets/sass/_forms.scss */
 form .form-actions {
   text-align: center;
   margin-top: 70px;
+  width: 100%;
 }
 
 /* line 3, ../assets/sass/_menu.scss */
@@ -9246,6 +9316,46 @@ form .form-actions {
   padding: 20px;
 }
 
+/* line 3, ../assets/sass/_node.scss */
+article {
+  max-width: 800px;
+  margin: auto;
+}
+/* line 6, ../assets/sass/_node.scss */
+article .author {
+  display: none;
+}
+/* line 9, ../assets/sass/_node.scss */
+article .field--name-field-ski,
+article .field--name-field-track {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 2px 0;
+  border-spacing: 2px 0;
+}
+/* line 16, ../assets/sass/_node.scss */
+article .field--name-field-ski > div,
+article .field--name-field-track > div {
+  display: table-cell;
+  background: #ffe5b1;
+  padding: 3px 20px;
+  border: 2px solid #ffe5b1;
+  vertical-align: middle;
+}
+/* line 23, ../assets/sass/_node.scss */
+article .field--name-field-ski .field--label,
+article .field--name-field-track .field--label {
+  text-transform: uppercase;
+}
+/* line 26, ../assets/sass/_node.scss */
+article .field--name-field-ski .field--item,
+article .field--name-field-ski .field__items,
+article .field--name-field-track .field--item,
+article .field--name-field-track .field__items {
+  background: transparent;
+}
+
 /* line 3, ../assets/sass/_banner.scss */
 #block-frontbanner {
   background: url(../images/banner-1.png) no-repeat;
@@ -9267,7 +9377,7 @@ form .form-actions {
   display: table-cell;
   width: 100%;
   vertical-align: middle;
-  padding-left: 12%;
+  padding-left: 8%;
 }
 /* line 20, ../assets/sass/_banner.scss */
 #block-frontbanner .field--name-body .banner-inner .header {

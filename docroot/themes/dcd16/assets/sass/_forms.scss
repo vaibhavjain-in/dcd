@@ -3,59 +3,79 @@
 form {
   max-width: 600px;
   margin: 30px auto;
-  label {
-    display: none;
-  }
   .form-item {
-    margin: 0 0 30px;
-    border-bottom: 1px solid $gray;
-    position: relative;
-    input.form-control,
-    textarea.form-control {
-      display: block;
-      background: none;
-      padding: 0;
-      border-width: 0;
-      border-color: transparent;
-      line-height: 1.9;
+    width: 100%;
+    .form-control {
       width: 100%;
-      color: transparent;
-      @include transition(all 0.28s ease);
-      box-shadow: none;
-      margin: 0;
-      height: 3rem;
-      width: 35rem;
-      &::-webkit-input-placeholder {
-        color: transparent;
-      }
     }
-    textarea.form-control {
-      height: 6rem;
-    }
+  }
+  &:not(.node-form) {
     label {
-      display: block;
-      // color: $filter-text-color;
-      position: absolute;
-      pointer-events: none;
-      z-index: 1;
-      font-weight: normal;
-      @include transition(all 0.28s ease);
-      top: 1px;
+      display: none;
     }
-    &.focus {
-      input {
-        outline: none;
-        color: inherit;
+    .form-item {
+      &.form-type-textfield,
+      &.form-type-textarea,
+      &.form-type-password {
+        margin: 0 0 30px;
+        border-bottom: 1px solid $gray;
+        position: relative;
+        input.form-control,
+        textarea.form-control {
+          display: block;
+          background: none;
+          padding: 0;
+          border-width: 0;
+          border-color: transparent;
+          line-height: 1.9;
+          color: transparent;
+          @include transition(all 0.28s ease);
+          box-shadow: none;
+          margin: 0;
+          height: 3rem;
+          width: 100%;
+          outline: none;
+          &::-webkit-input-placeholder {
+            color: transparent;
+          }
+        }
+        textarea.form-control {
+          height: 6rem;
+        }
+        label {
+          display: block;
+          // color: $filter-text-color;
+          position: absolute;
+          pointer-events: none;
+          z-index: 1;
+          font-weight: normal;
+          @include transition(all 0.28s ease);
+          top: 1px;
+        }
+        &.focus {
+          input.form-control,
+          textarea.form-control {
+            outline: none;
+            color: inherit;
+          }
+          label {
+            top: -15px;
+            font-size: 85%;
+            color: $brand-primary;
+          }
+        }
       }
-      label {
-        top: -15px;
-        font-size: 85%;
-        color: $brand-primary;
+      &.form-type-item {
+        label {
+          display: inline-block;
+          min-width: 200px;
+        }
       }
     }
   }
   .form-actions {
     text-align: center;
     margin-top: 70px;
+    width: 100%;
   }
 }
