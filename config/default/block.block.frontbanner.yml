@@ -10,7 +10,7 @@ dependencies:
     - dcd16
 id: frontbanner
 theme: dcd16
-region: header
+region: navigation
 weight: -10
 provider: null
 plugin: 'block_content:d14fd007-5af9-46cb-89f3-dc96295d968c'

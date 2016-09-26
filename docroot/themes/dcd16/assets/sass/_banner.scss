@@ -1,4 +1,27 @@
+@import "compass/css3/";
 @import "variables";
+
+body {
+  padding-top: 135px;
+  &.navbar-fixed {
+    padding-top: 135px !important;
+  }
+}
+#navbar:not(.navbar-fixed) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  @include transition(all 0.3s ease);
+  * {
+    @include transition(all 0.3s ease);
+  }
+}
+
+.navbar-header {
+  position: relative;
+}
 
 #block-frontbanner {
   background: url(../images/banner-1.png) no-repeat;
@@ -6,6 +29,13 @@
   position: relative;
   color: $white;
   height: 135px;
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover, &:focus {
+      @include text-shadow(0px 0px 200px $white);
+    }
+  }
   .field--name-body {
     height: 100%;
     display: table;
@@ -16,7 +46,7 @@
       display: table-cell;
       width: 100%;
       vertical-align: middle;
-      padding-left: 8%;
+      padding-left: 12%;
       .header {
         font-size: 6em;
         line-height: 100%;
@@ -35,10 +65,11 @@
   }
 }
 
-.path-frontpage {
+.path-frontpage:not(.navbar-fixed) {
   #block-frontbanner {
     height: 560px;
     .banner-inner {
+      padding-left: 8%;
       .header {
         font-size: 9em;
         padding: 0;
@@ -52,16 +83,16 @@
     }
     img {
       top: 20px;
-      height: auto;
+      height: 628px;
     }
   }
 }
 
 @media (max-width: 1200px) {
-  .path-frontpage #block-frontbanner {
+  .path-frontpage:not(.navbar-fixed) #block-frontbanner {
     height: 400px;
     img {
-      width: 400px;
+      height: 450px;
       top: 15px;
       right: 20px;
     }
@@ -76,10 +107,10 @@
   }
 }
 @media (max-width: 960px) {
-  .path-frontpage #block-frontbanner {
+  .path-frontpage:not(.navbar-fixed) #block-frontbanner {
     height: 280px;
     img {
-      width: 275px;
+      height: 310px;
     }
     .banner-inner {
       padding-left: 8%;
@@ -100,7 +131,7 @@
       padding: 0;
       text-align: center;
       .header {
-        font-size: 3em;
+        font-size: 3.5em;
       }
     }
     img {
@@ -108,21 +139,36 @@
       right: 20px;
     }
   }
-  .path-frontpage #block-frontbanner {
-    text-align: center;
-    height: auto;
-    padding-top: 50px;
-    img {
-      position: relative;
-      left: 0;
-      top: 55px;
-    }
-    .banner-inner {
-      display: block;
-      padding: 0;
-      .header {
+  .path-frontpage {
+    #block-frontbanner {
+      text-align: center;
+      padding-top: 80px;
+      height: 205px;
+      .field--name-body .banner-inner {
+        .header {
+          padding: 0;
+        }
       }
-      .subtext {
+      img {
+        position: relative;
+        left: 0;
+      }
+      .banner-inner {
+        display: block;
+        padding: 0;
+      }
+    }
+    &:not(.navbar-fixed) #block-frontbanner {
+      height: auto;
+      img {
+        top: 55px;
+      }
+      .banner-inner {
+        padding: 0;
+        .header {
+        }
+        .subtext {
+        }
       }
     }
   }
@@ -131,7 +177,7 @@
   #block-frontbanner {
     .field--name-body .banner-inner {
       .header {
-        font-size: 2.5em;
+        // font-size: 2.5em;
       }
     }
     img {

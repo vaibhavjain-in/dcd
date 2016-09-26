@@ -1,3 +1,4 @@
+@import "compass/css3/";
 @import "variables";
 
 form {
@@ -14,10 +15,12 @@ form {
       display: none;
     }
     .form-item {
+      margin: 0 0 30px;
       &.form-type-textfield,
       &.form-type-textarea,
-      &.form-type-password {
-        margin: 0 0 30px;
+      &.form-type-password,
+      &.form-type-url,
+      &.form-type-email {
         border-bottom: 1px solid $gray;
         position: relative;
         input.form-control,
@@ -63,6 +66,17 @@ form {
             font-size: 85%;
             color: $brand-primary;
           }
+        }
+      }
+      &.form-type-select {
+        label {
+          display: block;
+        }
+        select {
+          border: none;
+          border-bottom: 1px solid #555;
+          @include box-shadow(none);
+          @include border-radius(0);
         }
       }
       &.form-type-item {
