@@ -30,6 +30,13 @@
       $('.c-hamburger').removeClass('is-active');
     });
     $('body').css('padding-top', $('#navbar').height());
+
+    if ($(window).scrollTop() > 0) {
+      $('body').addClass('navbar-fixed');
+    }
+    else {
+      $('body').removeClass('navbar-fixed');
+    }
   });
 
   $(window).scroll(function(event) {
@@ -38,6 +45,9 @@
     }
     else {
       $('body').removeClass('navbar-fixed');
+      setTimeout(function(){
+        $('body').css('padding-top', $('#navbar').height());
+      }, 300);
     }
   });
 

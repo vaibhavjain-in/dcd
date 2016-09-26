@@ -9070,7 +9070,7 @@ form .form-actions {
   width: 100%;
 }
 
-/* line 3, ../assets/sass/_menu.scss */
+/* line 4, ../assets/sass/_menu.scss */
 .c-hamburger {
   display: block;
   position: relative;
@@ -9088,11 +9088,11 @@ form .form-actions {
   cursor: pointer;
   transition: background 0.3s;
 }
-/* line 19, ../assets/sass/_menu.scss */
+/* line 20, ../assets/sass/_menu.scss */
 .c-hamburger:focus {
   outline: none;
 }
-/* line 23, ../assets/sass/_menu.scss */
+/* line 24, ../assets/sass/_menu.scss */
 .c-hamburger span {
   display: block;
   position: absolute;
@@ -9102,7 +9102,7 @@ form .form-actions {
   background: #009de0;
   width: 100%;
 }
-/* line 31, ../assets/sass/_menu.scss */
+/* line 32, ../assets/sass/_menu.scss */
 .c-hamburger span:before, .c-hamburger span:after {
   position: absolute;
   display: block;
@@ -9112,57 +9112,57 @@ form .form-actions {
   background-color: #009de0;
   content: "";
 }
-/* line 42, ../assets/sass/_menu.scss */
+/* line 43, ../assets/sass/_menu.scss */
 .c-hamburger span:before {
   top: -15px;
 }
-/* line 46, ../assets/sass/_menu.scss */
+/* line 47, ../assets/sass/_menu.scss */
 .c-hamburger span:after {
   bottom: -16px;
 }
 
-/* line 54, ../assets/sass/_menu.scss */
+/* line 55, ../assets/sass/_menu.scss */
 .c-hamburger--htx {
   background-color: transparent;
 }
-/* line 58, ../assets/sass/_menu.scss */
+/* line 59, ../assets/sass/_menu.scss */
 .c-hamburger--htx span:before, .c-hamburger--htx span:after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
 }
-/* line 64, ../assets/sass/_menu.scss */
+/* line 65, ../assets/sass/_menu.scss */
 .c-hamburger--htx span:before {
   transition-property: top, transform;
 }
-/* line 68, ../assets/sass/_menu.scss */
+/* line 69, ../assets/sass/_menu.scss */
 .c-hamburger--htx span:after {
   transition-property: bottom, transform;
 }
-/* line 72, ../assets/sass/_menu.scss */
+/* line 73, ../assets/sass/_menu.scss */
 .c-hamburger--htx.is-active {
   background-color: #ffffff;
 }
-/* line 74, ../assets/sass/_menu.scss */
+/* line 75, ../assets/sass/_menu.scss */
 .c-hamburger--htx.is-active span {
   background: none;
 }
-/* line 77, ../assets/sass/_menu.scss */
+/* line 78, ../assets/sass/_menu.scss */
 .c-hamburger--htx.is-active span:before {
   top: 0;
   transform: rotate(45deg);
 }
-/* line 82, ../assets/sass/_menu.scss */
+/* line 83, ../assets/sass/_menu.scss */
 .c-hamburger--htx.is-active span:after {
   bottom: 0;
   transform: rotate(-45deg);
 }
-/* line 87, ../assets/sass/_menu.scss */
+/* line 88, ../assets/sass/_menu.scss */
 .c-hamburger--htx.is-active span:before, .c-hamburger--htx.is-active span:after {
   transition-delay: 0s, 0.3s;
 }
 
 /***********/
-/* line 100, ../assets/sass/_menu.scss */
+/* line 101, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu:before {
   content: '';
   position: fixed;
@@ -9174,7 +9174,7 @@ form .form-actions {
   width: 100%;
   display: none;
 }
-/* line 111, ../assets/sass/_menu.scss */
+/* line 112, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul {
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -9195,22 +9195,22 @@ form .form-actions {
   -webkit-box-shadow: 0px 0 11px #777777;
   box-shadow: 0px 0 11px #777777;
 }
-/* line 113, ../assets/sass/_menu.scss */
+/* line 114, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul * {
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 127, ../assets/sass/_menu.scss */
+/* line 128, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul > li {
   margin-bottom: 20px;
 }
-/* line 129, ../assets/sass/_menu.scss */
+/* line 130, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul > li > a {
   font-size: 16px;
 }
-/* line 131, ../assets/sass/_menu.scss */
+/* line 132, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul > li > a:before {
   content: '';
   width: 0px;
@@ -9225,40 +9225,40 @@ form .form-actions {
   -webkit-transition: width 0.25s;
   transition: width 0.25s;
 }
-/* line 143, ../assets/sass/_menu.scss */
+/* line 144, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul > li > a:hover:before {
   width: 100%;
 }
-/* line 150, ../assets/sass/_menu.scss */
+/* line 151, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul li {
   float: none;
   display: block;
 }
-/* line 153, ../assets/sass/_menu.scss */
+/* line 154, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul li.open {
   background: #ffe5b1 !important;
   font-weight: bold;
 }
-/* line 157, ../assets/sass/_menu.scss */
+/* line 158, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul li:hover, #block-dcd16-main-menu > ul li:focus {
   background: transparent;
 }
-/* line 160, ../assets/sass/_menu.scss */
+/* line 161, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul li a {
   padding: 15px;
   padding-left: 55px;
   background: transparent;
   color: #009de0;
 }
-/* line 165, ../assets/sass/_menu.scss */
+/* line 166, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul li a:hover, #block-dcd16-main-menu > ul li a:focus {
   background: transparent;
 }
-/* line 168, ../assets/sass/_menu.scss */
+/* line 169, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu > ul li a:hover {
   font-weight: bold;
 }
-/* line 174, ../assets/sass/_menu.scss */
+/* line 175, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu .dropdown-menu {
   position: relative;
   box-shadow: none;
@@ -9268,17 +9268,17 @@ form .form-actions {
   background: transparent;
   margin-left: 10px;
 }
-/* line 184, ../assets/sass/_menu.scss */
+/* line 185, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu.main-menu-show:before {
   display: block;
 }
-/* line 187, ../assets/sass/_menu.scss */
+/* line 188, ../assets/sass/_menu.scss */
 #block-dcd16-main-menu.main-menu-show > ul {
   left: 0;
 }
 
 /***********/
-/* line 196, ../assets/sass/_menu.scss */
+/* line 197, ../assets/sass/_menu.scss */
 #block-menuhamburgertrigger {
   position: absolute;
   left: 50px;
@@ -9287,50 +9287,95 @@ form .form-actions {
 }
 
 @media (max-width: 960px) {
-  /* line 207, ../assets/sass/_menu.scss */
+  /* line 208, ../assets/sass/_menu.scss */
   #block-menuhamburgertrigger {
     top: 20px;
     left: 20px;
   }
 
-  /* line 212, ../assets/sass/_menu.scss */
+  /* line 213, ../assets/sass/_menu.scss */
   #block-dcd16-main-menu > ul {
     overflow: scroll;
   }
-  /* line 214, ../assets/sass/_menu.scss */
+  /* line 215, ../assets/sass/_menu.scss */
   #block-dcd16-main-menu > ul li a {
     padding: 10px 10px 10px 25px;
   }
 }
 @media (max-width: 640px) {
-  /* line 221, ../assets/sass/_menu.scss */
+  /* line 222, ../assets/sass/_menu.scss */
   .path-frontpage #block-menuhamburgertrigger {
     top: 20px;
     left: 45%;
   }
 
-  /* line 226, ../assets/sass/_menu.scss */
+  /* line 227, ../assets/sass/_menu.scss */
   #block-dcd16-main-menu > ul {
     width: 100%;
     left: -110%;
     margin: 0;
     text-align: center;
   }
-  /* line 231, ../assets/sass/_menu.scss */
+  /* line 232, ../assets/sass/_menu.scss */
   #block-dcd16-main-menu > ul li a {
     padding: 10px;
     text-align: center;
   }
-  /* line 236, ../assets/sass/_menu.scss */
+  /* line 237, ../assets/sass/_menu.scss */
   #block-dcd16-main-menu .dropdown-menu {
     margin: 0;
   }
-  /* line 239, ../assets/sass/_menu.scss */
+  /* line 240, ../assets/sass/_menu.scss */
   #block-dcd16-main-menu.main-menu-show > ul {
     left: 0;
     padding-top: 50px;
   }
 }
+/* line 251, ../assets/sass/_menu.scss */
+#block-dcd16-account-menu {
+  position: fixed;
+  bottom: -10px;
+  right: -10px;
+  z-index: 10;
+  background: #009de0;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -moz-border-radius: 9999px 0 0;
+  -webkit-border-radius: 9999px;
+  border-radius: 9999px 0 0;
+}
+/* line 260, ../assets/sass/_menu.scss */
+#block-dcd16-account-menu ul.menu {
+  margin: 0;
+}
+/* line 263, ../assets/sass/_menu.scss */
+#block-dcd16-account-menu ul.menu li a {
+  color: #ffffff;
+  background: transparent;
+  padding: 25px 15px 15px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* line 270, ../assets/sass/_menu.scss */
+#block-dcd16-account-menu ul.menu li a:before {
+  content: "\e008";
+  font-family: 'Glyphicons Halflings';
+  display: block;
+}
+/* line 275, ../assets/sass/_menu.scss */
+#block-dcd16-account-menu ul.menu li a:hover {
+  color: #ffffff;
+  background: transparent;
+}
+/* line 282, ../assets/sass/_menu.scss */
+#block-dcd16-account-menu:hover {
+  bottom: -5px;
+  right: -5px;
+}
+
 /* line 3, ../assets/sass/_footer.scss */
 .footer {
   clear: both;

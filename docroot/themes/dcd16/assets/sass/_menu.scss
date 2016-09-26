@@ -1,3 +1,4 @@
+@import "compass/css3/";
 @import "variables";
 
 .c-hamburger {
@@ -240,5 +241,46 @@
       left: 0;
       padding-top: 50px;
     }
+  }
+}
+
+
+
+
+// User menu
+#block-dcd16-account-menu {
+  position: fixed;
+  bottom: -10px;
+  right: -10px;
+  z-index: 10;
+  background: $brand-primary;
+  @include transition(all 0.25s);
+  // border: 5px solid $brand-primary;
+  @include border-radius(9999px 0 0);
+  ul.menu {
+    margin: 0;
+    li {
+      a {
+        color: $white;
+        background: transparent;
+        padding: 25px 15px 15px 25px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        &:before {
+          content: "\e008";
+          font-family: 'Glyphicons Halflings';
+          display: block;
+        }
+        &:hover {
+          color: $white;
+          background: transparent;
+        }
+      }
+    }
+  }
+  &:hover {
+    bottom: -5px;
+    right: -5px;
   }
 }
