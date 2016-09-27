@@ -426,7 +426,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Session Proposed'
+      title: 'Session Accepted'
       header: {  }
       footer: {  }
       empty:

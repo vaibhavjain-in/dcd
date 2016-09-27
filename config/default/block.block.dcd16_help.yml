@@ -11,7 +11,7 @@ _core:
 id: dcd16_help
 theme: dcd16
 region: '-1'
-weight: -6
+weight: -7
 provider: null
 plugin: help_block
 settings:

@@ -11,7 +11,7 @@ _core:
 id: dcd16_powered
 theme: dcd16
 region: footer
-weight: -7
+weight: -8
 provider: null
 plugin: system_powered_by_block
 settings:
