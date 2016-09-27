@@ -572,7 +572,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Session Proposed'
+      title: 'Sessions Accepted'
       header: {  }
       footer: {  }
       empty:
