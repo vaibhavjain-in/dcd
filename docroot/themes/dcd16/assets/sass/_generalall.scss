@@ -148,7 +148,7 @@ ul.nav.nav-tabs {
   }
   @media (max-width: 768px) {
     margin: 0 0 10px;
-    > div {
+    > div, > span {
       display: block;
     }
   }

@@ -9448,7 +9448,7 @@ article .field .field-content {
     margin: 0 0 10px;
   }
   /* line 151, ../assets/sass/_generalall.scss */
-  article .field > div {
+  article .field > div, article .field > span {
     display: block;
   }
 }
@@ -9566,11 +9566,15 @@ article.session .author {
     margin: 0 0 10px;
   }
   /* line 151, ../assets/sass/_generalall.scss */
-  .path-user article .field--name-field-organization > div,
+  .path-user article .field--name-field-organization > div, .path-user article .field--name-field-organization > span,
   .path-user article .field--name-field-designation > div,
+  .path-user article .field--name-field-designation > span,
   .path-user article .field--name-field-phone > div,
+  .path-user article .field--name-field-phone > span,
   .path-user article .field--name-field-facebook-link > div,
-  .path-user article .field--name-field-twitter-link > div {
+  .path-user article .field--name-field-facebook-link > span,
+  .path-user article .field--name-field-twitter-link > div,
+  .path-user article .field--name-field-twitter-link > span {
     display: block;
   }
 }
@@ -10029,7 +10033,7 @@ body {
     margin: 0 0 10px;
   }
   /* line 151, ../assets/sass/_generalall.scss */
-  .view-page .views-field > div {
+  .view-page .views-field > div, .view-page .views-field > span {
     display: block;
   }
 }
