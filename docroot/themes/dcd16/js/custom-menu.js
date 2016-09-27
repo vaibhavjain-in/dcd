@@ -29,7 +29,6 @@
       $('#block-dcd16-main-menu').removeClass('main-menu-show');
       $('.c-hamburger').removeClass('is-active');
     });
-    $('body').css('padding-top', $('#navbar').height());
 
     if ($(window).scrollTop() > 0) {
       $('body').addClass('navbar-fixed');
@@ -45,9 +44,6 @@
     }
     else {
       $('body').removeClass('navbar-fixed');
-      setTimeout(function(){
-        $('body').css('padding-top', $('#navbar').height());
-      }, 300);
     }
   });
 

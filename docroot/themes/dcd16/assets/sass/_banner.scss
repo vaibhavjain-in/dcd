@@ -3,20 +3,23 @@
 
 body {
   padding-top: 135px;
-  &.navbar-fixed {
-    padding-top: 135px !important;
+  @include transition(all 1s ease);
+  // &.navbar-fixed {
+  //   padding-top: 135px !important;
+  // }
+}
+#navbar {
+  @include transition(all 0.3s ease);
+  * {
+    @include transition(all 0.3s ease);
   }
 }
-#navbar:not(.navbar-fixed) {
+#navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-  @include transition(all 0.3s ease);
-  * {
-    @include transition(all 0.3s ease);
-  }
 }
 
 .navbar-header {
@@ -66,6 +69,10 @@ body {
 }
 
 .path-frontpage:not(.navbar-fixed) {
+  padding-top: 0 !important;
+  #navbar {
+    position: static;
+  }
   #block-frontbanner {
     height: 560px;
     .banner-inner {
@@ -140,6 +147,7 @@ body {
     }
   }
   .path-frontpage {
+    padding-top: 250px;
     #block-frontbanner {
       text-align: center;
       padding-top: 80px;
@@ -177,7 +185,7 @@ body {
   #block-frontbanner {
     .field--name-body .banner-inner {
       .header {
-        // font-size: 2.5em;
+        font-size: 2.5em;
       }
     }
     img {
