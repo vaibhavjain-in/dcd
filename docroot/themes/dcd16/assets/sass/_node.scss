@@ -6,8 +6,16 @@ article {
   .author {
     display: none;
   }
-  .field--name-field-ski,
-  .field--name-field-track {
+  .field {
     @include tabular-field();
+  }
+  .field--type-text-with-summary {
+    display: block;
+    margin: 30px 0;
+  }
+  &.session {
+    .author {
+      display: block;
+    }
   }
 }

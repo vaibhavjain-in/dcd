@@ -8839,17 +8839,18 @@ ul.nav.nav-tabs {
   display: table;
   table-layout: fixed;
   width: 100%;
+  margin-bottom: 50px;
 }
-/* line 50, ../assets/sass/_generalall.scss */
+/* line 51, ../assets/sass/_generalall.scss */
 ul.nav.nav-tabs:before, ul.nav.nav-tabs:after {
   content: none;
 }
-/* line 54, ../assets/sass/_generalall.scss */
+/* line 55, ../assets/sass/_generalall.scss */
 ul.nav.nav-tabs li {
   display: table-cell;
   float: none;
 }
-/* line 57, ../assets/sass/_generalall.scss */
+/* line 58, ../assets/sass/_generalall.scss */
 ul.nav.nav-tabs li a {
   display: block;
   border: none;
@@ -8863,12 +8864,12 @@ ul.nav.nav-tabs li a {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
-/* line 69, ../assets/sass/_generalall.scss */
+/* line 70, ../assets/sass/_generalall.scss */
 ul.nav.nav-tabs li a:hover {
   background: #ffe5b1;
   opacity: 1;
 }
-/* line 75, ../assets/sass/_generalall.scss */
+/* line 76, ../assets/sass/_generalall.scss */
 ul.nav.nav-tabs li.active a,
 ul.nav.nav-tabs li.active a:hover {
   opacity: 1;
@@ -8877,12 +8878,12 @@ ul.nav.nav-tabs li.active a:hover {
   color: #ffe5b1;
 }
 
-/* line 86, ../assets/sass/_generalall.scss */
+/* line 87, ../assets/sass/_generalall.scss */
 .view-empty {
   text-align: center;
 }
 
-/* line 90, ../assets/sass/_generalall.scss */
+/* line 91, ../assets/sass/_generalall.scss */
 .google-card {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -8894,20 +8895,21 @@ ul.nav.nav-tabs li.active a:hover {
   margin: 20px 0;
 }
 
-/* line 98, ../assets/sass/_generalall.scss */
+/* line 99, ../assets/sass/_generalall.scss */
 .region-content {
   padding: 100px 0;
 }
 
-/* line 103, ../assets/sass/_generalall.scss */
+/* line 104, ../assets/sass/_generalall.scss */
 .content .field--name-body {
   position: relative;
   text-align: justify;
   max-width: 800px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 113, ../assets/sass/_generalall.scss */
+/* line 115, ../assets/sass/_generalall.scss */
 .path-frontpage .content .field--name-body {
   background: url(../images/map-india2.jpg) no-repeat 50% 50%;
   background-size: contain;
@@ -8915,39 +8917,39 @@ ul.nav.nav-tabs li.active a:hover {
   font-size: 17px;
   line-height: 30px;
 }
-/* line 119, ../assets/sass/_generalall.scss */
+/* line 121, ../assets/sass/_generalall.scss */
 .path-frontpage .content .field--name-body p {
   margin: 25px 0;
 }
 
 @media (max-width: 640px) {
-  /* line 160, ../assets/sass/_generalall.scss */
+  /* line 163, ../assets/sass/_generalall.scss */
   h1 {
     font-size: 3.5em;
   }
 
-  /* line 163, ../assets/sass/_generalall.scss */
+  /* line 166, ../assets/sass/_generalall.scss */
   h2.block-title {
     font-size: 3.5em;
     margin: 15px 10px;
   }
 
-  /* line 167, ../assets/sass/_generalall.scss */
+  /* line 170, ../assets/sass/_generalall.scss */
   .page-header {
     padding-bottom: 0;
     margin: 30px 0 20px;
   }
 
-  /* line 171, ../assets/sass/_generalall.scss */
+  /* line 174, ../assets/sass/_generalall.scss */
   .region-content {
     padding: 15px 0;
   }
 
-  /* line 174, ../assets/sass/_generalall.scss */
+  /* line 177, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body {
     padding: 15px 0;
   }
-  /* line 176, ../assets/sass/_generalall.scss */
+  /* line 179, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body p {
     margin: 15px 0;
   }
@@ -8965,31 +8967,35 @@ form .form-item {
 form .form-item .form-control {
   width: 100%;
 }
-/* line 14, ../assets/sass/_forms.scss */
-form:not(.node-form) label {
+/* line 13, ../assets/sass/_forms.scss */
+form label {
   display: none;
 }
-/* line 17, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item {
+/* line 16, ../assets/sass/_forms.scss */
+form .form-item {
   margin: 0 0 30px;
 }
-/* line 19, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield, form:not(.node-form) .form-item.form-type-textarea, form:not(.node-form) .form-item.form-type-password, form:not(.node-form) .form-item.form-type-url, form:not(.node-form) .form-item.form-type-email {
-  border-bottom: 1px solid #555555;
+/* line 18, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield, form .form-item.form-type-textarea, form .form-item.form-type-password, form .form-item.form-type-url, form .form-item.form-type-email, form .form-item.form-type-entity-autocomplete {
   position: relative;
 }
-/* line 26, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield input.form-control,
-form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea input.form-control,
-form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password input.form-control,
-form:not(.node-form) .form-item.form-type-password textarea.form-control, form:not(.node-form) .form-item.form-type-url input.form-control,
-form:not(.node-form) .form-item.form-type-url textarea.form-control, form:not(.node-form) .form-item.form-type-email input.form-control,
-form:not(.node-form) .form-item.form-type-email textarea.form-control {
+/* line 25, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield input.form-control,
+form .form-item.form-type-textfield textarea.form-control, form .form-item.form-type-textarea input.form-control,
+form .form-item.form-type-textarea textarea.form-control, form .form-item.form-type-password input.form-control,
+form .form-item.form-type-password textarea.form-control, form .form-item.form-type-url input.form-control,
+form .form-item.form-type-url textarea.form-control, form .form-item.form-type-email input.form-control,
+form .form-item.form-type-email textarea.form-control, form .form-item.form-type-entity-autocomplete input.form-control,
+form .form-item.form-type-entity-autocomplete textarea.form-control {
   display: block;
   background: none;
   padding: 0;
   border-width: 0;
   border-color: transparent;
+  border-bottom: 1px solid #bfbfbf;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   line-height: 1.9;
   color: transparent;
   -moz-transition: all 0.28s ease;
@@ -9002,21 +9008,22 @@ form:not(.node-form) .form-item.form-type-email textarea.form-control {
   width: 100%;
   outline: none;
 }
-/* line 41, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield input.form-control::-webkit-input-placeholder,
-form:not(.node-form) .form-item.form-type-textfield textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-textarea input.form-control::-webkit-input-placeholder,
-form:not(.node-form) .form-item.form-type-textarea textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-password input.form-control::-webkit-input-placeholder,
-form:not(.node-form) .form-item.form-type-password textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-url input.form-control::-webkit-input-placeholder,
-form:not(.node-form) .form-item.form-type-url textarea.form-control::-webkit-input-placeholder, form:not(.node-form) .form-item.form-type-email input.form-control::-webkit-input-placeholder,
-form:not(.node-form) .form-item.form-type-email textarea.form-control::-webkit-input-placeholder {
+/* line 42, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield input.form-control::-webkit-input-placeholder,
+form .form-item.form-type-textfield textarea.form-control::-webkit-input-placeholder, form .form-item.form-type-textarea input.form-control::-webkit-input-placeholder,
+form .form-item.form-type-textarea textarea.form-control::-webkit-input-placeholder, form .form-item.form-type-password input.form-control::-webkit-input-placeholder,
+form .form-item.form-type-password textarea.form-control::-webkit-input-placeholder, form .form-item.form-type-url input.form-control::-webkit-input-placeholder,
+form .form-item.form-type-url textarea.form-control::-webkit-input-placeholder, form .form-item.form-type-email input.form-control::-webkit-input-placeholder,
+form .form-item.form-type-email textarea.form-control::-webkit-input-placeholder, form .form-item.form-type-entity-autocomplete input.form-control::-webkit-input-placeholder,
+form .form-item.form-type-entity-autocomplete textarea.form-control::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 45, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield textarea.form-control, form:not(.node-form) .form-item.form-type-textarea textarea.form-control, form:not(.node-form) .form-item.form-type-password textarea.form-control, form:not(.node-form) .form-item.form-type-url textarea.form-control, form:not(.node-form) .form-item.form-type-email textarea.form-control {
+/* line 46, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield textarea.form-control, form .form-item.form-type-textarea textarea.form-control, form .form-item.form-type-password textarea.form-control, form .form-item.form-type-url textarea.form-control, form .form-item.form-type-email textarea.form-control, form .form-item.form-type-entity-autocomplete textarea.form-control {
   height: 6rem;
 }
-/* line 48, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield label, form:not(.node-form) .form-item.form-type-textarea label, form:not(.node-form) .form-item.form-type-password label, form:not(.node-form) .form-item.form-type-url label, form:not(.node-form) .form-item.form-type-email label {
+/* line 49, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield label, form .form-item.form-type-textarea label, form .form-item.form-type-password label, form .form-item.form-type-url label, form .form-item.form-type-email label, form .form-item.form-type-entity-autocomplete label {
   display: block;
   position: absolute;
   pointer-events: none;
@@ -9028,30 +9035,35 @@ form:not(.node-form) .form-item.form-type-textfield label, form:not(.node-form) 
   transition: all 0.28s ease;
   top: 1px;
 }
-/* line 59, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield.focus input.form-control,
-form:not(.node-form) .form-item.form-type-textfield.focus textarea.form-control, form:not(.node-form) .form-item.form-type-textarea.focus input.form-control,
-form:not(.node-form) .form-item.form-type-textarea.focus textarea.form-control, form:not(.node-form) .form-item.form-type-password.focus input.form-control,
-form:not(.node-form) .form-item.form-type-password.focus textarea.form-control, form:not(.node-form) .form-item.form-type-url.focus input.form-control,
-form:not(.node-form) .form-item.form-type-url.focus textarea.form-control, form:not(.node-form) .form-item.form-type-email.focus input.form-control,
-form:not(.node-form) .form-item.form-type-email.focus textarea.form-control {
+/* line 60, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield.focus input.form-control,
+form .form-item.form-type-textfield.focus textarea.form-control, form .form-item.form-type-textarea.focus input.form-control,
+form .form-item.form-type-textarea.focus textarea.form-control, form .form-item.form-type-password.focus input.form-control,
+form .form-item.form-type-password.focus textarea.form-control, form .form-item.form-type-url.focus input.form-control,
+form .form-item.form-type-url.focus textarea.form-control, form .form-item.form-type-email.focus input.form-control,
+form .form-item.form-type-email.focus textarea.form-control, form .form-item.form-type-entity-autocomplete.focus input.form-control,
+form .form-item.form-type-entity-autocomplete.focus textarea.form-control {
   outline: none;
   color: inherit;
+  border-color: #555555;
 }
-/* line 64, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-textfield.focus label, form:not(.node-form) .form-item.form-type-textarea.focus label, form:not(.node-form) .form-item.form-type-password.focus label, form:not(.node-form) .form-item.form-type-url.focus label, form:not(.node-form) .form-item.form-type-email.focus label {
+/* line 66, ../assets/sass/_forms.scss */
+form .form-item.form-type-textfield.focus label, form .form-item.form-type-textarea.focus label, form .form-item.form-type-password.focus label, form .form-item.form-type-url.focus label, form .form-item.form-type-email.focus label, form .form-item.form-type-entity-autocomplete.focus label {
   top: -15px;
   font-size: 85%;
   color: #009de0;
 }
-/* line 72, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-select label {
+/* line 74, ../assets/sass/_forms.scss */
+form .form-item.form-type-select label {
   display: block;
 }
-/* line 75, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-select select {
-  border: none;
+/* line 77, ../assets/sass/_forms.scss */
+form .form-item.form-type-select .select-wrapper {
   border-bottom: 1px solid #555;
+}
+/* line 80, ../assets/sass/_forms.scss */
+form .form-item.form-type-select select {
+  border: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -9059,12 +9071,21 @@ form:not(.node-form) .form-item.form-type-select select {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 83, ../assets/sass/_forms.scss */
-form:not(.node-form) .form-item.form-type-item label {
+/* line 87, ../assets/sass/_forms.scss */
+form .form-item.form-type-item label {
   display: inline-block;
   min-width: 200px;
 }
-/* line 90, ../assets/sass/_forms.scss */
+/* line 93, ../assets/sass/_forms.scss */
+form .form-item.form-type-entity-autocomplete .input-group-addon {
+  background: none;
+  border: none;
+}
+/* line 101, ../assets/sass/_forms.scss */
+form.node-form .form-type-textarea label {
+  position: static;
+}
+/* line 106, ../assets/sass/_forms.scss */
 form .form-actions {
   text-align: center;
   margin-top: 70px;
@@ -9171,7 +9192,7 @@ form .form-actions {
   left: 0;
   height: 100%;
   background: rgba(255, 255, 255, 0.84);
-  z-index: 2;
+  z-index: 200;
   width: 100%;
   display: none;
 }
@@ -9185,7 +9206,7 @@ form .form-actions {
   position: fixed;
   top: 0;
   left: -350px;
-  z-index: 2;
+  z-index: 200;
   width: 300px;
   height: 100%;
   float: none;
@@ -9284,7 +9305,7 @@ form .form-actions {
   position: absolute;
   left: 50px;
   top: 50px;
-  z-index: 3;
+  z-index: 300;
 }
 
 @media (max-width: 960px) {
@@ -9337,7 +9358,7 @@ form .form-actions {
   position: fixed;
   bottom: -10px;
   right: -10px;
-  z-index: 10;
+  z-index: 1000;
   background: #009de0;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -9396,46 +9417,49 @@ article .author {
   display: none;
 }
 /* line 9, ../assets/sass/_node.scss */
-article .field--name-field-ski,
-article .field--name-field-track {
+article .field {
   display: table;
   table-layout: fixed;
   width: 100%;
   margin: 2px 0;
   border-spacing: 2px 0;
 }
-/* line 132, ../assets/sass/_generalall.scss */
-article .field--name-field-ski > div,
-article .field--name-field-track > div {
+/* line 134, ../assets/sass/_generalall.scss */
+article .field > div, article .field > span {
   display: table-cell;
   background: #ffe5b1;
   padding: 3px 20px;
   border: 2px solid #ffe5b1;
   vertical-align: middle;
 }
-/* line 139, ../assets/sass/_generalall.scss */
-article .field--name-field-ski .field--label,
-article .field--name-field-track .field--label {
+/* line 141, ../assets/sass/_generalall.scss */
+article .field .field--label, article .field .views-label {
   text-transform: uppercase;
 }
-/* line 142, ../assets/sass/_generalall.scss */
-article .field--name-field-ski .field--item,
-article .field--name-field-ski .field__items,
-article .field--name-field-track .field--item,
-article .field--name-field-track .field__items {
+/* line 144, ../assets/sass/_generalall.scss */
+article .field .field--item,
+article .field .field__items,
+article .field .field-content {
   background: transparent;
 }
 @media (max-width: 768px) {
   /* line 9, ../assets/sass/_node.scss */
-  article .field--name-field-ski,
-  article .field--name-field-track {
+  article .field {
     margin: 0 0 10px;
   }
-  /* line 148, ../assets/sass/_generalall.scss */
-  article .field--name-field-ski > div,
-  article .field--name-field-track > div {
+  /* line 151, ../assets/sass/_generalall.scss */
+  article .field > div {
     display: block;
   }
+}
+/* line 12, ../assets/sass/_node.scss */
+article .field--type-text-with-summary {
+  display: block;
+  margin: 30px 0;
+}
+/* line 17, ../assets/sass/_node.scss */
+article.session .author {
+  display: block;
 }
 
 /* line 2, ../assets/sass/_user.scss */
@@ -9459,21 +9483,22 @@ article .field--name-field-track .field__items {
   display: inline-block;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0 15px;
+  width: auto;
 }
-/* line 20, ../assets/sass/_user.scss */
+/* line 21, ../assets/sass/_user.scss */
 .path-user article .field--type-image img {
   margin: auto;
 }
-/* line 24, ../assets/sass/_user.scss */
+/* line 25, ../assets/sass/_user.scss */
 .path-user article .field--name-field-drupal-profile {
   font-size: 20px;
   margin: 40px 0;
 }
-/* line 27, ../assets/sass/_user.scss */
+/* line 28, ../assets/sass/_user.scss */
 .path-user article .field--name-field-drupal-profile a {
   word-wrap: break-word;
 }
-/* line 31, ../assets/sass/_user.scss */
+/* line 32, ../assets/sass/_user.scss */
 .path-user article .field--name-field-organization,
 .path-user article .field--name-field-designation,
 .path-user article .field--name-field-phone,
@@ -9485,41 +9510,54 @@ article .field--name-field-track .field__items {
   margin: 2px 0;
   border-spacing: 2px 0;
 }
-/* line 132, ../assets/sass/_generalall.scss */
-.path-user article .field--name-field-organization > div,
+/* line 134, ../assets/sass/_generalall.scss */
+.path-user article .field--name-field-organization > div, .path-user article .field--name-field-organization > span,
 .path-user article .field--name-field-designation > div,
+.path-user article .field--name-field-designation > span,
 .path-user article .field--name-field-phone > div,
+.path-user article .field--name-field-phone > span,
 .path-user article .field--name-field-facebook-link > div,
-.path-user article .field--name-field-twitter-link > div {
+.path-user article .field--name-field-facebook-link > span,
+.path-user article .field--name-field-twitter-link > div,
+.path-user article .field--name-field-twitter-link > span {
   display: table-cell;
   background: #ffe5b1;
   padding: 3px 20px;
   border: 2px solid #ffe5b1;
   vertical-align: middle;
 }
-/* line 139, ../assets/sass/_generalall.scss */
-.path-user article .field--name-field-organization .field--label,
+/* line 141, ../assets/sass/_generalall.scss */
+.path-user article .field--name-field-organization .field--label, .path-user article .field--name-field-organization .views-label,
 .path-user article .field--name-field-designation .field--label,
+.path-user article .field--name-field-designation .views-label,
 .path-user article .field--name-field-phone .field--label,
+.path-user article .field--name-field-phone .views-label,
 .path-user article .field--name-field-facebook-link .field--label,
-.path-user article .field--name-field-twitter-link .field--label {
+.path-user article .field--name-field-facebook-link .views-label,
+.path-user article .field--name-field-twitter-link .field--label,
+.path-user article .field--name-field-twitter-link .views-label {
   text-transform: uppercase;
 }
-/* line 142, ../assets/sass/_generalall.scss */
+/* line 144, ../assets/sass/_generalall.scss */
 .path-user article .field--name-field-organization .field--item,
 .path-user article .field--name-field-organization .field__items,
+.path-user article .field--name-field-organization .field-content,
 .path-user article .field--name-field-designation .field--item,
 .path-user article .field--name-field-designation .field__items,
+.path-user article .field--name-field-designation .field-content,
 .path-user article .field--name-field-phone .field--item,
 .path-user article .field--name-field-phone .field__items,
+.path-user article .field--name-field-phone .field-content,
 .path-user article .field--name-field-facebook-link .field--item,
 .path-user article .field--name-field-facebook-link .field__items,
+.path-user article .field--name-field-facebook-link .field-content,
 .path-user article .field--name-field-twitter-link .field--item,
-.path-user article .field--name-field-twitter-link .field__items {
+.path-user article .field--name-field-twitter-link .field__items,
+.path-user article .field--name-field-twitter-link .field-content {
   background: transparent;
 }
 @media (max-width: 768px) {
-  /* line 31, ../assets/sass/_user.scss */
+  /* line 32, ../assets/sass/_user.scss */
   .path-user article .field--name-field-organization,
   .path-user article .field--name-field-designation,
   .path-user article .field--name-field-phone,
@@ -9527,7 +9565,7 @@ article .field--name-field-track .field__items {
   .path-user article .field--name-field-twitter-link {
     margin: 0 0 10px;
   }
-  /* line 148, ../assets/sass/_generalall.scss */
+  /* line 151, ../assets/sass/_generalall.scss */
   .path-user article .field--name-field-organization > div,
   .path-user article .field--name-field-designation > div,
   .path-user article .field--name-field-phone > div,
@@ -9567,7 +9605,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
 }
 
 /* line 25, ../assets/sass/_banner.scss */
@@ -9943,4 +9981,69 @@ body {
 /* line 38, ../assets/sass/_sponsors.scss */
 #block-views-block-sponsors-block-1 h3:first-child {
   margin-top: 0;
+}
+
+/* line 1, ../assets/sass/_listings.scss */
+.view-page {
+  max-width: 800px;
+  margin: auto;
+}
+/* line 4, ../assets/sass/_listings.scss */
+.view-page .views-row {
+  border-bottom: 1px solid #eeeeee;
+  padding: 30px 0;
+}
+/* line 7, ../assets/sass/_listings.scss */
+.view-page .views-row:last-child {
+  border: none;
+}
+/* line 11, ../assets/sass/_listings.scss */
+.view-page .views-field {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 2px 0;
+  border-spacing: 2px 0;
+}
+/* line 134, ../assets/sass/_generalall.scss */
+.view-page .views-field > div, .view-page .views-field > span {
+  display: table-cell;
+  background: #ffe5b1;
+  padding: 3px 20px;
+  border: 2px solid #ffe5b1;
+  vertical-align: middle;
+}
+/* line 141, ../assets/sass/_generalall.scss */
+.view-page .views-field .field--label, .view-page .views-field .views-label {
+  text-transform: uppercase;
+}
+/* line 144, ../assets/sass/_generalall.scss */
+.view-page .views-field .field--item,
+.view-page .views-field .field__items,
+.view-page .views-field .field-content {
+  background: transparent;
+}
+@media (max-width: 768px) {
+  /* line 11, ../assets/sass/_listings.scss */
+  .view-page .views-field {
+    margin: 0 0 10px;
+  }
+  /* line 151, ../assets/sass/_generalall.scss */
+  .view-page .views-field > div {
+    display: block;
+  }
+}
+/* line 14, ../assets/sass/_listings.scss */
+.view-page .views-field-field-first-name {
+  display: block;
+}
+/* line 16, ../assets/sass/_listings.scss */
+.view-page .views-field-field-first-name .field-content {
+  border: none;
+  padding: 20px 0;
+  display: block;
+}
+/* line 22, ../assets/sass/_listings.scss */
+.view-page a, .view-page a:hover, .view-page a:focus {
+  text-decoration: none;
 }
