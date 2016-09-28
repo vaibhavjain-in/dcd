@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_state
+    - field.field.node.session.field_ski
+    - field.field.node.session.field_timeslot
+    - field.field.node.session.field_track
     - node.type.session
   module:
     - text
@@ -23,4 +28,9 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_room: true
+  field_session_state: true
+  field_ski: true
+  field_timeslot: true
+  field_track: true

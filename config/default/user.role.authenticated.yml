@@ -19,3 +19,4 @@ permissions:
   - 'search content'
   - 'create session content'
   - 'edit own session content'
+  - 'view own unpublished content'

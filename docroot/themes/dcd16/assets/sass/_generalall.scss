@@ -47,6 +47,7 @@ ul.nav.nav-tabs {
   display: table;
   table-layout: fixed;
   width: 100%;
+  margin-bottom: 50px;
   &:before,
   &:after {
     content: none;
@@ -104,7 +105,8 @@ ul.nav.nav-tabs {
     position: relative;
     text-align: justify;
     max-width: 800px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -129,23 +131,24 @@ ul.nav.nav-tabs {
   width: 100%;
   margin: 2px 0;
   border-spacing: 2px 0;
-  > div {
+  > div, > span {
     display: table-cell;
     background: $brand-secondary;
     padding: 3px 20px;
     border: 2px solid $brand-secondary;
     vertical-align: middle;
   }
-  .field--label {
+  .field--label, .views-label {
     text-transform: uppercase;
   }
   .field--item,
-  .field__items {
+  .field__items,
+  .field-content {
     background: transparent;
   }
   @media (max-width: 768px) {
     margin: 0 0 10px;
-    > div {
+    > div, > span {
       display: block;
     }
   }
