@@ -171,6 +171,12 @@ ul.nav.nav-tabs {
     padding-bottom: 0;
     margin: 30px 0 20px;
   }
+  ul.nav.nav-tabs {
+    li {
+      display: block;
+      margin: 1px 0;
+    }
+  }
   .region-content {
     padding: 15px 0;
   }
