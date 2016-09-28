@@ -9404,6 +9404,40 @@ form .form-actions {
   right: -5px;
 }
 
+@media (max-width: 640px) {
+  /* line 290, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu {
+    bottom: 60%;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -moz-transform-origin: 100% 100% 50%;
+    -ms-transform-origin: 100% 100% 50%;
+    -webkit-transform-origin: 100% 100% 50%;
+    transform-origin: 100% 100% 50%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    right: 0;
+  }
+  /* line 300, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu ul.menu li {
+    float: left;
+  }
+  /* line 302, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu ul.menu li a {
+    padding: 12px 10px 8px;
+    line-height: 100%;
+  }
+  /* line 305, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu ul.menu li a:before {
+    content: none;
+  }
+}
 /* line 3, ../assets/sass/_footer.scss */
 .footer {
   clear: both;
