@@ -8940,16 +8940,22 @@ ul.nav.nav-tabs li.active a:hover {
     margin: 30px 0 20px;
   }
 
-  /* line 174, ../assets/sass/_generalall.scss */
+  /* line 175, ../assets/sass/_generalall.scss */
+  ul.nav.nav-tabs li {
+    display: block;
+    margin: 1px 0;
+  }
+
+  /* line 180, ../assets/sass/_generalall.scss */
   .region-content {
     padding: 15px 0;
   }
 
-  /* line 177, ../assets/sass/_generalall.scss */
+  /* line 183, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body {
     padding: 15px 0;
   }
-  /* line 179, ../assets/sass/_generalall.scss */
+  /* line 185, ../assets/sass/_generalall.scss */
   .path-frontpage .content .field--name-body p {
     margin: 15px 0;
   }
@@ -9407,17 +9413,17 @@ form .form-actions {
   padding: 20px;
 }
 
-/* line 3, ../assets/sass/_node.scss */
-article {
+/* line 4, ../assets/sass/_node.scss */
+.path-node article {
   max-width: 800px;
   margin: auto;
 }
-/* line 6, ../assets/sass/_node.scss */
-article .author {
+/* line 7, ../assets/sass/_node.scss */
+.path-node article .author {
   display: none;
 }
-/* line 9, ../assets/sass/_node.scss */
-article .field {
+/* line 10, ../assets/sass/_node.scss */
+.path-node article .field {
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -9425,7 +9431,7 @@ article .field {
   border-spacing: 2px 0;
 }
 /* line 134, ../assets/sass/_generalall.scss */
-article .field > div, article .field > span {
+.path-node article .field > div, .path-node article .field > span {
   display: table-cell;
   background: #ffe5b1;
   padding: 3px 20px;
@@ -9433,32 +9439,32 @@ article .field > div, article .field > span {
   vertical-align: middle;
 }
 /* line 141, ../assets/sass/_generalall.scss */
-article .field .field--label, article .field .views-label {
+.path-node article .field .field--label, .path-node article .field .views-label {
   text-transform: uppercase;
 }
 /* line 144, ../assets/sass/_generalall.scss */
-article .field .field--item,
-article .field .field__items,
-article .field .field-content {
+.path-node article .field .field--item,
+.path-node article .field .field__items,
+.path-node article .field .field-content {
   background: transparent;
 }
 @media (max-width: 768px) {
-  /* line 9, ../assets/sass/_node.scss */
-  article .field {
+  /* line 10, ../assets/sass/_node.scss */
+  .path-node article .field {
     margin: 0 0 10px;
   }
   /* line 151, ../assets/sass/_generalall.scss */
-  article .field > div, article .field > span {
+  .path-node article .field > div, .path-node article .field > span {
     display: block;
   }
 }
-/* line 12, ../assets/sass/_node.scss */
-article .field--type-text-with-summary {
+/* line 13, ../assets/sass/_node.scss */
+.path-node article .field--type-text-with-summary {
   display: block;
   margin: 30px 0;
 }
-/* line 17, ../assets/sass/_node.scss */
-article.session .author {
+/* line 18, ../assets/sass/_node.scss */
+.path-node article.session .author {
   display: block;
 }
 
@@ -9468,13 +9474,52 @@ article.session .author {
 }
 /* line 5, ../assets/sass/_user.scss */
 .path-user article {
+  max-width: 800px;
+  margin: auto;
   text-align: center;
 }
-/* line 7, ../assets/sass/_user.scss */
+/* line 9, ../assets/sass/_user.scss */
 .path-user article .field {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 2px 0;
+  border-spacing: 2px 0;
+}
+/* line 134, ../assets/sass/_generalall.scss */
+.path-user article .field > div, .path-user article .field > span {
+  display: table-cell;
+  background: #ffe5b1;
+  padding: 3px 20px;
+  border: 2px solid #ffe5b1;
+  vertical-align: middle;
+}
+/* line 141, ../assets/sass/_generalall.scss */
+.path-user article .field .field--label, .path-user article .field .views-label {
+  text-transform: uppercase;
+}
+/* line 144, ../assets/sass/_generalall.scss */
+.path-user article .field .field--item,
+.path-user article .field .field__items,
+.path-user article .field .field-content {
+  background: transparent;
+}
+@media (max-width: 768px) {
+  /* line 9, ../assets/sass/_user.scss */
+  .path-user article .field {
+    margin: 0 0 10px;
+  }
+  /* line 151, ../assets/sass/_generalall.scss */
+  .path-user article .field > div, .path-user article .field > span {
+    display: block;
+  }
+}
+/* line 12, ../assets/sass/_user.scss */
+.path-user article .field--type-text-long {
+  display: block;
   margin: 40px 0;
 }
-/* line 10, ../assets/sass/_user.scss */
+/* line 16, ../assets/sass/_user.scss */
 .path-user article .field--name-field-first-name, .path-user article .field--name-field-last-name {
   font-size: 4.5em;
   font-weight: bold;
@@ -9485,98 +9530,23 @@ article.session .author {
   margin: 0 15px;
   width: auto;
 }
-/* line 21, ../assets/sass/_user.scss */
+/* line 26, ../assets/sass/_user.scss */
+.path-user article .field--type-image {
+  display: block;
+}
+/* line 28, ../assets/sass/_user.scss */
 .path-user article .field--type-image img {
   margin: auto;
 }
-/* line 25, ../assets/sass/_user.scss */
+/* line 32, ../assets/sass/_user.scss */
 .path-user article .field--name-field-drupal-profile {
+  display: block;
   font-size: 20px;
   margin: 40px 0;
 }
-/* line 28, ../assets/sass/_user.scss */
+/* line 36, ../assets/sass/_user.scss */
 .path-user article .field--name-field-drupal-profile a {
   word-wrap: break-word;
-}
-/* line 32, ../assets/sass/_user.scss */
-.path-user article .field--name-field-organization,
-.path-user article .field--name-field-designation,
-.path-user article .field--name-field-phone,
-.path-user article .field--name-field-facebook-link,
-.path-user article .field--name-field-twitter-link {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  margin: 2px 0;
-  border-spacing: 2px 0;
-}
-/* line 134, ../assets/sass/_generalall.scss */
-.path-user article .field--name-field-organization > div, .path-user article .field--name-field-organization > span,
-.path-user article .field--name-field-designation > div,
-.path-user article .field--name-field-designation > span,
-.path-user article .field--name-field-phone > div,
-.path-user article .field--name-field-phone > span,
-.path-user article .field--name-field-facebook-link > div,
-.path-user article .field--name-field-facebook-link > span,
-.path-user article .field--name-field-twitter-link > div,
-.path-user article .field--name-field-twitter-link > span {
-  display: table-cell;
-  background: #ffe5b1;
-  padding: 3px 20px;
-  border: 2px solid #ffe5b1;
-  vertical-align: middle;
-}
-/* line 141, ../assets/sass/_generalall.scss */
-.path-user article .field--name-field-organization .field--label, .path-user article .field--name-field-organization .views-label,
-.path-user article .field--name-field-designation .field--label,
-.path-user article .field--name-field-designation .views-label,
-.path-user article .field--name-field-phone .field--label,
-.path-user article .field--name-field-phone .views-label,
-.path-user article .field--name-field-facebook-link .field--label,
-.path-user article .field--name-field-facebook-link .views-label,
-.path-user article .field--name-field-twitter-link .field--label,
-.path-user article .field--name-field-twitter-link .views-label {
-  text-transform: uppercase;
-}
-/* line 144, ../assets/sass/_generalall.scss */
-.path-user article .field--name-field-organization .field--item,
-.path-user article .field--name-field-organization .field__items,
-.path-user article .field--name-field-organization .field-content,
-.path-user article .field--name-field-designation .field--item,
-.path-user article .field--name-field-designation .field__items,
-.path-user article .field--name-field-designation .field-content,
-.path-user article .field--name-field-phone .field--item,
-.path-user article .field--name-field-phone .field__items,
-.path-user article .field--name-field-phone .field-content,
-.path-user article .field--name-field-facebook-link .field--item,
-.path-user article .field--name-field-facebook-link .field__items,
-.path-user article .field--name-field-facebook-link .field-content,
-.path-user article .field--name-field-twitter-link .field--item,
-.path-user article .field--name-field-twitter-link .field__items,
-.path-user article .field--name-field-twitter-link .field-content {
-  background: transparent;
-}
-@media (max-width: 768px) {
-  /* line 32, ../assets/sass/_user.scss */
-  .path-user article .field--name-field-organization,
-  .path-user article .field--name-field-designation,
-  .path-user article .field--name-field-phone,
-  .path-user article .field--name-field-facebook-link,
-  .path-user article .field--name-field-twitter-link {
-    margin: 0 0 10px;
-  }
-  /* line 151, ../assets/sass/_generalall.scss */
-  .path-user article .field--name-field-organization > div, .path-user article .field--name-field-organization > span,
-  .path-user article .field--name-field-designation > div,
-  .path-user article .field--name-field-designation > span,
-  .path-user article .field--name-field-phone > div,
-  .path-user article .field--name-field-phone > span,
-  .path-user article .field--name-field-facebook-link > div,
-  .path-user article .field--name-field-facebook-link > span,
-  .path-user article .field--name-field-twitter-link > div,
-  .path-user article .field--name-field-twitter-link > span {
-    display: block;
-  }
 }
 
 /* line 4, ../assets/sass/_banner.scss */
