@@ -8885,8 +8885,8 @@ ul.nav.nav-tabs li.active a:hover {
 
 /* line 91, ../assets/sass/_generalall.scss */
 .google-card {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -9404,6 +9404,36 @@ form .form-actions {
   right: -5px;
 }
 
+@media (max-width: 640px) {
+  /* line 290, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu {
+    bottom: 60%;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    right: 0;
+  }
+  /* line 299, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu ul.menu li {
+    float: left;
+  }
+  /* line 301, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu ul.menu li a {
+    padding: 12px 10px 8px;
+    line-height: 100%;
+  }
+  /* line 304, ../assets/sass/_menu.scss */
+  #block-dcd16-account-menu ul.menu li a:before {
+    content: none;
+  }
+}
 /* line 3, ../assets/sass/_footer.scss */
 .footer {
   clear: both;
@@ -9957,67 +9987,127 @@ body {
   margin-top: 0;
 }
 
-/* line 1, ../assets/sass/_listings.scss */
-.view-page {
-  max-width: 800px;
-  margin: auto;
-}
-/* line 4, ../assets/sass/_listings.scss */
+/* line 2, ../assets/sass/_listings.scss */
 .view-page .views-row {
-  border-bottom: 1px solid #eeeeee;
-  padding: 30px 0;
+  width: 31%;
+  float: left;
+  margin: 20px 1.7%;
+  height: 150px;
+  position: relative;
+  top: 0;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
-/* line 7, ../assets/sass/_listings.scss */
-.view-page .views-row:last-child {
-  border: none;
+/* line 10, ../assets/sass/_listings.scss */
+.view-page .views-row:hover {
+  top: -15px;
 }
-/* line 11, ../assets/sass/_listings.scss */
-.view-page .views-field {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  margin: 2px 0;
-  border-spacing: 2px 0;
-}
-/* line 134, ../assets/sass/_generalall.scss */
-.view-page .views-field > div, .view-page .views-field > span {
-  display: table-cell;
-  background: #ffe5b1;
-  padding: 3px 20px;
-  border: 2px solid #ffe5b1;
-  vertical-align: middle;
-}
-/* line 141, ../assets/sass/_generalall.scss */
-.view-page .views-field .field--label, .view-page .views-field .views-label {
-  text-transform: uppercase;
-}
-/* line 144, ../assets/sass/_generalall.scss */
-.view-page .views-field .field--item,
-.view-page .views-field .field__items,
-.view-page .views-field .field-content {
-  background: transparent;
-}
-@media (max-width: 768px) {
-  /* line 11, ../assets/sass/_listings.scss */
-  .view-page .views-field {
-    margin: 0 0 10px;
-  }
-  /* line 151, ../assets/sass/_generalall.scss */
-  .view-page .views-field > div, .view-page .views-field > span {
-    display: block;
-  }
-}
-/* line 14, ../assets/sass/_listings.scss */
-.view-page .views-field-field-first-name {
-  display: block;
+/* line 13, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(3n+1) {
+  margin-left: 0;
 }
 /* line 16, ../assets/sass/_listings.scss */
-.view-page .views-field-field-first-name .field-content {
-  border: none;
-  padding: 20px 0;
-  display: block;
+.view-page .views-row:nth-child(3n) {
+  margin-right: 0;
 }
-/* line 22, ../assets/sass/_listings.scss */
+/* line 19, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(odd) {
+  background: #009de0;
+}
+/* line 21, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(odd) a {
+  color: #ffffff;
+}
+/* line 24, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(odd) .views-field-field-first-name a {
+  color: #ffe5b1;
+}
+/* line 27, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(odd) .views-field-field-session-state {
+  color: #ffe5b1;
+}
+/* line 31, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(even) {
+  background: #ffffff;
+}
+/* line 33, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(even) a {
+  color: #009de0;
+}
+/* line 36, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(even) .views-field-field-first-name a {
+  color: #ffb218;
+}
+/* line 39, ../assets/sass/_listings.scss */
+.view-page .views-row:nth-child(even) .views-field-field-session-state {
+  color: #ffb218;
+}
+/* line 43, ../assets/sass/_listings.scss */
+.view-page .views-row h4 {
+  font-size: 21px;
+}
+/* line 46, ../assets/sass/_listings.scss */
+.view-page .views-row h3 {
+  margin: 0;
+}
+/* line 49, ../assets/sass/_listings.scss */
+.view-page .views-row .views-field-field-session-state,
+.view-page .views-row .views-field-field-first-name {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+/* line 55, ../assets/sass/_listings.scss */
+.view-page .views-row .views-field-field-session-state {
+  padding: 15px 0;
+}
+/* line 57, ../assets/sass/_listings.scss */
+.view-page .views-row .views-field-field-session-state > div, .view-page .views-row .views-field-field-session-state > span {
+  float: left;
+}
+/* line 60, ../assets/sass/_listings.scss */
+.view-page .views-row .views-field-field-session-state > span {
+  margin-right: 15px;
+}
+/* line 65, ../assets/sass/_listings.scss */
 .view-page a, .view-page a:hover, .view-page a:focus {
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  /* line 72, ../assets/sass/_listings.scss */
+  .view-page .views-row {
+    height: 180px;
+  }
+}
+@media (max-width: 960px) {
+  /* line 79, ../assets/sass/_listings.scss */
+  .view-page .views-row {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 86, ../assets/sass/_listings.scss */
+  .view-page .views-row {
+    width: 47%;
+    margin: 20px 3%;
+  }
+  /* line 89, ../assets/sass/_listings.scss */
+  .view-page .views-row:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  /* line 92, ../assets/sass/_listings.scss */
+  .view-page .views-row:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 100, ../assets/sass/_listings.scss */
+  .view-page .views-row {
+    width: 100%;
+    margin: 20px 0;
+    height: 150px;
+  }
 }
