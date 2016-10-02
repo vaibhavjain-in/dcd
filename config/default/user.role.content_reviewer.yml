@@ -15,3 +15,4 @@ permissions:
   - 'edit field_room'
   - 'edit field_session_state'
   - 'edit field_timeslot'
+  - 'edit any session content'

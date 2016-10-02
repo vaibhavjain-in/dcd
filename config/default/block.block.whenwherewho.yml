@@ -12,7 +12,7 @@ dependencies:
 id: whenwherewho
 theme: dcd16
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'block_content:a15c1705-ed85-4a1f-a598-252ef807c33e'
 settings:
