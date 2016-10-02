@@ -250,8 +250,8 @@
 // User menu
 #block-dcd16-account-menu {
   position: fixed;
-  bottom: -10px;
-  right: -10px;
+  bottom: -5px;
+  right: -5px;
   z-index: 1000;
   background: $brand-primary;
   @include transition(all 0.25s);
@@ -263,7 +263,7 @@
       a {
         color: $white;
         background: transparent;
-        padding: 25px 15px 15px 25px;
+        padding: 30px 10px 10px 30px;
         font-size: 15px;
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
@@ -271,6 +271,8 @@
           content: "\e008";
           font-family: 'Glyphicons Halflings';
           display: block;
+          font-size: 30px;
+          margin-bottom: 10px;
         }
         &:hover {
           color: $white;
@@ -280,8 +282,13 @@
     }
   }
   &:hover {
-    bottom: -5px;
-    right: -5px;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+.user-anon {
+  #block-dcd16-account-menu ul.menu li a {
+    padding: 30px 25px 10px 40px;
   }
 }
 

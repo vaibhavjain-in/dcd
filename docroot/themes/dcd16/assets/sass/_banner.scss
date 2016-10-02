@@ -2,7 +2,7 @@
 @import "variables";
 
 body {
-  padding-top: 135px;
+  padding-top: 155px;
   @include transition(all 1s ease);
   // &.navbar-fixed {
   //   padding-top: 135px !important;
@@ -66,6 +66,20 @@ body {
     top: 10px;
     right: 50px;
   }
+  .cta {
+    // @media (min-width: 641px) {
+      position: absolute;
+      top: 100%;
+      background: white;
+      padding: 0 10px;
+      box-shadow: 0 0 5px #ccc;
+      transform: translateX(-50%);
+      left: 50%;
+      span {
+        margin: 8px;
+      }
+    // }
+  }
 }
 
 .path-frontpage:not(.navbar-fixed) {
@@ -91,6 +105,13 @@ body {
     img {
       top: 20px;
       height: 628px;
+    }
+    .cta {
+      position: static;
+      background: transparent;
+      padding: 0;
+      transform: none;
+      box-shadow: none;
     }
   }
 }
@@ -144,6 +165,15 @@ body {
     img {
       height: 73px;
       right: 20px;
+    }
+    .cta {
+      width: 100%;
+      left: 0;
+      transform: none;
+      padding: 0;
+      .blue-button {
+        font-size: 13px;
+      }
     }
   }
   .path-frontpage {

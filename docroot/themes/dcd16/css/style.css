@@ -8839,7 +8839,7 @@ ul.nav.nav-tabs {
   display: table;
   table-layout: fixed;
   width: 100%;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 /* line 51, ../assets/sass/_generalall.scss */
 ul.nav.nav-tabs:before, ul.nav.nav-tabs:after {
@@ -9362,8 +9362,8 @@ form .form-actions {
 /* line 251, ../assets/sass/_menu.scss */
 #block-dcd16-account-menu {
   position: fixed;
-  bottom: -10px;
-  right: -10px;
+  bottom: -5px;
+  right: -5px;
   z-index: 1000;
   background: #009de0;
   -moz-transition: all 0.25s;
@@ -9373,6 +9373,8 @@ form .form-actions {
   -moz-border-radius: 9999px 0 0;
   -webkit-border-radius: 9999px;
   border-radius: 9999px 0 0;
+  -webkit-box-shadow: 0 0  20px 3px #a3a3a3;
+  box-shadow: 0 0  20px 3px #a3a3a3;
 }
 /* line 260, ../assets/sass/_menu.scss */
 #block-dcd16-account-menu ul.menu {
@@ -9382,7 +9384,7 @@ form .form-actions {
 #block-dcd16-account-menu ul.menu li a {
   color: #ffffff;
   background: transparent;
-  padding: 25px 15px 15px 25px;
+  padding: 30px 10px 10px 30px;
   font-size: 15px;
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
@@ -9392,6 +9394,8 @@ form .form-actions {
   content: "\e008";
   font-family: 'Glyphicons Halflings';
   display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 /* line 275, ../assets/sass/_menu.scss */
 #block-dcd16-account-menu ul.menu li a:hover {
@@ -9400,8 +9404,11 @@ form .form-actions {
 }
 /* line 282, ../assets/sass/_menu.scss */
 #block-dcd16-account-menu:hover {
-  bottom: -5px;
-  right: -5px;
+  bottom: 0px;
+  right: 0px;
+}
+.user-anon #block-dcd16-account-menu ul.menu li a {
+  padding: 30px 25px 10px 40px;
 }
 
 @media (max-width: 640px) {
@@ -9585,7 +9592,7 @@ form .form-actions {
 
 /* line 4, ../assets/sass/_banner.scss */
 body {
-  padding-top: 135px;
+  padding-top: 155px;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -webkit-transition: all 1s ease;
@@ -9670,6 +9677,20 @@ body {
   top: 10px;
   right: 50px;
 }
+/*@media (min-width: 641px) {*/
+  #block-frontbanner .cta {
+    position: absolute;
+    top: 100%;
+    background: white;
+    padding: 0 10px;
+    box-shadow: 0 0 5px #ccc;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+/*}*/
+#block-frontbanner .cta span {
+  margin: 8px;
+}
 
 /* line 71, ../assets/sass/_banner.scss */
 .path-frontpage:not(.navbar-fixed) {
@@ -9703,6 +9724,13 @@ body {
 .path-frontpage:not(.navbar-fixed) #block-frontbanner img {
   top: 20px;
   height: 628px;
+}
+.path-frontpage:not(.navbar-fixed) #block-frontbanner .cta {
+  position: static;
+  background: transparent;
+  padding: 0;
+  transform: none;
+  box-shadow: none;
 }
 
 @media (max-width: 1200px) {
@@ -9766,6 +9794,15 @@ body {
   #block-frontbanner img {
     height: 73px;
     right: 20px;
+  }
+  #block-frontbanner .cta {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0;
+  }
+  #block-frontbanner .cta .blue-button {
+    font-size: 13px;
   }
 
   /* line 149, ../assets/sass/_banner.scss */
