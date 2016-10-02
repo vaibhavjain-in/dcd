@@ -33,6 +33,7 @@ module:
   quickedit: 0
   r4032login: 0
   rdf: 0
+  rules: 0
   search: 0
   shortcut: 0
   superfish: 0
@@ -42,6 +43,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
   user: 0
   views_ui: 0
   menu_link_content: 1
