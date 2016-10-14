@@ -89,7 +89,7 @@ ul.nav.nav-tabs {
 }
 
 .google-card {
-  @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1));
+  @include box-shadow(0 6px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1));
   border-radius: 2px;
   @include transition(all 0.25s);
   padding: 20px;
