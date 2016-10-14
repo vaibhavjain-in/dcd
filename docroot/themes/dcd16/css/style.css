@@ -9713,7 +9713,7 @@ body {
 /* line 85, ../assets/sass/_banner.scss */
 .path-frontpage:not(.navbar-fixed) #block-frontbanner .banner-inner .subtext {
   display: block;
-  font-size: 5em;
+  font-size: 4.5em;
   margin: 0 0 0 8px;
 }
 /* line 91, ../assets/sass/_banner.scss */
@@ -9728,7 +9728,11 @@ body {
   transform: none;
   box-shadow: none;
 }
-
+@media (max-width: 1300px) {
+  .path-frontpage:not(.navbar-fixed) #block-frontbanner .banner-inner .subtext {
+    font-size: 4em;
+  }
+}
 @media (max-width: 1200px) {
   /* line 99, ../assets/sass/_banner.scss */
   .path-frontpage:not(.navbar-fixed) #block-frontbanner {
