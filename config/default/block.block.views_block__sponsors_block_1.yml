@@ -1,4 +1,4 @@
-uuid: b54b233b-85bf-491e-93a9-b40935e4950f
+uuid: 6c88f550-c904-4f2b-9bb8-28b26f3cabee
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__sponsors_block_1
 theme: dcd16
 region: content_full
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:sponsors-block_1'
 settings:

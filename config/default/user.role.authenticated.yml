@@ -20,3 +20,4 @@ permissions:
   9: 'edit own session content'
   11: 'access user profiles'
   12: 'create session content'
+  13: 'view own unpublished content'
