@@ -5,12 +5,13 @@ dependencies:
   config:
     - field.field.node.sponsors.body
     - field.field.node.sponsors.field_company_logo
-    - field.field.node.sponsors.field_company_site_link
     - field.field.node.sponsors.field_sponsorship_type
+    - field.field.node.sponsors.field_website
     - image.style.thumbnail
     - node.type.sponsors
   module:
     - image
+    - link
     - path
     - text
 id: node.sponsors.default
@@ -38,18 +39,18 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-  field_company_site_link:
-    weight: 34
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_sponsorship_type:
     weight: 32
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_website:
+    weight: 35
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   path:
     type: path
     weight: 30

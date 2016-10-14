@@ -12,7 +12,7 @@ field_name: field_twitter_link
 entity_type: user
 bundle: user
 label: Twitter
-description: ''
+description: 'Example: https://twitter.com/drupalcampdelhi'
 required: false
 translatable: false
 default_value: {  }

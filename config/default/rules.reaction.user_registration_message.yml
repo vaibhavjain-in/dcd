@@ -1,0 +1,41 @@
+uuid: f28dad73-00f5-4859-9cac-55991434602a
+langcode: en
+status: true
+dependencies: {  }
+id: user_registration_message
+label: 'User Registration Message'
+events:
+  -
+    event_name: 'rules_entity_insert:user'
+description: 'A message will be displayed to users after registration that the Email Can land up in Spam.'
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 9dc900f5-dfe7-43df-a93e-8f25ff614e13
+  conditions:
+    id: rules_and
+    uuid: 144a1720-d832-4d21-963e-afbb549fc901
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 7169a9f5-0efe-4583-a309-3eae8dcf69a1
+    actions:
+      -
+        id: rules_action
+        uuid: 1fabb3e3-671a-43e5-bdf1-36ab59fc8e8a
+        context_values:
+          message: 'Please see: The Email might end up in SPAM.'
+          type: warning
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_system_message

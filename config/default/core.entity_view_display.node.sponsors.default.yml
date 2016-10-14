@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.sponsors.body
     - field.field.node.sponsors.field_company_logo
-    - field.field.node.sponsors.field_company_site_link
     - field.field.node.sponsors.field_sponsorship_type
+    - field.field.node.sponsors.field_website
+    - image.style.large
     - node.type.sponsors
   module:
     - image
+    - link
     - text
     - user
 id: node.sponsors.default
@@ -20,33 +22,37 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   field_company_logo:
-    weight: 103
+    weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
-  field_company_site_link:
-    weight: 104
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
   field_sponsorship_type:
-    weight: 102
+    weight: 4
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_website:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      target: _blank
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
   links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

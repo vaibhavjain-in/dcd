@@ -6,8 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.sponsors.body
     - field.field.node.sponsors.field_company_logo
-    - field.field.node.sponsors.field_company_site_link
     - field.field.node.sponsors.field_sponsorship_type
+    - field.field.node.sponsors.field_website
     - node.type.sponsors
   module:
     - text
@@ -28,5 +28,5 @@ content:
     weight: 100
 hidden:
   field_company_logo: true
-  field_company_site_link: true
   field_sponsorship_type: true
+  field_website: true

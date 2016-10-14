@@ -2,8 +2,8 @@
 @import "variables";
 
 body {
-  padding-top: 155px;
-  @include transition(all 1s ease);
+  padding-top: 200px;
+  // @include transition(all 1s ease);
   // &.navbar-fixed {
   //   padding-top: 135px !important;
   // }
@@ -185,7 +185,7 @@ body {
     }
   }
   .path-frontpage {
-    padding-top: 250px;
+    padding-top: 300px;
     #block-frontbanner {
       text-align: center;
       padding-top: 80px;
