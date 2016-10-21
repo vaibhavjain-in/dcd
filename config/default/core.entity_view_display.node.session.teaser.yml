@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_co_presenter
     - field.field.node.session.field_room
     - field.field.node.session.field_session_state
     - field.field.node.session.field_ski
@@ -29,6 +30,7 @@ content:
   links:
     weight: 100
 hidden:
+  field_co_presenter: true
   field_room: true
   field_session_state: true
   field_ski: true
