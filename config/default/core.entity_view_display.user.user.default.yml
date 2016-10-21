@@ -95,13 +95,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_phone:
-    weight: 7
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
   field_twitter_link:
     weight: 9
     label: above
@@ -123,4 +116,5 @@ content:
     label: hidden
 hidden:
   field_gender: true
+  field_phone: true
   member_for: true

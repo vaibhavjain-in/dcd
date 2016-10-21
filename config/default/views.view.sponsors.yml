@@ -71,7 +71,7 @@ display:
               field: field_sponsorship_type
               rendered: true
               rendered_strip: false
-          row_class: '{{ field_sponsorship_type }} col-md-4'
+          row_class: '{{ field_sponsorship_type }} col-md-4 col-xs-12'
           default_row_class: true
       row:
         type: fields
@@ -550,7 +550,7 @@ display:
               field: field_sponsorship_type
               rendered: true
               rendered_strip: false
-          row_class: '{{ field_sponsorship_type }} col-md-4'
+          row_class: '{{ field_sponsorship_type }} col-sm-4  col-xs-12'
           default_row_class: true
       row:
         type: fields
