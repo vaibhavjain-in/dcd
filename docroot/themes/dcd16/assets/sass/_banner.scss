@@ -2,7 +2,10 @@
 @import "variables";
 
 body {
-  padding-top: 200px;
+  padding-top: 80px;
+  &.path-frontpage {
+    padding-top: 200px;
+  }
   // @include transition(all 1s ease);
   // &.navbar-fixed {
   //   padding-top: 135px !important;
@@ -160,14 +163,17 @@ body {
     }
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .path-frontpage:not(.navbar-fixed) #block-frontbanner {
+    text-align: left;
+  }
   #block-frontbanner {
-    height: 73px;
+    height: 72px;
+    text-align: center;
     .field--name-body .banner-inner {
       padding: 0;
-      text-align: center;
       .header {
-        font-size: 3.5em;
+        font-size: 4em;
       }
     }
     img {
@@ -181,41 +187,75 @@ body {
       padding: 0;
       .blue-button {
         font-size: 13px;
+        margin: 5px;
       }
+    }
+  }
+}
+@media (max-width: 640px) {
+  #block-frontbanner {
+    height: 73px;
+    .field--name-body .banner-inner {
+      padding: 0;
+      text-align: center;
+      .header {
+        font-size: 3.5em;
+      }
+    }
+    img {
+      // height: 73px;
+      // right: 20px;
     }
   }
   .path-frontpage {
     padding-top: 300px;
     #block-frontbanner {
-      text-align: center;
-      padding-top: 80px;
-      height: 205px;
+      // text-align: center;
+      // padding-top: 80px;
+      // height: 205px;
       .field--name-body .banner-inner {
         .header {
-          padding: 0;
+          // padding: 0;
         }
       }
       img {
-        position: relative;
-        left: 0;
+
       }
       .banner-inner {
-        display: block;
         padding: 0;
       }
     }
     &:not(.navbar-fixed) #block-frontbanner {
       height: auto;
+      padding-top: 50px;
       img {
-        top: 55px;
+        position: relative;
+        left: 0;
+        height: 150px;
+        top: 35px;
+        display: block;
+        margin: auto;
       }
       .banner-inner {
+        display: block;
         padding: 0;
         .header {
         }
         .subtext {
         }
       }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #block-frontbanner {
+    .cta {
+      display: none;
+    }
+  }
+  .path-frontpage:not(.navbar-fixed) #block-frontbanner {
+    .cta {
+      display: block;
     }
   }
 }
@@ -227,7 +267,7 @@ body {
       }
     }
     img {
-      height: 73px;
+      // height: 73px;
       right: 5px;
     }
   }
