@@ -219,9 +219,11 @@
   }
 }
 @media (max-width: 640px) {
-  .path-frontpage #block-menuhamburgertrigger {
-    top: 20px;
-    left: 45%;
+  .path-frontpage {
+    &:not(.navbar-fixed) #block-menuhamburgertrigger {
+      top: 20px;
+      left: 45%;
+    }
   }
   #block-dcd16-main-menu {
     > ul {
@@ -293,7 +295,7 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   #block-dcd16-account-menu {
     bottom: 60%;
     @include border-radius(0);
@@ -306,7 +308,7 @@
       li {
         float: left;
         a {
-          padding: 12px 10px 8px;
+          padding: 12px 10px 8px !important;
           line-height: 100%;
           &:before {
             content: none;
