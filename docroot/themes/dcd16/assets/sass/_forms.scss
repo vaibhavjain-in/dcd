@@ -11,7 +11,7 @@ form {
     }
   }
   label {
-    display: none;
+    // display: none;
   }
   .form-item {
     margin: 0 0 30px;
@@ -94,6 +94,11 @@ form {
         background: none;
         border: none;
       }
+    }
+  }
+  .form-type-checkbox {
+    input {
+      margin-top: 5px;
     }
   }
   &.node-form {
