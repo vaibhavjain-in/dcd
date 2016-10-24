@@ -8979,10 +8979,6 @@ form .form-item {
 form .form-item .form-control {
   width: 100%;
 }
-/* line 13, ../assets/sass/_forms.scss */
-form label {
-  display: none;
-}
 /* line 16, ../assets/sass/_forms.scss */
 form .form-item {
   margin: 0 0 30px;
@@ -9093,11 +9089,15 @@ form .form-item.form-type-entity-autocomplete .input-group-addon {
   background: none;
   border: none;
 }
-/* line 101, ../assets/sass/_forms.scss */
+/* line 100, ../assets/sass/_forms.scss */
+form .form-type-checkbox input {
+  margin-top: 5px;
+}
+/* line 106, ../assets/sass/_forms.scss */
 form.node-form .form-type-textarea label {
   position: static;
 }
-/* line 106, ../assets/sass/_forms.scss */
+/* line 111, ../assets/sass/_forms.scss */
 form .form-actions {
   text-align: center;
   margin-top: 70px;
