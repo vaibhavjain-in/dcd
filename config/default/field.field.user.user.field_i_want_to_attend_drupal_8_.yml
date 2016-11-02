@@ -1,0 +1,24 @@
+uuid: 09890081-9302-45d9-9da5-1d4877d6c6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_i_want_to_attend_drupal_8_
+  module:
+    - user
+id: user.user.field_i_want_to_attend_drupal_8_
+field_name: field_i_want_to_attend_drupal_8_
+entity_type: user
+bundle: user
+label: 'I want to attend Drupal 8 Foundation Training'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'No'
+  off_label: 'Off'
+field_type: boolean

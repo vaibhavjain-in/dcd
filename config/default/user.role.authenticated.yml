@@ -17,7 +17,5 @@ permissions:
   5: 'access site-wide contact form'
   6: 'access shortcuts'
   7: 'search content'
-  9: 'edit own session content'
   11: 'access user profiles'
-  12: 'create session content'
   13: 'view own unpublished content'
