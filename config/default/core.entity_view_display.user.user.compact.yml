@@ -10,6 +10,9 @@ dependencies:
     - field.field.user.user.field_facebook_link
     - field.field.user.user.field_first_name
     - field.field.user.user.field_gender
+    - field.field.user.user.field_i_m_a
+    - field.field.user.user.field_i_want_to_attend_code_spri
+    - field.field.user.user.field_i_want_to_attend_drupal_8_
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_link
     - field.field.user.user.field_organization
@@ -42,6 +45,9 @@ hidden:
   field_facebook_link: true
   field_first_name: true
   field_gender: true
+  field_i_m_a: true
+  field_i_want_to_attend_code_spri: true
+  field_i_want_to_attend_drupal_8_: true
   field_last_name: true
   field_linkedin_link: true
   field_organization: true

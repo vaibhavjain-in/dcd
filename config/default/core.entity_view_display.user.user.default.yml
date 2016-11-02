@@ -9,6 +9,9 @@ dependencies:
     - field.field.user.user.field_facebook_link
     - field.field.user.user.field_first_name
     - field.field.user.user.field_gender
+    - field.field.user.user.field_i_m_a
+    - field.field.user.user.field_i_want_to_attend_code_spri
+    - field.field.user.user.field_i_want_to_attend_drupal_8_
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_link
     - field.field.user.user.field_organization
@@ -19,6 +22,7 @@ dependencies:
   module:
     - image
     - link
+    - options
     - text
     - user
 _core:
@@ -29,11 +33,11 @@ bundle: user
 mode: default
 content:
   field_bio:
+    type: text_default
     weight: 4
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
   field_designation:
     weight: 6
     label: above
@@ -53,7 +57,7 @@ content:
     third_party_settings: {  }
     type: link
   field_facebook_link:
-    weight: 8
+    weight: 7
     label: above
     settings:
       trim_length: 80
@@ -70,6 +74,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_i_m_a:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_last_name:
     type: string
     weight: 1
@@ -78,7 +88,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   field_linkedin_link:
-    weight: 10
+    weight: 9
     label: above
     settings:
       trim_length: 80
@@ -96,7 +106,7 @@ content:
     third_party_settings: {  }
     type: string
   field_twitter_link:
-    weight: 9
+    weight: 8
     label: above
     settings:
       trim_length: 80
@@ -116,5 +126,7 @@ content:
     label: hidden
 hidden:
   field_gender: true
+  field_i_want_to_attend_code_spri: true
+  field_i_want_to_attend_drupal_8_: true
   field_phone: true
   member_for: true

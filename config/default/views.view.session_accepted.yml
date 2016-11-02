@@ -449,7 +449,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Sessions Accepted'
+      title: 'Accepted Sessions'
       header: {  }
       footer: {  }
       empty:

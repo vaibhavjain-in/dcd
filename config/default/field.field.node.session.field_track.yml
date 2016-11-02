@@ -10,7 +10,7 @@ id: node.session.field_track
 field_name: field_track
 entity_type: node
 bundle: session
-label: SessionTrack
+label: 'Session Track'
 description: ''
 required: false
 translatable: false

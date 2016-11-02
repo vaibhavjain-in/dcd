@@ -1,23 +1,21 @@
-uuid: f26ca8ef-ee6c-4b85-a0c4-d9285e6d8604
+uuid: 69d9da51-4b05-4b51-9380-878027f93c99
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
-    - node
-    - taxonomy
+    - user
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_track
-field_name: field_track
-entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
+id: user.field_i_want_to_attend_drupal_8_
+field_name: field_i_want_to_attend_drupal_8_
+entity_type: user
+type: boolean
+settings: {  }
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
