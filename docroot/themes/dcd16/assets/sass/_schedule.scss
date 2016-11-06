@@ -1,64 +1,241 @@
-.schedule-wrapper {
-  .time-row {
-    padding: 0;
+// clock.png
+.schedule,
+.schedule-dev {
+  .content .field--name-body {
+    max-width: none;
   }
-  .panel-heading {
-    background: transparent;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 0;
-    a {
-      font-size: 30px;
-      display: block;
-      padding: 5px 20px;
-      .glyphicon {
-        font-size: 35px;
-        top: 6px;
-        margin-right: 5%;
+}
+
+.inventory-wrapper {
+  float: right;
+  margin-bottom: 30px;
+  .inventory {
+    display: inline-block;
+    margin-left: 20px;
+    .inventory-color {
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin-right: 10px;
+    }
+    .inventory-label {}
+    &.beginner {
+      .inventory-color {
+        background: #6abeff;
+      }
+    }
+    &.intermediate {
+      .inventory-color {
+        background: #42ca49;
+      }
+    }
+    &.advanced {
+      .inventory-color {
+        background: #ffb26a;
       }
     }
   }
-  .panel-collapse {
-    padding: 0 20px 10px 20px;
-    .google-card {
-      margin: 0 0 10px;
-      padding: 13px;
-      padding-right: 20px;
-      @include box-shadow(0 2px 10px rgba(0, 0, 0, 0.11));
-      border: 1px solid #e4e4e4;
-      overflow: hidden;
-      position: relative;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
+}
+.schedule-wrapper {
+  clear: both;
+}
+@media (min-width: 769px) {
+  .schedule-wrapper {
+    // display: table;
+    // border-collapse: separate;
+    // border-spacing: 5px;
+    text-align: center;
+    .schedule-header {
+      background: $brand-primary;
+      padding: 5px;
+      color: white;
+      &.time {
+        background: transparent;
+        div {
+          display: table;
+          div {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .time-row {
+      // display: table-row;
+      flex: 1 100%;
+      padding: 0;
+      border: none;
+      margin: 5px 0;
+    }
+    .time, .event {
+      // display: table-cell;
+      // vertical-align: middle;
+      // height: inherit;
+      flex: 1 25%;
+      margin: 0 2px;
+    }
+    .event:nth-child(2),
+    .event:nth-child(3) {
+      flex: 1 30%;
+    }
+    .event:nth-child(4),
+    .event:nth-child(5) {
+      flex: 1 20%;
+    }
+    .panel-heading {
+      display: none;
+    }
+    .panel-collapse {
+      // display: block;
+      // height: 1px;
+      display: flex;
+    }
+    > .google-card {
+      @include box-shadow(none);
+    }
+    .time {
+      // width: 100px;
+      background: $gray-lighter;
+      padding: 0;
+      max-width: 120px;
+      div {
+        display: table;
+        width: 100%;
         height: 100%;
-        width: 10px;
+        h4 {
+          display: table-cell;
+          vertical-align: middle;
+        }
       }
-      &.beginner:before {
-        background: #6abeff;
+    }
+    .event {
+      .google-card {
+        text-align: left;
+        margin: 5px 0;
+        height: 100%;
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        height: 130px;
+        &.non-session {
+          background: $gray-lighter;
+          vertical-align: middle;
+          text-align: center;
+        }
+
+        h4 {
+          margin: 0;
+        }
+        .speaker-name {
+          position: absolute;
+          bottom: 15px;
+          right: 20px;
+          a {
+            color: darken($brand-secondary, 30%);
+          }
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 25px 25px 0;
+          border-color: transparent;
+        }
+        &.beginner:before {
+          border-color: transparent #6abeff transparent transparent;
+        }
+        &.intermediate:before {
+          border-color: transparent #42ca49 transparent transparent;
+        }
+        &.advanced:before {
+          border-color: transparent #ffb26a transparent transparent;
+        }
       }
-      &.intermediate:before {
-        background: #42ca49;
+    }
+    .activity {
+      margin: 0;
+      background: $gray-lighter;
+      padding: 10px;
+    }
+    .schedule-card-wrapper {
+      height: 100%;
+      display: table;
+      width: 100%;
+      padding: 5px;
+    }
+    .room {display: none;}
+  }
+}
+@media (max-width: 768px) {
+  .schedule-header {display: none;}
+  .schedule-wrapper {
+    .time-row {
+      padding: 0;
+    }
+    .panel-heading {
+      background: transparent;
+      font-family: 'Josefin Sans', sans-serif;
+      padding: 0;
+      a {
+        font-size: 30px;
+        display: block;
+        padding: 5px 20px;
+        .glyphicon {
+          font-size: 35px;
+          top: 6px;
+          margin-right: 5%;
+        }
       }
-      &.advanced:before {
-        background: #ffb26a;
-      }
-      h3 {
-        margin: 0;
-        float: left;
-        margin-right: 10px;
-      }
-      .speaker-name {
-        float: left;
-        margin: -3px 0;
-        padding: 7px 15px 5px;
-        background: $gray-lighter;
-      }
-      .room {
-        clear: both;
-        padding-top: 10px;
-        margin: 0;
+    }
+    .panel-collapse {
+      padding: 0 20px 10px 20px;
+      .time {display: none;}
+      .google-card {
+        margin: 0 0 10px;
+        padding: 13px;
+        padding-right: 20px;
+        @include box-shadow(0 2px 10px rgba(0, 0, 0, 0.11));
+        border: 1px solid #e4e4e4;
+        overflow: hidden;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 10px;
+        }
+        &.beginner:before {
+          background: #6abeff;
+        }
+        &.intermediate:before {
+          background: #42ca49;
+        }
+        &.advanced:before {
+          background: #ffb26a;
+        }
+        h4 {
+          margin: 0;
+          float: left;
+          margin-right: 10px;
+        }
+        .speaker-name {
+          float: left;
+          margin: -3px 0;
+          padding: 7px 15px 5px;
+          background: $gray-lighter;
+        }
+        .room {
+          clear: both;
+          padding-top: 10px;
+          margin: 0;
+        }
       }
     }
   }
