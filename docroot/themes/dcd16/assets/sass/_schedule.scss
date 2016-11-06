@@ -95,7 +95,7 @@
     }
     .time {
       // width: 100px;
-      background: $gray-lighter;
+      background: lighten($gray-lighter, 3%);
       padding: 0;
       max-width: 120px;
       div {
@@ -159,8 +159,9 @@
     }
     .activity {
       margin: 0;
-      background: $gray-lighter;
+      background: lighten($gray-lighter, 3%);
       padding: 10px;
+      color: #b3495c;
     }
     .schedule-card-wrapper {
       height: 100%;
@@ -229,7 +230,7 @@
           float: left;
           margin: -3px 0;
           padding: 7px 15px 5px;
-          background: $gray-lighter;
+          background: lighten($gray-lighter, 3%);
         }
         .room {
           clear: both;
