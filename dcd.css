@@ -13,14 +13,14 @@ body {
 }
 
 #DCD19_HOME_PAGE {
-    position: absolute;
+    position: relative;
     box-sizing: border-box;
     background: #E5E5E5;
     width: 1280px;
     height: 6015px;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     opacity: 1;
     --web-view-name: DCD19 HOME PAGE;
@@ -1608,7 +1608,7 @@ body {
     width: 1280px;
     height: 800px;
     left: 0.357px;
-    top: 2405.464px;
+    top: 2500px;
     overflow: visible;
 }
 
@@ -1623,7 +1623,7 @@ body {
     width: 1280px;
     height: 800px;
     left: 0.357px;
-    top: 2405.464px;
+    top: 2500px;
 }
 
 #_DCD19 {
@@ -2650,8 +2650,8 @@ body {
     height: 29.417px;
 }
 
-#Mask_Group_8 {
-    opacity: 0.7;
+#map {
+    opacity: 1;
     position: absolute;
     width: 640px;
     height: 800px;
@@ -7842,9 +7842,9 @@ body {
     opacity: 1;
     position: absolute;
     width: 514.246px;
-    height: 589.773px;
+    height: 860px;
     left: 713px;
-    top: 1703.487px;
+    top: 1620px;
     overflow: visible;
 }
 
@@ -8675,4 +8675,9 @@ body {
     left: 21.338px;
     width: 14.517px;
     height: 4.886px;
+}
+
+#Mask_Group_8,
+#Rectangle_85 {
+    display: none;
 }
