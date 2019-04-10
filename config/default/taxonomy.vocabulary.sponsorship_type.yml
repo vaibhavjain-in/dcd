@@ -1,9 +1,0 @@
-uuid: 973798bf-fac0-41d6-8746-330d936f6a78
-langcode: en
-status: true
-dependencies: {  }
-name: 'Sponsorship type'
-vid: sponsorship_type
-description: ''
-hierarchy: 0
-weight: 0

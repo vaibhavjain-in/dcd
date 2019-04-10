@@ -1,9 +1,0 @@
-uuid: 89e804d3-eed5-4f66-b32e-5383dbdf9e1e
-langcode: en
-status: true
-dependencies: {  }
-name: 'Session tracks'
-vid: session_tracks
-description: ''
-hierarchy: 0
-weight: 0

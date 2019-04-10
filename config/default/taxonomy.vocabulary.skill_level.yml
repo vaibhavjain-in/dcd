@@ -1,9 +1,0 @@
-uuid: 1c28c5e0-6974-4e8c-8afb-6272c115c760
-langcode: en
-status: true
-dependencies: {  }
-name: 'Skill Level'
-vid: skill_level
-description: 'Session skill level'
-hierarchy: 0
-weight: 0
