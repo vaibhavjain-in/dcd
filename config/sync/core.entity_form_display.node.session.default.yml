@@ -1,0 +1,95 @@
+uuid: e76e0157-1e81-4ffb-be45-96d4e5938fdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.session.body
+    - field.field.node.session.field_co_presenter
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_state
+    - field.field.node.session.field_ski
+    - field.field.node.session.field_timeslot
+    - field.field.node.session.field_track
+    - node.type.session
+  module:
+    - datetime
+    - text
+id: node.session.default
+targetEntityType: node
+bundle: session
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_co_presenter:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_room:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_session_state:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ski:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_timeslot:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_track:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

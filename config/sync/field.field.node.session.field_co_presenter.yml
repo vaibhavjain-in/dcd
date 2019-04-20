@@ -1,0 +1,21 @@
+uuid: 1772786f-4988-46f4-8563-1742829c406d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_presenter
+    - node.type.session
+id: node.session.field_co_presenter
+field_name: field_co_presenter
+entity_type: node
+bundle: session
+label: Co-presenter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

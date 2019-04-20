@@ -1,0 +1,142 @@
+uuid: 5af96701-7be0-4bae-93bb-d3674e66e7f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_drupal_profile
+    - field.field.user.user.field_facebook_link
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_i_m_a
+    - field.field.user.user.field_i_want_to_attend_code_spri
+    - field.field.user.user.field_i_want_to_attend_drupal_8_
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin_link
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_twitter_link
+    - field.field.user.user.user_picture
+    - image.style.profile_picture
+  module:
+    - image
+    - link
+    - options
+    - text
+    - user
+  id: user.user.default
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_bio:
+    type: text_default
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_designation:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_drupal_profile:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_facebook_link:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_first_name:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_i_m_a:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_last_name:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_linkedin_link:
+    weight: 9
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_organization:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_twitter_link:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  user_picture:
+    type: image
+    weight: 2
+    settings:
+      image_style: profile_picture
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  field_gender: true
+  field_i_want_to_attend_code_spri: true
+  field_i_want_to_attend_drupal_8_: true
+  field_phone: true
+  member_for: true

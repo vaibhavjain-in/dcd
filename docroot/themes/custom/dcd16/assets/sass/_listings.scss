@@ -1,0 +1,106 @@
+.view-page {
+  .views-row {
+    width: 31%;
+    float: left;
+    margin: 20px 1.7%;
+    height: 150px;
+    position: relative;
+    top: 0;
+    @include transition(all .25s);
+    &:hover {
+      top: -15px;
+    }
+    &:nth-child(3n+1) {
+      margin-left: 0;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(odd) {
+      background: $brand-primary;
+      a {
+        color: $white;
+      }
+      .views-field-field-first-name a {
+        color: $brand-secondary;
+      }
+      .views-field-field-session-state {
+        color: $brand-secondary;
+      }
+    }
+    &:nth-child(even) {
+      background: $white;
+      a {
+        color: $brand-primary;
+      }
+      .views-field-field-first-name a {
+        color: darken($brand-secondary, 30%);
+      }
+      .views-field-field-session-state {
+        color: darken($brand-secondary, 30%);
+      }
+    }
+    h4 {
+      font-size: 21px;
+    }
+    h3 {
+      margin: 0;
+    }
+    .views-field-field-session-state,
+    .views-field-field-first-name {
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+    }
+    .views-field-field-session-state {
+      padding: 15px 0;
+      > div, > span {
+        float: left;
+      }
+      > span {
+        margin-right: 15px;
+      }
+    }
+  }
+  a, a:hover, a:focus {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .view-page {
+    .views-row {
+      height: 180px;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .view-page {
+    .views-row {
+      height: 200px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .view-page {
+    .views-row {
+      width: 47%;
+      margin: 20px 3%;
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .view-page {
+    .views-row {
+      width: 100%;
+      margin: 20px 0;
+      height: 150px;
+    }
+  }
+}

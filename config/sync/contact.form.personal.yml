@@ -1,0 +1,11 @@
+uuid: edf2e851-0875-4ee6-9bad-2e269674660f
+langcode: en
+status: true
+dependencies: {  }
+id: personal
+label: 'Personal contact form'
+recipients: {  }
+reply: ''
+weight: 0
+message: null
+redirect: null

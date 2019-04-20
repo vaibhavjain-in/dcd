@@ -1,0 +1,12 @@
+uuid: e8e8fb29-b509-4f74-ad7e-a8a1343796e9
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - drupalcampdelhi@gmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

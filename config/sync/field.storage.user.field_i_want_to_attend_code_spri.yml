@@ -1,0 +1,18 @@
+uuid: 68c4ea95-533a-469f-a048-2a4842141f33
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_i_want_to_attend_code_spri
+field_name: field_i_want_to_attend_code_spri
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

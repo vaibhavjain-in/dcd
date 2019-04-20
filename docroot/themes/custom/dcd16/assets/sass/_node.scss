@@ -1,0 +1,23 @@
+@import "variables";
+
+.path-node {
+  article.session {
+    max-width: 800px;
+    margin: auto;
+    .author {
+      display: none;
+    }
+    .field {
+      @include tabular-field();
+    }
+    .field--type-text-with-summary {
+      display: block;
+      margin: 30px 0;
+    }
+    &.session {
+      .author {
+        display: block;
+      }
+    }
+  }
+}

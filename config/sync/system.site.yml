@@ -1,0 +1,15 @@
+uuid: 9339be07-079d-4627-88a5-99565dbb63a7
+name: 'Drupal Camp Delhi 2016'
+mail: drupalcampdelhi@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/13
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: drupalcampdelhi@gmail.com
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,9 @@
+uuid: 70fb6e7d-3276-4a62-8dd6-dfc46097f941
+langcode: en
+status: true
+dependencies: {  }
+name: 'Skill Level'
+vid: skill_level
+description: 'Session skill level'
+hierarchy: 0
+weight: 0

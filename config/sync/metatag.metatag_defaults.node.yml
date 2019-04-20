@@ -1,0 +1,9 @@
+uuid: a4b294e5-0310-48c8-94e4-27942b222238
+langcode: en
+status: true
+dependencies: {  }
+id: node
+label: Content
+tags:
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'

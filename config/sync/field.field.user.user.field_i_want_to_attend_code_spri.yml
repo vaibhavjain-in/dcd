@@ -1,0 +1,22 @@
+uuid: ce496b30-2d9a-4d0a-9813-82e6dcde7c08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_i_want_to_attend_code_spri
+  module:
+    - user
+id: user.user.field_i_want_to_attend_code_spri
+field_name: field_i_want_to_attend_code_spri
+entity_type: user
+bundle: user
+label: 'I want to attend Code Sprint'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

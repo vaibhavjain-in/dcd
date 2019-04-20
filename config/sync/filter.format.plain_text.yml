@@ -1,0 +1,27 @@
+uuid: 7caf8f83-300a-4fd1-9022-cf46ee1c45c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Plain text'
+format: plain_text
+weight: 10
+filters:
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

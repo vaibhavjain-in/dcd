@@ -1,0 +1,27 @@
+uuid: 03862bdd-369a-4336-aac3-30ea85f5dd27
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_block
+    - system
+  theme:
+    - bartik
+id: contactblock
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact Us'
+  provider: contact_block
+  label_display: visible
+  contact_form: contact_us
+visibility:
+  request_path:
+    id: request_path
+    pages: /become-sponser
+    negate: false
+    context_mapping: {  }

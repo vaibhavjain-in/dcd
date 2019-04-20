@@ -1,0 +1,25 @@
+uuid: dd96d9b1-6c52-4126-8d42-424902130b2e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3b723e79-8afa-4db1-a844-ac10156fbe8e'
+  module:
+    - block_content
+  theme:
+    - dcd16
+id: socialwidgets
+theme: dcd16
+region: '-1'
+weight: -2
+provider: null
+plugin: 'block_content:3b723e79-8afa-4db1-a844-ac10156fbe8e'
+settings:
+  id: 'block_content:3b723e79-8afa-4db1-a844-ac10156fbe8e'
+  label: 'Connect With Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

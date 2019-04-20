@@ -1,0 +1,23 @@
+uuid: 6cb1da20-456b-4548-bee9-2c16e439d715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_drupal_profile
+  module:
+    - link
+    - user
+id: user.user.field_drupal_profile
+field_name: field_drupal_profile
+entity_type: user
+bundle: user
+label: 'Drupal.org profile'
+description: 'Example: https://www.drupal.org/u/dries'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

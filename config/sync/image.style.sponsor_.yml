@@ -1,0 +1,15 @@
+uuid: 301d132a-de53-41fd-b566-7c28fec83bc9
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_
+label: 'Sponsor small'
+effects:
+  cda9b8f5-2f55-4998-8bff-025e6afcedea:
+    uuid: ''
+    id: image_scale
+    weight: 1
+    data:
+      width: 180
+      height: 80
+      upscale: false

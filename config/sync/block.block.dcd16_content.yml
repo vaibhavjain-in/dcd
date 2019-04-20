@@ -1,0 +1,22 @@
+uuid: 7e07a64c-7d7f-4bba-8bb9-136b9c72711c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcd16
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dcd16_content
+theme: dcd16
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

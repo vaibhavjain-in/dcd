@@ -1,0 +1,31 @@
+uuid: 5a8b89b6-653c-4e08-b2a7-a3ed2b4ca299
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4fb34dbf-f26e-4ae6-ab67-ad566d1daeaa'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcd16
+id: registrationtitle
+theme: dcd16
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:4fb34dbf-f26e-4ae6-ab67-ad566d1daeaa'
+settings:
+  id: 'block_content:4fb34dbf-f26e-4ae6-ab67-ad566d1daeaa'
+  label: 'Registration title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/register
+    negate: false
+    context_mapping: {  }

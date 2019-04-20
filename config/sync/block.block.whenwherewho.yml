@@ -1,0 +1,31 @@
+uuid: b6fd6c98-f735-43bd-8e26-880c2a236a27
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a15c1705-ed85-4a1f-a598-252ef807c33e'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcd16
+id: whenwherewho
+theme: dcd16
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:a15c1705-ed85-4a1f-a598-252ef807c33e'
+settings:
+  id: 'block_content:a15c1705-ed85-4a1f-a598-252ef807c33e'
+  label: 'When Where Who'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

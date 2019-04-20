@@ -1,0 +1,8 @@
+uuid: fa0b6ae8-8204-491f-9438-6caab2b12346
+langcode: en
+status: true
+dependencies: {  }
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'

@@ -1,0 +1,21 @@
+uuid: 1de86499-6bd3-46de-9297-62f5cd9240f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeslot
+    - node.type.session
+  module:
+    - datetime
+id: node.session.field_timeslot
+field_name: field_timeslot
+entity_type: node
+bundle: session
+label: Timeslot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,12 @@
+uuid: 28077111-04e9-4676-a78f-f0716efe499d
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - drupalcampdelhi@gmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

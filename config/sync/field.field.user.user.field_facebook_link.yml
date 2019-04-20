@@ -1,0 +1,23 @@
+uuid: c81d602f-5ed4-4889-a4d2-faa8af1d7037
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_facebook_link
+  module:
+    - link
+    - user
+id: user.user.field_facebook_link
+field_name: field_facebook_link
+entity_type: user
+bundle: user
+label: Facebook
+description: 'Example: https://www.facebook.com/DrupalCampDelhi'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
