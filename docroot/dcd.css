@@ -1532,6 +1532,34 @@ body {
     letter-spacing: 0.47619071960449216px;
 }
 
+#Help_us_make_this_ev_A1_Text_22 {
+  opacity: 1;
+  position: absolute;
+  left: 250px;
+  top: 5749.022px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 133.263px;
+  height: 198.978px;
+  line-height: 24px;
+  margin-top: -5px;
+  text-align: left;
+  font-family: Inter-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.47619071960449216px;
+  z-index: 1;
+}
+
+#Help_us_make_this_ev_A1_Text_22 a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
 #Reach_out_to_us_on_d {
     opacity: 1;
     position: absolute;
@@ -1713,7 +1741,7 @@ body {
 }
 
 .instagram_glyph_1 {
-    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0) rotate(90deg);
     overflow: visible;
     position: absolute;
     top: 554.569px;
