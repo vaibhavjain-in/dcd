@@ -10,13 +10,13 @@ _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
 id: dcd16_search
 theme: dcd16
-region: sidebar_first
-weight: -1
+region: footer
+weight: -6
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: 'Stay Updated'
   provider: search
   label_display: visible
 visibility: {  }

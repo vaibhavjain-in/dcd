@@ -1,0 +1,31 @@
+uuid: d4bc672c-9177-4cd3-922b-a5c1a95543b5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46fc8f1a-7a72-4ed5-a913-6cf48f4d670d'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcd16
+id: mapblockhomepage
+theme: dcd16
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:46fc8f1a-7a72-4ed5-a913-6cf48f4d670d'
+settings:
+  id: 'block_content:46fc8f1a-7a72-4ed5-a913-6cf48f4d670d'
+  label: 'Map Block (Homepage)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

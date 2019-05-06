@@ -4,8 +4,7 @@ status: true
 dependencies:
   module:
     - editor
-  name: 'Basic HTML'
-name: ''
+name: 'Basic Html'
 format: basic_html
 weight: 0
 filters:

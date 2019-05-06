@@ -2,10 +2,7 @@ uuid: 467d9258-d9d1-4a14-b938-05710838a6cd
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:75639687-985e-4301-92b6-a90a101bad2d'
   module:
-    - block_content
     - system
   theme:
     - dcd16

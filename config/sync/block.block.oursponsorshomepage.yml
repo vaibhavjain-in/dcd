@@ -1,0 +1,31 @@
+uuid: b3e579ab-7725-47d4-9d75-673b19a7506a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f906106-108b-44d5-a6c2-89754c1c9698'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcd16
+id: oursponsorshomepage
+theme: dcd16
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
+settings:
+  id: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
+  label: 'Our Sponsors'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
