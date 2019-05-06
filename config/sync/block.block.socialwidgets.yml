@@ -2,16 +2,12 @@ uuid: dd96d9b1-6c52-4126-8d42-424902130b2e
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:basic:3b723e79-8afa-4db1-a844-ac10156fbe8e'
-  module:
-    - block_content
   theme:
     - dcd16
 id: socialwidgets
 theme: dcd16
-region: '-1'
-weight: -2
+region: navigation
+weight: -7
 provider: null
 plugin: 'block_content:3b723e79-8afa-4db1-a844-ac10156fbe8e'
 settings:

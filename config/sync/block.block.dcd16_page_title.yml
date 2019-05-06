@@ -2,6 +2,8 @@ uuid: fc00f55f-67c5-4893-8013-5ba0736f0772
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - dcd16
 _core:
@@ -9,7 +11,7 @@ _core:
 id: dcd16_page_title
 theme: dcd16
 region: content
-weight: -50
+weight: -11
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

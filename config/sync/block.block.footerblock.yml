@@ -1,0 +1,25 @@
+uuid: 9218ce67-6235-4f48-aa7a-1de4ad05d95b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:544e70fe-6253-417c-8431-62b741859230'
+  module:
+    - block_content
+  theme:
+    - dcd16
+id: footerblock
+theme: dcd16
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:544e70fe-6253-417c-8431-62b741859230'
+settings:
+  id: 'block_content:544e70fe-6253-417c-8431-62b741859230'
+  label: 'Footer Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
