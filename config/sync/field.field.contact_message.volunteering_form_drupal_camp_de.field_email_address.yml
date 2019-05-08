@@ -1,0 +1,19 @@
+uuid: fc33a070-e14d-407b-9c86-055f77911e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteering_form_drupal_camp_de
+    - field.storage.contact_message.field_email_address
+id: contact_message.volunteering_form_drupal_camp_de.field_email_address
+field_name: field_email_address
+entity_type: contact_message
+bundle: volunteering_form_drupal_camp_de
+label: 'Email address'
+description: 'Your Email'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

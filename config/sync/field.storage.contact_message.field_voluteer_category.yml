@@ -1,0 +1,46 @@
+uuid: 39cfb21b-c6c6-453e-a76f-0875844880cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: contact_message.field_voluteer_category
+field_name: field_voluteer_category
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Website
+      label: Website
+    -
+      value: Content
+      label: Content
+    -
+      value: Design
+      label: Design
+    -
+      value: Social Media
+      label: Social Media
+    -
+      value: 'Logistics (food, venue, after-party etc.)'
+      label: Logistics
+    -
+      value: 'Trivia Night'
+      label: 'Trivia Night'
+    -
+      value: 'Splash Awards'
+      label: 'Splash Awards'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

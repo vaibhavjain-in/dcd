@@ -1,0 +1,73 @@
+uuid: c6d80443-f6cf-4b29-8afc-418b065ae4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteering_form_drupal_camp_de
+    - field.field.contact_message.volunteering_form_drupal_camp_de.field_anu_comments_or_feedback_
+    - field.field.contact_message.volunteering_form_drupal_camp_de.field_com
+    - field.field.contact_message.volunteering_form_drupal_camp_de.field_email_address
+    - field.field.contact_message.volunteering_form_drupal_camp_de.field_full_name
+    - field.field.contact_message.volunteering_form_drupal_camp_de.field_phone
+    - field.field.contact_message.volunteering_form_drupal_camp_de.field_voluteer_category
+id: contact_message.volunteering_form_drupal_camp_de.default
+targetEntityType: contact_message
+bundle: volunteering_form_drupal_camp_de
+mode: default
+content:
+  field_anu_comments_or_feedback_:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_com:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email_address:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_full_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_voluteer_category:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  preview:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  subject: true
