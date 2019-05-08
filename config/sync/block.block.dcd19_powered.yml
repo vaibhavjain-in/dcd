@@ -1,0 +1,22 @@
+uuid: 4ed87be5-7f1a-4ec4-9d2f-df0324afcb2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcd19
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: dcd19_powered
+theme: dcd19
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

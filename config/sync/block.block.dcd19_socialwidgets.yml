@@ -1,0 +1,21 @@
+uuid: c45df516-5571-41b2-a15b-32732813a2a1
+langcode: en
+status: false
+dependencies:
+  theme:
+    - dcd19
+id: dcd19_socialwidgets
+theme: dcd19
+region: navigation
+weight: -7
+provider: null
+plugin: 'block_content:3b723e79-8afa-4db1-a844-ac10156fbe8e'
+settings:
+  id: 'block_content:3b723e79-8afa-4db1-a844-ac10156fbe8e'
+  label: 'Connect With Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 35f9a8a3-3549-4853-a9ae-ef2cc685b612
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcd19
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dcd19_content
+theme: dcd19
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

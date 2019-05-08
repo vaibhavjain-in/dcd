@@ -1,0 +1,28 @@
+uuid: 64b530de-4b9d-4eba-8417-88fad16451e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcd19
+id: dcd19_registrationtitle
+theme: dcd19
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:4fb34dbf-f26e-4ae6-ab67-ad566d1daeaa'
+settings:
+  id: 'block_content:4fb34dbf-f26e-4ae6-ab67-ad566d1daeaa'
+  label: 'Registration title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/register
+    negate: false
+    context_mapping: {  }
