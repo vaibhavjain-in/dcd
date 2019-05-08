@@ -1,0 +1,13 @@
+.path-frontpage {
+  .region-header {
+    background-image: url('../images/top_banner.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
