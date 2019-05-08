@@ -1,0 +1,22 @@
+uuid: 87738ea2-21f1-46dd-8815-3ed17142a96e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcd19
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: dcd19_breadcrumbs
+theme: dcd19
+region: navigation
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

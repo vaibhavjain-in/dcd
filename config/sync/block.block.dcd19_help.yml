@@ -1,0 +1,22 @@
+uuid: 3d1a092f-d73c-4462-af72-e25c721cc591
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - dcd19
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: dcd19_help
+theme: dcd19
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

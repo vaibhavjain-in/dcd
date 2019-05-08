@@ -1,0 +1,31 @@
+uuid: f358aaa6-f8e3-476c-ac85-e8604290bdde
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcd19
+id: dcd19_callforpapershomepage
+theme: dcd19
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
+settings:
+  id: 'block_content:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
+  label: 'Call for Papers'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
