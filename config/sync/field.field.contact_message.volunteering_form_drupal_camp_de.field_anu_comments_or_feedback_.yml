@@ -1,0 +1,19 @@
+uuid: ecd73785-4ae7-4e1d-8bfe-ebbf544581b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteering_form_drupal_camp_de
+    - field.storage.contact_message.field_anu_comments_or_feedback_
+id: contact_message.volunteering_form_drupal_camp_de.field_anu_comments_or_feedback_
+field_name: field_anu_comments_or_feedback_
+entity_type: contact_message
+bundle: volunteering_form_drupal_camp_de
+label: 'Any Comments or feedback?'
+description: 'Your Answer'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

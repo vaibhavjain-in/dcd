@@ -1,4 +1,4 @@
-uuid: 3f0dabdd-228d-4fbb-bb97-51478df8fae2
+uuid: 0118ae04-a4d5-4308-b2d4-9348b4e191da
 langcode: en
 status: true
 dependencies:
@@ -8,13 +8,11 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-id: contact_message.field_phone
-field_name: field_phone
+id: contact_message.field_email_address
+field_name: field_email_address
 entity_type: contact_message
-type: integer
-settings:
-  unsigned: false
-  size: normal
+type: email
+settings: {  }
 module: core
 locked: false
 cardinality: 1

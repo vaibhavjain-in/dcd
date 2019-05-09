@@ -1,0 +1,21 @@
+uuid: cd231dbb-d2f4-4dce-a17d-d9ca6e49b10a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteering_form_drupal_camp_de
+    - field.storage.contact_message.field_voluteer_category
+  module:
+    - options
+id: contact_message.volunteering_form_drupal_camp_de.field_voluteer_category
+field_name: field_voluteer_category
+entity_type: contact_message
+bundle: volunteering_form_drupal_camp_de
+label: 'How would you like to be involved?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

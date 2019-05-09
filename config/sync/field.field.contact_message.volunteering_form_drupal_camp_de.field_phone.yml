@@ -1,0 +1,23 @@
+uuid: c361cc75-b409-4623-b0a3-ed3ed196d3de
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteering_form_drupal_camp_de
+    - field.storage.contact_message.field_phone
+id: contact_message.volunteering_form_drupal_camp_de.field_phone
+field_name: field_phone
+entity_type: contact_message
+bundle: volunteering_form_drupal_camp_de
+label: Phone
+description: 'Your Answer'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,12 @@
+uuid: 53b9b07d-9a28-45c5-b857-50e1adb77df2
+langcode: en
+status: true
+dependencies: {  }
+id: volunteering_form_drupal_camp_de
+label: 'Volunteering Form - Drupal Camp Delhi 2019'
+recipients:
+  - drupalcampdelhi@gmail.com
+reply: ''
+weight: 0
+message: 'Thanks for the volunteering !! we will get back to you soon!'
+redirect: ''
