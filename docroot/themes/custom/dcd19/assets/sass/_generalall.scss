@@ -197,3 +197,13 @@ ul.nav.nav-tabs {
     }
   }
 }
+
+.btn {
+  font-size: $font-size-base;
+  background: $blue-darkest;
+  color: $white;
+  padding: 10px 20px;
+  &:hover {
+    background: $blue-darker;
+  }
+}
