@@ -1,3 +1,5 @@
+@import "variables";
+
 .path-frontpage {
   .region-header {
     background-image: url('../images/top_banner.svg');
@@ -10,6 +12,13 @@
     width: 100vw;
     height: 100vh;
   }
+  .cta {
+    margin-top: 40px;
+    @extend .btn;
+    a {
+      color: inherit;
+    }
+  }
   #block-dcd19-mapblockhomepage {
     .two-col-block {
       align-items: center;
@@ -17,6 +26,53 @@
         padding-left: 10%;
         .cta {
           margin-top: 40px;
+          @extend .btn;
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  #block-dcd19-keynotespeakerhomepage {
+    > div {
+      > div {
+        display: flex;
+        align-items: center;
+        div {
+          flex: 50%;
+        }
+        .first-col {
+
+        }
+        .last-col {
+          > p {
+            margin: 0;
+            &:nth-child(1) {
+              font-size: $col-subtitle-text-size;
+              font-weight: 600;
+              color: $col-text-color;
+            }
+            &:nth-child(2){
+              font-size: $col-subtitle2-text-size;
+              color: $col-text-color;
+            }
+          }
+          blockquote {
+            &:before {
+              color: $gray-darkest;
+              content: "\“";
+              font-size: 6em;
+              line-height: 0.1em;
+              margin-right: 0.25em;
+              vertical-align: -0.4em;
+            }
+            border-left: none;
+            padding: 60px 100px 0px 0;
+            p {
+              font-size: $font-size-base;
+            }
+          }
         }
       }
     }
