@@ -1,0 +1,27 @@
+@import "variables";
+
+.two-col-block {
+  display: flex;
+  > div {
+    flex: 50%;
+  }
+  .col-content-top {
+    font-size: $col-top-text-size;
+    color: $col-top-text-color;
+  }
+  .col-content-title {
+    font-size: $col-title-text-size;
+    color: $col-title-text-color;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  .col-content-subtitle {
+    margin-top: 40px;
+    font-size: $col-subtitle-text-size;
+    color: $col-subtitle-text-color;
+  }
+  .col-content-subtitle2 {
+    font-size: $col-subtitle2-text-size;
+    color: $col-subtitle2-text-color;
+  }
+}

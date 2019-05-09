@@ -2,8 +2,39 @@
 
 .footer {
   clear: both;
-  background: $gray-darkest;
+  background: $footer-background-color;
   color: #fff;
   text-align: center;
   padding: 20px;
+  position: relative;
+
+  > div {
+    display: flex;
+    padding: 40px 180px;
+    justify-content: space-between;
+    text-align: left;
+    nav, section {
+      a {
+        color: inherit;
+      }
+    }
+    section {
+      margin-top: 8px;
+      margin-left: -35%;
+      ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        li {
+          font-size: $icon-size;
+          padding-right: $social-icon-padding;
+        }
+      }
+    }
+    > span {
+      position: absolute;
+      left: 90%;
+      bottom: 10px;
+    }
+  }
 }

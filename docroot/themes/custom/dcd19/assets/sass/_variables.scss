@@ -17,6 +17,8 @@ $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $blue:                  #009de0;
+$blue-darker:           #1371C2;
+$blue-darkest:          #0E144F;
 $white:                 #ffffff;
 $yellow:                #ffe5b1;
 
@@ -880,3 +882,22 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+$footer-background-color:     $blue-darkest;
+
+$social-icon-padding:         6px;
+$icon-size:                   20px;
+
+$col-text-color:              #313131;
+
+$col-top-text-color:          $col-text-color;
+$col-top-text-size:           14px;
+
+$col-title-text-color:        $blue-darker;
+$col-title-text-size:         40px;
+
+$col-subtitle-text-color:     $col-text-color;
+$col-subtitle-text-size:      20px;
+
+$col-subtitle2-text-color:    $col-subtitle-text-color;
+$col-subtitle2-text-size:     12px;
