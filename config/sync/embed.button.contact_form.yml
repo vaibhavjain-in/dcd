@@ -1,0 +1,22 @@
+uuid: 1fa66154-cbe2-4a97-a8e4-16e3b91b3817
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - contact.form.volunteering_form_drupal_camp_de
+  module:
+    - contact
+    - entity_embed
+label: 'Contact Form'
+id: contact_form
+type_id: entity
+type_settings:
+  entity_type: contact_message
+  bundles:
+    - contact_us
+    - volunteering_form_drupal_camp_de
+  display_plugins: {  }
+  entity_browser: ''
+  entity_browser_settings: null
+icon_uuid: null
