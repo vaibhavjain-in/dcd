@@ -8379,10 +8379,50 @@ form .form-actions {
 
 .footer {
   clear: both;
-  background: #2e2e2e;
+  background: #0E144F;
   color: #fff;
   text-align: center;
   padding: 20px;
+  position: relative;
+}
+
+.footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 180px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer > div nav a, .footer > div section a {
+  color: inherit;
+}
+
+.footer > div section {
+  margin-top: 8px;
+  margin-left: -35%;
+}
+
+.footer > div section ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer > div section ul li {
+  font-size: 20px;
+  padding-right: 6px;
+}
+
+.footer > div > span {
+  position: absolute;
+  left: 90%;
+  bottom: 10px;
 }
 
 .path-node article.session {
@@ -9340,4 +9380,53 @@ body.path-frontpage {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+}
+
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right {
+  padding-left: 10%;
+}
+
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta {
+  margin-top: 40px;
+}
+
+.two-col-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.two-col-block > div {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.two-col-block .col-content-top {
+  font-size: 14px;
+  color: #313131;
+}
+
+.two-col-block .col-content-title {
+  font-size: 40px;
+  color: #1371C2;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.two-col-block .col-content-subtitle {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #313131;
+}
+
+.two-col-block .col-content-subtitle2 {
+  font-size: 12px;
+  color: #313131;
 }
