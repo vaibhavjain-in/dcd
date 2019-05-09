@@ -12,7 +12,7 @@ dependencies:
 id: dcd19_mapblockhomepage
 theme: dcd19
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: 'block_content:46fc8f1a-7a72-4ed5-a913-6cf48f4d670d'
 settings:

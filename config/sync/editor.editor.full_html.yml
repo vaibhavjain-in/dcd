@@ -49,12 +49,19 @@ settings:
           name: Tools
           items:
             - ShowBlocks
+            - AddResponsiveArea
             - Source
+        -
+          name: Embeds
+          items:
+            - contact_form
+            - node
+            - '-'
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
