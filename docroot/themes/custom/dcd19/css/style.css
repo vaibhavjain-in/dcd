@@ -9461,6 +9461,22 @@ body.path-frontpage {
   }
 }
 
+.path-frontpage .navbar-header {
+  display: none;
+}
+
+.path-frontpage.navbar-fixed .navbar-header {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
+  box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
+  display: block;
+  padding: 0 15px;
+}
+
+.path-frontpage.navbar-fixed .navbar-header .logo img {
+  height: 105px;
+}
+
 .path-frontpage .region-header {
   background-image: url("../images/top_banner.svg");
   background-position: center center;
@@ -9469,14 +9485,99 @@ body.path-frontpage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.path-frontpage .region-header .logo {
+  margin-top: 20px;
+}
+
+.path-frontpage #block-dcd19-firstbannerhomepage {
+  height: calc(100% - 220px);
+}
+
+.path-frontpage #block-dcd19-firstbannerhomepage .field--name-body {
+  height: 100%;
+}
+
+.path-frontpage .first-banner {
+  color: #ffffff;
+  height: 100%;
+  position: relative;
+}
+
+.path-frontpage .first-banner .title {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+
+.path-frontpage .first-banner .social-links {
+  margin-top: 15px;
+}
+
+.path-frontpage .first-banner .social-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  list-style: none;
+  padding: 0;
+}
+
+.path-frontpage .first-banner .social-links ul li a {
+  font-size: 0;
+}
+
+.path-frontpage .first-banner .social-links ul li a:before {
+  display: block;
+  content: '';
+  height: 30px;
+  width: 30px;
+}
+
+.path-frontpage .first-banner .social-links ul li.instagram a:before {
+  background: url("../images/instagram.svg") no-repeat;
+}
+
+.path-frontpage .first-banner .social-links ul li.facebook a:before {
+  background: url("../images/facebook.svg") no-repeat;
+}
+
+.path-frontpage .first-banner .social-links ul li.twitter a:before {
+  background: url("../images/twitter.svg") no-repeat;
+}
+
+.path-frontpage .first-banner .bottom-info {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.path-frontpage .first-banner .bottom-info .date {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.path-frontpage .first-banner .bottom-info .location {
+  font-size: 24px;
+}
+
+.path-frontpage .first-banner .bottom-info .cta {
+  margin-top: 10px;
 }
 
 .path-frontpage .cta {

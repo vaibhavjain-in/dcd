@@ -1,17 +1,120 @@
-@import "variables";
-
 .path-frontpage {
+  .navbar-header {
+    display: none;
+  }
+
+  &.navbar-fixed {
+    .navbar-header {
+      background: $white;
+      box-shadow:  0px 4px 4px rgba(217, 224, 231, 0.25);
+      display: block;
+      padding: 0 15px;
+
+      .logo img {
+        height: 105px;
+      }
+    }
+  }
+  
   .region-header {
     background-image: url('../images/top_banner.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
+    position: relative;
+
+    .logo {
+      margin-top: 20px;
+    }
   }
+
+  #block-dcd19-firstbannerhomepage {
+    height: calc(100% - 220px);
+
+    .field--name-body {
+      height: 100%;
+    }
+  }
+
+  .first-banner {
+    color: $white;
+    height: 100%;
+    position: relative;
+
+    .title {
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .social-links {
+      margin-top: 15px;
+
+      ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+
+        li {
+          a {
+            font-size: 0;
+
+            &:before {
+              display: block;
+              content: '';
+              height: 30px;
+              width: 30px
+            }
+          }
+
+          &.instagram {
+            a:before {
+              background: url('../images/instagram.svg') no-repeat;
+            }
+          }
+
+          &.facebook {
+            a:before {
+              background: url('../images/facebook.svg') no-repeat;
+            }
+          }
+
+          &.twitter {
+            a:before {
+              background: url('../images/twitter.svg') no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-info {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+
+      .date {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .location {
+        font-size: 24px;
+      }
+
+      .cta {
+        margin-top: 10px;
+      }
+    }
+  }
+
   .cta {
     margin-top: 40px;
     @extend .btn;
@@ -19,6 +122,7 @@
       color: inherit;
     }
   }
+
   #block-dcd19-mapblockhomepage {
     .two-col-block {
       align-items: center;
@@ -34,6 +138,7 @@
       }
     }
   }
+
   #block-dcd19-keynotespeakerhomepage {
     > div {
       > div {
