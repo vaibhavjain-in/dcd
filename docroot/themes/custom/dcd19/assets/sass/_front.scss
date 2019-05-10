@@ -7,10 +7,99 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
+    position: relative;
+  }
+
+  #block-dcd19-firstbannerhomepage {
+    height: calc(100% - 220px);
+
+    .field--name-body {
+      height: 100%;
+    }
+  }
+
+  .first-banner {
+    color: $white;
+    height: 100%;
+    position: relative;
+
+    .title {
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .social-links {
+      margin-top: 15px;
+
+      ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+
+        li {
+          a {
+            font-size: 0;
+
+            &:before {
+              display: block;
+              content: '';
+              height: 30px;
+              width: 30px
+            }
+          }
+
+          &.instagram {
+            a:before {
+              background: url('../images/instagram.svg') no-repeat;
+            }
+          }
+
+          &.facebook {
+            a:before {
+              background: url('../images/facebook.svg') no-repeat;
+            }
+          }
+
+          &.twitter {
+            a:before {
+              background: url('../images/twitter.svg') no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-info {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+
+      .date {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .location {
+        font-size: 24px;
+      }
+
+      .cta a {
+        background: #0E144F;
+        border-radius: 2px;
+        color: $white;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 20px 45px;
+        position: relative;
+      }
+    }
   }
   .cta {
     margin-top: 40px;
