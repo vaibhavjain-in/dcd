@@ -9461,6 +9461,22 @@ body.path-frontpage {
   }
 }
 
+.path-frontpage .navbar-header {
+  display: none;
+}
+
+.path-frontpage.navbar-fixed .navbar-header {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
+  box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
+  display: block;
+  padding: 0 15px;
+}
+
+.path-frontpage.navbar-fixed .navbar-header .logo img {
+  height: 105px;
+}
+
 .path-frontpage .region-header {
   background-image: url("../images/top_banner.svg");
   background-position: center center;
@@ -9481,7 +9497,7 @@ body.path-frontpage {
   position: relative;
 }
 
-.path-frontpage .logo {
+.path-frontpage .region-header .logo {
   margin-top: 20px;
 }
 

@@ -1,4 +1,21 @@
 .path-frontpage {
+  .navbar-header {
+    display: none;
+  }
+
+  &.navbar-fixed {
+    .navbar-header {
+      background: $white;
+      box-shadow:  0px 4px 4px rgba(217, 224, 231, 0.25);
+      display: block;
+      padding: 0 15px;
+
+      .logo img {
+        height: 105px;
+      }
+    }
+  }
+  
   .region-header {
     background-image: url('../images/top_banner.svg');
     background-position: center center;
@@ -10,10 +27,10 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-  }
 
-  .logo {
-    margin-top: 20px;
+    .logo {
+      margin-top: 20px;
+    }
   }
 
   #block-dcd19-firstbannerhomepage {
