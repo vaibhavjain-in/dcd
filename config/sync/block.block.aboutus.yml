@@ -1,0 +1,31 @@
+uuid: f851c18c-466d-4a94-9756-4158f3711ac0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:24781308-2bf1-4a31-852b-82573703b242'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcd16
+id: aboutus
+theme: dcd16
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:24781308-2bf1-4a31-852b-82573703b242'
+settings:
+  id: 'block_content:24781308-2bf1-4a31-852b-82573703b242'
+  label: 'About Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

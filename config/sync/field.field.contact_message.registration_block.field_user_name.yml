@@ -1,0 +1,19 @@
+uuid: 3c1d2742-014f-43f9-9a6b-88412586b5d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.registration_block
+    - field.storage.contact_message.field_user_name
+id: contact_message.registration_block.field_user_name
+field_name: field_user_name
+entity_type: contact_message
+bundle: registration_block
+label: 'User Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

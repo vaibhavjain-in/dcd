@@ -19,3 +19,10 @@ function dcd16_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = Html::cleanCssIdentifier(ltrim($path, '/'));
   }
 }
+
+function dcd16_preprocess_block(&$variables) {
+$block = \Drupal\block\Entity\Block::load('27');
+$variables['block_output'] = \Drupal::entityTypeManager()
+  ->getViewBuilder('block')
+  ->view($block);
+}
