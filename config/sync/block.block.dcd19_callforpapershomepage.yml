@@ -12,7 +12,7 @@ dependencies:
 id: dcd19_callforpapershomepage
 theme: dcd19
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
 settings:

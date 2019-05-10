@@ -17,3 +17,4 @@ permissions:
   - 'edit terms in skill_level'
   - 'edit terms in sponsorship_type'
   - 'use layouter'
+  - 'use text format full_html'

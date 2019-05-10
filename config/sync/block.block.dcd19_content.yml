@@ -11,7 +11,7 @@ _core:
 id: dcd19_content
 theme: dcd19
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: system_main_block
 settings:

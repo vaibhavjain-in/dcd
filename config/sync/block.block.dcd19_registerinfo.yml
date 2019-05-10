@@ -9,7 +9,7 @@ dependencies:
 id: dcd19_registerinfo
 theme: dcd19
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:75639687-985e-4301-92b6-a90a101bad2d'
 settings:
