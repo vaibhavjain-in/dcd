@@ -9481,6 +9481,10 @@ body.path-frontpage {
   position: relative;
 }
 
+.path-frontpage .logo {
+  margin-top: 20px;
+}
+
 .path-frontpage #block-dcd19-firstbannerhomepage {
   height: calc(100% - 220px);
 }
@@ -9556,14 +9560,8 @@ body.path-frontpage {
   font-size: 24px;
 }
 
-.path-frontpage .first-banner .bottom-info .cta a {
-  background: #0E144F;
-  border-radius: 2px;
-  color: #ffffff;
-  display: inline-block;
+.path-frontpage .first-banner .bottom-info .cta {
   margin-top: 10px;
-  padding: 20px 45px;
-  position: relative;
 }
 
 .path-frontpage .cta {
