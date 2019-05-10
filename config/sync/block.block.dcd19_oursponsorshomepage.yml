@@ -12,7 +12,7 @@ dependencies:
 id: dcd19_oursponsorshomepage
 theme: dcd19
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
 settings:

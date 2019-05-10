@@ -1,0 +1,30 @@
+uuid: bdf41c8f-d976-45ca-84fe-6631293bdb1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.announcements
+  module:
+    - system
+    - views
+  theme:
+    - dcd19
+id: views_block__announcements_block_1
+theme: dcd19
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:announcements-block_1'
+settings:
+  id: 'views_block:announcements-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
