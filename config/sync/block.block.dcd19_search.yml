@@ -1,6 +1,6 @@
 uuid: 526677d5-adb8-4336-a2bd-c382fc4e2afa
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search

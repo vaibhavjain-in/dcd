@@ -1,0 +1,17 @@
+uuid: ca8a9965-f235-4d50-8d78-31be50946463
+langcode: en
+status: true
+dependencies: {  }
+name: DCD
+id: dcd
+description: 'Subscribe for dcd news'
+format: plain
+priority: 0
+receipt: true
+from_name: 'Drupal Camp Delhi 2019'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: drupalcampdelhi@gmail.com
+hyperlinks: true
+new_account: silent
+opt_inout: hidden
+weight: 0

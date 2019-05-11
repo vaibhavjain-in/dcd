@@ -1,0 +1,19 @@
+uuid: d339206e-6790-484f-9ba2-b3d408d5b71c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hj6zGNwndnW_J6lKfFcg-tY5e5YqWfgXyt0qioGtXL8
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: 'Drupal Camp Delhi 2019'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: drupalcampdelhi@gmail.com
+hyperlinks: false
+new_account: none
+opt_inout: double
+weight: 0
