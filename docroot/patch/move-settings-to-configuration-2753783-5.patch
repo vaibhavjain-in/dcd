@@ -1,0 +1,112 @@
+diff --git a/social_login.install b/social_login.install
+index ca058aa..4dbe6e6 100644
+--- a/social_login.install
++++ b/social_login.install
+@@ -88,38 +88,28 @@ function social_login_schema() {
+     ],
+   ];
+ 
+-  // Used to store module settings.
+-  $schema['oneall_social_login_settings'] = [
+-    'description' => 'Used to store module settings.',
+-    'fields' => [
+-      'oaslsid' => [
+-        'description' => 'The primary key of this table.',
+-        'type' => 'serial',
+-        'unsigned' => TRUE,
+-        'not null' => TRUE,
+-      ],
+-      'setting' => [
+-        'description' => 'The name of the setting.',
+-        'type' => 'varchar',
+-        'length' => '64',
+-        'not null' => TRUE,
+-      ],
+-      'value' => [
+-        'description' => 'The value of the setting.',
+-        'type' => 'varchar',
+-        'length' => '64',
+-        'not null' => TRUE,
+-      ],
+-    ],
+-    'indexes' => [
+-      'setting' => [
+-        'setting',
+-      ],
+-    ],
+-    'primary key' => [
+-      'oaslsid',
+-    ],
+-  ];
+-
+   return $schema;
+ }
++
++/**
++ * Convert social_login settings to drupal config
++ */
++function social_login_update_8001() {
++  $results = db_query("SELECT setting, value FROM {oneall_social_login_settings}");
++
++  // Unsure we have current element set to 0.
++  if (!isset($sandbox['current'])) {
++    $sandbox['current'] = 0;
++    $sandbox['total'] = count($results);
++  }
++
++  foreach ($results as $result) {
++    \Drupal::configFactory()->getEditable('social_login.settings')
++      ->set($result->setting, $result->value)
++      ->save();
++  }
++
++  $sandbox['current']++;
++
++  $sandbox['#finished'] = (float) $sandbox['total'] / (float) $sandbox['current'];
++}
+diff --git a/social_login.module b/social_login.module
+index 93423fe..b2fbfb4 100644
+--- a/social_login.module
++++ b/social_login.module
+@@ -1085,13 +1085,14 @@ function social_login_get_settings() {
+   $settings['enabled_providers'] = [];
+ 
+   // Read settings.
+-  $results = db_query("SELECT setting, value FROM {oneall_social_login_settings}");
+-  foreach ($results as $result) {
+-    $settings[$result->setting] = $result->value;
+-    if (substr($result->setting, 0, 8) == 'provider' && !empty($result->value)) {
+-      $settings['enabled_providers'][] = substr($result->setting, 9, strlen($result->setting));
++  $conf = \Drupal::config('social_login.settings')->get();
++  foreach ($conf as $setting => $value) {
++    $settings[$setting] = $value;
++    if (substr($setting, 0, 8) == 'provider' && !empty($value)) {
++      $settings['enabled_providers'][] = substr($setting, 9, strlen($setting));
+     }
+   }
++
+   return $settings;
+ }
+ 
+diff --git a/src/Form/SocialLoginAdminSettings.php b/src/Form/SocialLoginAdminSettings.php
+index 2d3237c..be1f41e 100644
+--- a/src/Form/SocialLoginAdminSettings.php
++++ b/src/Form/SocialLoginAdminSettings.php
+@@ -437,16 +437,7 @@ class SocialLoginAdminSettings extends ConfigFormBase {
+       // Clean.
+       $value = trim($value);
+ 
+-      // Check if settings already exists.
+-      $oaslsid = db_select('oneall_social_login_settings', 'o')->fields('o', ['oaslsid',])->condition('setting', $setting, '=')->execute()->fetchField();
+-      if (is_numeric($oaslsid)) {
+-        // Update setting.
+-        db_update('oneall_social_login_settings')->fields(['value' => $value])->condition('oaslsid', $oaslsid, '=')->execute();
+-      }
+-      else {
+-        // Add setting.
+-        db_insert('oneall_social_login_settings')->fields(['setting' => $setting, 'value' => $value])->execute();
+-      }
++      \Drupal::configFactory()->getEditable('social_login.settings')->set($setting, $value)->save();
+     }
+     drupal_set_message(t('Settings saved successfully'), 'status social_login');
+ 
