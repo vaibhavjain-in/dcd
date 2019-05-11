@@ -12,4 +12,5 @@ permissions:
   - 'access site-wide contact form'
   - 'access user profiles'
   - 'search content'
+  - 'subscribe to newsletters'
   - 'use text format restricted_html'

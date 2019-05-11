@@ -1,0 +1,24 @@
+uuid: 4daffeb5-5381-4e86-b37e-ebfe449e5bc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - simplenews
+  theme:
+    - dcd19
+id: simplenewssubscription
+theme: dcd19
+region: footer
+weight: 0
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Simplenews subscription'
+  provider: simplenews
+  label_display: '0'
+  newsletters:
+    dcd: dcd
+  message: 'Stay Updated'
+  unique_id: 114da1d3-ef3e-47ea-8045-3f3431db6cf0
+visibility: {  }
