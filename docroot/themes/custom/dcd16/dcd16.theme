@@ -21,8 +21,8 @@ function dcd16_preprocess_html(&$variables) {
 }
 
 function dcd16_preprocess_block(&$variables) {
-$block = \Drupal\block\Entity\Block::load('27');
-$variables['block_output'] = \Drupal::entityTypeManager()
+$block = \Drupal\block\Entity\Block::load('contactblock_2');
+$variables['block_volunteer'] = \Drupal::entityTypeManager()
   ->getViewBuilder('block')
   ->view($block);
 }
