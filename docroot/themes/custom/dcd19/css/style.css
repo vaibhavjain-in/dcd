@@ -7831,9 +7831,35 @@ button.close {
   }
 }
 
+@font-face {
+  font-family: 'CircularAir Black';
+  src: url("../assets/fonts/Circular-Air-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'CircularAir Bold';
+  src: url("../assets/fonts/Circular-Air-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'CircularAir Book';
+  src: url("../assets/fonts/Circular-Air-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'CircularAir Light';
+  src: url("../assets/fonts/Circular-Air-Light.ttf") format("truetype");
+}
+
 html,
 body {
   height: 100%;
+}
+
+body {
+  font-family: 'CircularAir Light';
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9461,20 +9487,64 @@ body.path-frontpage {
   }
 }
 
-.path-frontpage .navbar-header {
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .navbar-collapse {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.header .logo img {
+  height: 105px;
+}
+
+@media (min-width: 768px) {
+  .header .region-navigation-collapsible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+.path-frontpage .header {
   display: none;
 }
 
-.path-frontpage.navbar-fixed .navbar-header {
+.path-frontpage.navbar-fixed .header {
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
   box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
-  display: block;
-  padding: 0 15px;
-}
-
-.path-frontpage.navbar-fixed .navbar-header .logo img {
-  height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .path-frontpage .region-header {
@@ -9516,6 +9586,7 @@ body.path-frontpage {
 }
 
 .path-frontpage .first-banner .title {
+  font-family: 'CircularAir Bold';
   font-size: 48px;
   line-height: 1;
   margin-bottom: 7px;

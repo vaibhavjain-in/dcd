@@ -10,8 +10,8 @@ dependencies:
     - dcd19
 id: dcd19_main_menu
 theme: dcd19
-region: navigation
-weight: -10
+region: navigation_collapsible
+weight: -12
 provider: null
 plugin: 'system_menu_block:main'
 settings:

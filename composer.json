@@ -22,6 +22,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.26",
         "drupal/backup_migrate": "^4.0",
+        "drupal/block_class": "^1.0",
         "drupal/bootstrap": "^3.17",
         "drupal/ckeditor_responsive_plugin": "^1.0@beta",
         "drupal/console": "^1.0.2",
