@@ -22,7 +22,17 @@ function dcd16_preprocess_html(&$variables) {
 
 function dcd16_preprocess_block(&$variables) {
 $block = \Drupal\block\Entity\Block::load('contactblock_2');
-$variables['block_volunteer'] = \Drupal::entityTypeManager()
+if($block){
+  $variables['block_volunteer'] = \Drupal::entityTypeManager()
   ->getViewBuilder('block')
   ->view($block);
+  }
+$block = \Drupal\block\Entity\Block::load('sociallogin');
+if($block){
+  $variables['block_sociallogin'] = \Drupal::entityTypeManager()
+  ->getViewBuilder('block')
+  ->view($block);
+  }
 }
+
+

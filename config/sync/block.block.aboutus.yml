@@ -12,7 +12,7 @@ dependencies:
 id: aboutus
 theme: dcd16
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:24781308-2bf1-4a31-852b-82573703b242'
 settings:
