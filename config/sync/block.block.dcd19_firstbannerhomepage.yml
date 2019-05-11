@@ -12,7 +12,7 @@ dependencies:
 id: dcd19_firstbannerhomepage
 theme: dcd19
 region: header
-weight: -12
+weight: -11
 provider: null
 plugin: 'block_content:e10ca164-072d-40f7-9a91-4d20580b42ce'
 settings:
