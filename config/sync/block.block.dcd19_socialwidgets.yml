@@ -7,7 +7,7 @@ dependencies:
 id: dcd19_socialwidgets
 theme: dcd19
 region: navigation
-weight: -7
+weight: -11
 provider: null
 plugin: 'block_content:3b723e79-8afa-4db1-a844-ac10156fbe8e'
 settings:

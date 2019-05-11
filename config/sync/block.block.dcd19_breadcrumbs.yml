@@ -11,7 +11,7 @@ _core:
 id: dcd19_breadcrumbs
 theme: dcd19
 region: navigation
-weight: -9
+weight: -12
 provider: null
 plugin: system_breadcrumb_block
 settings:
