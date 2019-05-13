@@ -20,16 +20,17 @@ form {
     &.form-type-password,
     &.form-type-url,
     &.form-type-email,
+    &.form-type-number,
     &.form-type-entity-autocomplete {
       position: relative;
       input.form-control,
       textarea.form-control {
+        font-family: Circular Air;
         display: block;
         background: none;
         padding: 0;
-        border-width: 0;
-        border-color: transparent;
-        border-bottom: 1px solid lighten($gray-base, 75%);
+        border: 1px solid $input-outline;
+        border-radius: 0;
         // @include border-radius(0);
         line-height: 1.9;
         color: transparent;
@@ -39,22 +40,21 @@ form {
         height: 3rem;
         width: 100%;
         outline: none;
+        text-indent: 12px;
         &::-webkit-input-placeholder {
           color: transparent;
         }
       }
-      textarea.form-control {
-        height: 6rem;
+      input.form-control {
+        height: 48px;
       }
       label {
-        display: block;
-        // color: $filter-text-color;
-        position: absolute;
-        pointer-events: none;
-        z-index: 1;
+        margin-bottom: 12px;
+        font-family: Circular Air;
         font-weight: normal;
-        @include transition(all 0.28s ease);
-        top: 1px;
+      }
+      textarea.form-control {
+        height: 6rem;
       }
       &.focus {
         input.form-control,
@@ -62,11 +62,7 @@ form {
           outline: none;
           color: inherit;
           border-color: $gray;
-        }
-        label {
-          top: -15px;
-          font-size: 85%;
-          color: $brand-primary;
+          border: 2px solid $input-outline;
         }
       }
     }
@@ -109,8 +105,8 @@ form {
     }
   }
   .form-actions {
-    text-align: center;
-    margin-top: 70px;
+    text-align: left;
+    margin-top: 20px;
     width: 100%;
   }
 }
