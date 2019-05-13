@@ -23,11 +23,13 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0px 2px 10px grey;
+  .navbar-header {
+    position: relative;
+    margin-left: 30px;
+  }
 }
 
-.navbar-header {
-  position: relative;
-}
 
 #block-frontbanner {
   background: url(../images/banner-1.png) no-repeat;
