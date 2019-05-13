@@ -210,6 +210,7 @@ ul.nav.nav-tabs {
   color: $white;
   padding: 10px 20px;
   &:hover {
-    background: $blue-darker;
+    border: 1px solid white;
+    color: white;
   }
 }

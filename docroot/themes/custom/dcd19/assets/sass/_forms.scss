@@ -1,5 +1,6 @@
 // @import "compass/css3/";
 @import "variables";
+@import "fonts";
 
 form {
   max-width: 600px;
@@ -25,7 +26,7 @@ form {
       position: relative;
       input.form-control,
       textarea.form-control {
-        font-family: Circular Air;
+        font-family: CircularAir Book;
         display: block;
         background: none;
         padding: 0;
@@ -50,11 +51,11 @@ form {
       }
       label {
         margin-bottom: 12px;
-        font-family: Circular Air;
+        font-family: CircularAir Book;
         font-weight: normal;
       }
       textarea.form-control {
-        height: 6rem;
+        height: 12rem;
       }
       &.focus {
         input.form-control,
