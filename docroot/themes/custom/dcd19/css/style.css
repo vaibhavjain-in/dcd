@@ -8578,7 +8578,7 @@ form .form-actions {
   margin-left: -35%;
 }
 
-.footer > div section ul {
+.footer > div section ul:not(.contextual-links) {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8586,7 +8586,7 @@ form .form-actions {
   list-style: none;
 }
 
-.footer > div section ul li {
+.footer > div section ul:not(.contextual-links) li {
   font-size: 20px;
   padding-right: 6px;
 }
@@ -9547,8 +9547,9 @@ body.path-frontpage {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -9610,6 +9611,10 @@ body.path-frontpage {
   display: none;
 }
 
+.path-frontpage .row {
+  margin: 0;
+}
+
 .path-frontpage.navbar-fixed .header {
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
@@ -9617,6 +9622,119 @@ body.path-frontpage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.path-frontpage .wrapper-volunteerform {
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em 5em;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.path-frontpage .wrapper-volunteerform .about-us {
+  color: #1371C2;
+}
+
+.path-frontpage .wrapper-volunteerform #block-aboutusvolunteerformhomepage {
+  width: 40%;
+}
+
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 {
+  width: 40%;
+}
+
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .block-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage {
+  padding-bottom: 2em;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .submit-session-btn {
+  text-align: center;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5em;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .first-col {
+  width: 40%;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .first-col h2 {
+  color: #1371C2;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col {
+  width: 50%;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li {
+  width: 28%;
+  text-align: center;
+  padding: 0 4%;
+  margin: 0 0 2em;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li img {
+  width: 90px;
+}
+
+.path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li p {
+  font-size: 15px;
+  margin-top: 1em;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.path-frontpage #block-dcd19-keynotespeakerhomepage {
+  padding: 0 20px;
+}
+
+.path-frontpage .block-views-blockannouncements-block-1 {
+  background: #eeeeee;
+  position: relative;
+  margin-top: 6em;
+  padding-bottom: 2em;
+}
+
+.path-frontpage .block-views-blockannouncements-block-1:before {
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 100%;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}
+
+.path-frontpage .block-views-blockannouncements-block-1 .view-content {
+  padding: 0 5em;
 }
 
 .path-frontpage .region-header {
@@ -9637,6 +9755,7 @@ body.path-frontpage {
   width: 100vw;
   height: 100vh;
   position: relative;
+  min-height: 550px;
 }
 
 .path-frontpage .region-header .logo {
@@ -9820,7 +9939,7 @@ body.path-frontpage {
   padding-bottom: 100px;
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div ul {
+.path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9829,7 +9948,7 @@ body.path-frontpage {
   flex-wrap: wrap;
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div ul li {
+.path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li {
   -webkit-box-flex: 33%;
   -ms-flex: 33%;
   flex: 33%;
@@ -9845,7 +9964,7 @@ body.path-frontpage {
   padding: 50px 0;
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div ul li img {
+.path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li img {
   width: 200px;
 }
 
@@ -9863,12 +9982,13 @@ body.path-frontpage {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .path-frontpage #block-views-block-announcements-block-1 > div .view-content > div {
-  -webkit-box-flex: 50%;
-  -ms-flex: 50%;
-  flex: 50%;
+  width: 43%;
   padding: 10px 0;
 }
 

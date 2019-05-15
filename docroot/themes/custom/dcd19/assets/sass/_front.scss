@@ -5,6 +5,9 @@
   .header {
     display: none;
   }
+  .row {
+    margin: 0;
+  }
 
   &.navbar-fixed {
     .header {
@@ -13,7 +16,93 @@
       display: flex;
     }
   }
-  
+
+  .wrapper-volunteerform {
+    background: $gray-lighter;
+    display: flex;
+    padding: 2em 5em;
+    justify-content: space-between;
+    .about-us {
+      color: $blue-darker;
+    }
+    #block-aboutusvolunteerformhomepage {
+      width: 40%;
+    }
+    #block-contactblock-2 {
+      width: 40%;
+      .block-title {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #block-dcd19-callforpapershomepage {
+    padding-bottom: 2em;
+    .submit-session-btn {
+      text-align: center;
+    }
+    .ckeditor-col-container {
+      display: flex;
+      padding: 0 5em;
+      justify-content: space-between;
+      .first-col {
+        width: 40%;
+        h2 {
+          color: $blue-darker;
+        }
+      }
+      .last-col {
+        width: 50%;
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            width: 28%;
+            text-align: center;
+            padding: 0 4%;
+            margin: 0 0 2em;
+            img {
+              width: 90px;
+            }
+            p {
+              font-size: 15px;
+              margin-top: 1em;
+              line-height: 1.3;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #block-dcd19-keynotespeakerhomepage {
+    padding: 0 20px;
+  }
+  .block-views-blockannouncements-block-1 {
+    background: $gray-lighter;
+    position: relative;
+    margin-top: 6em;
+    padding-bottom: 2em;
+    &:before {
+      width: 100%;
+      background: $gray-lighter;
+      border-radius: 100%;
+      height: 200px;
+      position: absolute;
+      top: -100px;
+      z-index: -1;
+    }
+    .view-content {
+      padding: 0 5em;
+    }
+  }
+
   .region-header {
     background-image: url('../images/top_banner.svg');
     background-position: center center;
@@ -25,7 +114,7 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-
+    min-height: 550px;
     .logo {
       margin-top: 20px;
     }
@@ -191,7 +280,7 @@
       flex-direction: column;
       align-items: center;
       padding-bottom: 100px;
-      ul {
+      ul:not(.contextual-links) {
         display: flex;
         list-style: none;
         flex-wrap: wrap;
@@ -220,8 +309,9 @@
       .view-content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         > div {
-          flex: 50%;
+          width: 43%;
           padding: 10px 0;
           > div {
             &:nth-child(1) {

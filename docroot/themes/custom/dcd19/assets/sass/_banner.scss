@@ -87,6 +87,14 @@ body {
   }
 }
 
+.path-frontpage {
+  &.toolbar-fixed {
+    &.navbar-fixed {
+
+    }
+  }
+}
+
 .path-frontpage:not(.navbar-fixed) {
   padding-top: 0 !important;
   #navbar {

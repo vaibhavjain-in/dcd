@@ -1,8 +1,9 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: $white;
 
   @media (min-width: $screen-sm-min) {
     flex-direction: row;
@@ -14,7 +15,7 @@
       flex: 1;
     }
   }
-  
+
   .logo {
     img {
       height: 80px;
