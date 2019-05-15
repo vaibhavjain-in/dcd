@@ -4119,6 +4119,58 @@
         }
     },
     {
+        "name": "drupal/social_login",
+        "version": "2.84.0",
+        "version_normalized": "2.84.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/social-login.git",
+            "reference": "8.x-2.84"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/social_login-8.x-2.84.zip",
+            "reference": "8.x-2.84",
+            "shasum": "71b2bebd86c2dcc82b5619422dc959371456558c"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "php": "~5.4|~7.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.84",
+                "datestamp": "1557130981",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "OneAll",
+                "homepage": "https://www.drupal.org/user/1824044",
+                "email": "plugins@oneall.com"
+            }
+        ],
+        "description": "Professionally developed and free Drupal module that allows your users to register and login with their existing accounts from 40+ social networks.",
+        "homepage": "https://www.oneall.com/",
+        "support": {
+            "source": "https://git.drupalcode.org/project/social_login",
+            "issues": "https://support.oneall.com/"
+        }
+    },
+    {
         "name": "drupal/stage_file_proxy",
         "version": "1.0.0-beta1",
         "version_normalized": "1.0.0.0-beta1",
