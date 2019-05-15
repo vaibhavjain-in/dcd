@@ -1,0 +1,19 @@
+uuid: d97a4406-11c0-41d5-bf3f-dcfa76f4acfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.registration_block
+    - field.storage.contact_message.field_full_name
+id: contact_message.registration_block.field_full_name
+field_name: field_full_name
+entity_type: contact_message
+bundle: registration_block
+label: 'Full Name'
+description: 'Type your full name here'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
