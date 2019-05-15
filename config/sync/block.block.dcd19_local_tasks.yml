@@ -9,7 +9,7 @@ _core:
 id: dcd19_local_tasks
 theme: dcd19
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: local_tasks_block
 settings:

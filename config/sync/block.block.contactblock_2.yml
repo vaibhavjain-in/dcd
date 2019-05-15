@@ -1,0 +1,33 @@
+uuid: cfb74a24-8d55-489f-9750-7a6d0c3026b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteering_form_drupal_camp_de
+  module:
+    - block_class
+    - contact_block
+    - system
+  theme:
+    - dcd19
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6'
+id: contactblock_2
+theme: dcd19
+region: content
+weight: -2
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Become a volunteer'
+  provider: contact_block
+  label_display: visible
+  contact_form: volunteering_form_drupal_camp_de
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
