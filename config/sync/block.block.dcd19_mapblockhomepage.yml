@@ -5,10 +5,14 @@ dependencies:
   content:
     - 'block_content:basic:46fc8f1a-7a72-4ed5-a913-6cf48f4d670d'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - dcd19
+third_party_settings:
+  block_class:
+    classes: col-xs-12
 id: dcd19_mapblockhomepage
 theme: dcd19
 region: content

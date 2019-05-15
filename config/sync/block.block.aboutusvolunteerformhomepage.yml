@@ -5,14 +5,18 @@ dependencies:
   content:
     - 'block_content:basic:4191c261-ef28-4327-848e-bc9aa56dc684'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - dcd19
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6'
 id: aboutusvolunteerformhomepage
 theme: dcd19
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:4191c261-ef28-4327-848e-bc9aa56dc684'
 settings:
