@@ -6,6 +6,7 @@ module:
   block: 0
   block_class: 0
   block_content: 0
+  block_class: 0
   breakpoint: 0
   ckeditor: 0
   ckeditor_responsive_plugin: 0
@@ -47,6 +48,7 @@ module:
   search: 0
   shortcut: 0
   simplenews: 0
+  social_login: 0
   superfish: 0
   system: 0
   taxonomy: 0
