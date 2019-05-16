@@ -122,6 +122,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  simplenews:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   user_picture:
     type: image_image
     weight: 3

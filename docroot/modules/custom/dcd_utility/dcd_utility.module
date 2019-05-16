@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Set fields to be disabled for all the forms.
+  
+  if ($form_id == 'contact_message_volunteering_form_drupal_camp_de_form') {
+    $form['actions']['submit']['#value'] = t('Submit');
+    $form['actions']['preview']['#access'] = FALSE;
+  }
+}
+
