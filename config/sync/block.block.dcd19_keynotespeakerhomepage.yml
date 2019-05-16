@@ -12,7 +12,7 @@ dependencies:
 id: dcd19_keynotespeakerhomepage
 theme: dcd19
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'block_content:c22dad50-083a-4121-8457-690d462f36d7'
 settings:

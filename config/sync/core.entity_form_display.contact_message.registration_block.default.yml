@@ -1,0 +1,45 @@
+uuid: e88c93bd-1b01-4794-9c25-ab6b512c90a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.registration_block
+    - field.field.contact_message.registration_block.field_email_address
+    - field.field.contact_message.registration_block.field_full_name
+    - field.field.contact_message.registration_block.field_user_name
+id: contact_message.registration_block.default
+targetEntityType: contact_message
+bundle: registration_block
+mode: default
+content:
+  field_email_address:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_full_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_user_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

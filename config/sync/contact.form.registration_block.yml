@@ -1,0 +1,12 @@
+uuid: fe197f3d-2ce4-4928-ad88-01143a9c63ed
+langcode: en
+status: true
+dependencies: {  }
+id: registration_block
+label: 'Registration block'
+recipients:
+  - drupalcampdelhi@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

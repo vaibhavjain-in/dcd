@@ -1,0 +1,5 @@
+name: DCD Utility
+description: This module will have all the utility work.
+package: DCD
+type: module
+core: 8.x

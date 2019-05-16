@@ -5,10 +5,14 @@ dependencies:
   content:
     - 'block_content:basic:2f906106-108b-44d5-a6c2-89754c1c9698'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - dcd19
+third_party_settings:
+  block_class:
+    classes: col-xs-12
 id: dcd19_oursponsorshomepage
 theme: dcd19
 region: content
@@ -17,7 +21,7 @@ provider: null
 plugin: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
 settings:
   id: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
-  label: 'Our Sponsors'
+  label: 'Past Sponsors'
   provider: block_content
   label_display: visible
   status: true

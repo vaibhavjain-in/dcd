@@ -1,0 +1,19 @@
+uuid: 30f1e114-7ad7-49ea-b215-a85bedf8bc1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.registration_block
+    - field.storage.contact_message.field_email_address
+id: contact_message.registration_block.field_email_address
+field_name: field_email_address
+entity_type: contact_message
+bundle: registration_block
+label: 'Email address'
+description: 'Type your email address here'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
