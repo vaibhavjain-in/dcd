@@ -9653,6 +9653,26 @@ body.path-frontpage {
   margin-bottom: 0;
 }
 
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item input::-webkit-input-placeholder,
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item textarea::-webkit-input-placeholder {
+  color: #B3BACE;
+}
+
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item input::-moz-placeholder,
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item textarea::-moz-placeholder {
+  color: #B3BACE;
+}
+
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item input:-ms-input-placeholder,
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item textarea:-ms-input-placeholder {
+  color: #B3BACE;
+}
+
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item input:-moz-placeholder,
+.path-frontpage .wrapper-volunteerform #block-contactblock-2 .form-item textarea:-moz-placeholder {
+  color: #B3BACE;
+}
+
 .path-frontpage #block-dcd19-callforpapershomepage {
   padding-bottom: 2em;
 }
