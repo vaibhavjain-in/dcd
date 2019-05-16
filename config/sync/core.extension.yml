@@ -6,7 +6,6 @@ module:
   block: 0
   block_class: 0
   block_content: 0
-  block_class: 0
   breakpoint: 0
   ckeditor: 0
   ckeditor_responsive_plugin: 0
@@ -19,6 +18,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  dcd_utility: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0

@@ -15,59 +15,43 @@ targetEntityType: contact_message
 bundle: volunteering_form_drupal_camp_de
 mode: default
 content:
-  field_anu_comments_or_feedback_:
-    weight: 5
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_com:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_email_address:
-    weight: 0
+    weight: 1
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Type your email address here'
     third_party_settings: {  }
     type: email_default
     region: content
   field_full_name:
-    weight: 1
+    weight: 0
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Type your full name here'
     third_party_settings: {  }
     type: string_textfield
     region: content
   field_phone:
     weight: 2
     settings:
-      placeholder: ''
+      placeholder: 'Type your contact number here'
     third_party_settings: {  }
     type: number
     region: content
-  field_voluteer_category:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
+  message:
+    type: string_textarea
+    weight: 3
     region: content
-  preview:
-    weight: 6
-    region: content
-    settings: {  }
+    settings:
+      rows: 5
+      placeholder: 'Tell us about yourself'
     third_party_settings: {  }
 hidden:
   copy: true
+  field_anu_comments_or_feedback_: true
+  field_com: true
+  field_voluteer_category: true
   mail: true
-  message: true
   name: true
+  preview: true
   subject: true
