@@ -24,7 +24,6 @@ dependencies:
     - link
     - text
     - user
-  id: user.user.default
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -32,9 +31,9 @@ mode: default
 content:
   account:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_bio:
     type: text_textarea
     weight: 8
@@ -119,14 +118,14 @@ content:
     region: content
   google_analytics:
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   simplenews:
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   user_picture:
     type: image_image
     weight: 3
