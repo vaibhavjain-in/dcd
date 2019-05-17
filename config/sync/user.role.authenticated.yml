@@ -12,6 +12,7 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'create session content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

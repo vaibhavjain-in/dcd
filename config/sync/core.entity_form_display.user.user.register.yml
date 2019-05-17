@@ -1,0 +1,69 @@
+uuid: cb1216e3-3815-486d-9283-2d1c783e368c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_drupal_profile
+    - field.field.user.user.field_facebook_link
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_i_m_a
+    - field.field.user.user.field_i_want_to_attend_code_spri
+    - field.field.user.user.field_i_want_to_attend_drupal_8_
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin_link
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_twitter_link
+    - field.field.user.user.user_picture
+  module:
+    - user
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_first_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  contact: true
+  field_bio: true
+  field_designation: true
+  field_drupal_profile: true
+  field_facebook_link: true
+  field_gender: true
+  field_i_m_a: true
+  field_i_want_to_attend_code_spri: true
+  field_i_want_to_attend_drupal_8_: true
+  field_linkedin_link: true
+  field_organization: true
+  field_phone: true
+  field_twitter_link: true
+  google_analytics: true
+  language: true
+  path: true
+  simplenews: true
+  timezone: true
+  user_picture: true
