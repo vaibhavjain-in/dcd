@@ -9,8 +9,8 @@ id: contact_message.volunteering_form_drupal_camp_de.field_full_name
 field_name: field_full_name
 entity_type: contact_message
 bundle: volunteering_form_drupal_camp_de
-label: Name
-description: ''
+label: 'Full Name'
+description: 'Your Answer'
 required: true
 translatable: false
 default_value: {  }
