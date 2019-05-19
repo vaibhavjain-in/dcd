@@ -1,0 +1,23 @@
+uuid: 744dfe49-d786-475d-acec-222dd3aea8e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: contact_message.field_comments
+field_name: field_comments
+entity_type: contact_message
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

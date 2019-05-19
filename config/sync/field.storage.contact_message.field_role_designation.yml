@@ -1,0 +1,25 @@
+uuid: 44e4ea47-ddb0-4ffa-8c84-42e5e6c34e16
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: contact_message.field_role_designation
+field_name: field_role_designation
+entity_type: contact_message
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

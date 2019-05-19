@@ -1,0 +1,19 @@
+uuid: e078c372-365b-4a79-9f93-f18f3da01f17
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.storage.contact_message.field_role_designation
+id: contact_message.sponsor.field_role_designation
+field_name: field_role_designation
+entity_type: contact_message
+bundle: sponsor
+label: Role/Designation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

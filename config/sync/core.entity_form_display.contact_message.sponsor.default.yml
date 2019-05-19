@@ -1,0 +1,65 @@
+uuid: db2c405a-333a-4362-945f-9ffb4fec2135
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.field.contact_message.sponsor.field_comments
+    - field.field.contact_message.sponsor.field_organization
+    - field.field.contact_message.sponsor.field_phone
+    - field.field.contact_message.sponsor.field_role_designation
+id: contact_message.sponsor.default
+targetEntityType: contact_message
+bundle: sponsor
+mode: default
+content:
+  copy:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_organization:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_role_designation:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_comments: true
+  preview: true
+  subject: true
