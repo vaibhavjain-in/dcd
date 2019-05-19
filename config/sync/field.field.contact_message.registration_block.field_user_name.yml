@@ -9,7 +9,7 @@ id: contact_message.registration_block.field_user_name
 field_name: field_user_name
 entity_type: contact_message
 bundle: registration_block
-label: 'User Name'
+label: Username
 description: ''
 required: true
 translatable: false

@@ -21,9 +21,9 @@ provider: null
 plugin: 'block_content:4191c261-ef28-4327-848e-bc9aa56dc684'
 settings:
   id: 'block_content:4191c261-ef28-4327-848e-bc9aa56dc684'
-  label: 'About us / Volunteer Form (Homepage)'
+  label: 'About Us'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
