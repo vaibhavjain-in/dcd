@@ -1,0 +1,27 @@
+uuid: bc970dfc-4943-4422-9e3f-803b09decfdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: sign_up
+label: 'Sign Up'
+description: ''
+use_admin_theme: false
+path: /sign_up
+access_logic: and
+access_conditions:
+  -
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: current_user
+  -
+    id: current_theme
+    theme: dcd19
+    negate: false
+    context_mapping: {  }
+parameters: {  }

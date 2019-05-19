@@ -10,7 +10,7 @@ field_name: field_email_address
 entity_type: contact_message
 bundle: volunteering_form_drupal_camp_de
 label: 'Email Address'
-description: ''
+description: 'Your Email'
 required: true
 translatable: false
 default_value: {  }

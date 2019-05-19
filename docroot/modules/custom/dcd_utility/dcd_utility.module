@@ -16,5 +16,10 @@ function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id
     $form['actions']['submit']['#value'] = t('Submit');
     $form['actions']['preview']['#access'] = FALSE;
   }
+
+  if ($form_id == 'contact-message-registration-block-form') {
+    $form['actions']['submit']['#value'] = t('Submit');
+    $form['actions']['preview']['#access'] = FALSE;
+  }
 }
 
