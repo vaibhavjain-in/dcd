@@ -16,6 +16,7 @@ module:
   contact_block: 0
   contextual: 0
   ctools: 0
+  ctools_block: 0
   datetime: 0
   dblog: 0
   dcd_utility: 0
@@ -32,6 +33,7 @@ module:
   help: 0
   history: 0
   image: 0
+  layout_discovery: 0
   link: 0
   menu_ui: 0
   metatag: 0
@@ -40,6 +42,12 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  page_manager: 0
+  page_manager_ui: 0
+  panelizer: 0
+  panelizer_quickedit: 0
+  panels: 0
+  panels_ipe: 0
   path: 0
   quickedit: 0
   r4032login: 0
