@@ -22,6 +22,7 @@ module:
   dcd_utility: 0
   dynamic_page_cache: 0
   editor: 0
+  email_registration: 0
   embed: 0
   entity_embed: 0
   field: 0
