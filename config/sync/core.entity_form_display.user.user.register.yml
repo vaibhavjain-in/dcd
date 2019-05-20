@@ -16,6 +16,7 @@ dependencies:
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_link
     - field.field.user.user.field_organization
+    - field.field.user.user.field_organization_term
     - field.field.user.user.field_phone
     - field.field.user.user.field_twitter_link
     - field.field.user.user.user_picture
@@ -30,6 +31,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_designation:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_first_name:
     weight: 0
@@ -47,10 +56,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_organization_term:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   contact: true
   field_bio: true
-  field_designation: true
   field_drupal_profile: true
   field_facebook_link: true
   field_gender: true

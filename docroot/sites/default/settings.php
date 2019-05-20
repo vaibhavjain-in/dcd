@@ -768,10 +768,10 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$config_directories['sync'] = '../config/sync';
 
 // Add acquia db settings.
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/drupalcampdelhi/drupalcampdelhi-settings.inc';
 }
 
+$config_directories['sync'] = '../config/sync';
