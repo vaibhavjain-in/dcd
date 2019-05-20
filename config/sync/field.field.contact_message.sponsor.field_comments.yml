@@ -1,0 +1,19 @@
+uuid: bd285208-b04e-4435-958f-1b18360ae2b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.storage.contact_message.field_comments
+id: contact_message.sponsor.field_comments
+field_name: field_comments
+entity_type: contact_message
+bundle: sponsor
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

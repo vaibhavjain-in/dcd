@@ -5,7 +5,7 @@ dependencies: {  }
 id: contact_us
 label: 'Contact Us'
 recipients:
-  - drupalcampdelhixxx@gmail.com
+  - drupalcampdelhi@gmail.com
 reply: ''
 weight: 0
 message: 'Thank you for contacting us. '

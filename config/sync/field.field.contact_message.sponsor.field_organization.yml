@@ -1,0 +1,19 @@
+uuid: bd155345-ec99-430c-b263-645f2cedcdb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.storage.contact_message.field_organization
+id: contact_message.sponsor.field_organization
+field_name: field_organization
+entity_type: contact_message
+bundle: sponsor
+label: Organization
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
