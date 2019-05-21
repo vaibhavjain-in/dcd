@@ -1,40 +1,138 @@
-@import "variables";
-
 .footer {
   clear: both;
-  background: $footer-background-color;
+  background: linear-gradient(162.47deg, $footer-gradient-left 2.8%, $footer-gradient-right 101.5%);
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 0;
   position: relative;
 
-  > div {
+  &:after {
+    background-image: url('../images/footer.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .region-footer {
     display: flex;
-    padding: 40px 180px;
+    padding: 40px 180px 150px;
     justify-content: space-between;
     text-align: left;
+    position: relative;
+    z-index: 10;
+
     nav, section {
       a {
         color: inherit;
       }
     }
     section {
-      margin-top: 8px;
-      margin-left: -35%;
       ul:not(.contextual-links) {
-        padding: 0;
         display: flex;
         list-style: none;
+        padding: 0;
+
         li {
-          font-size: $icon-size;
-          padding-right: $social-icon-padding;
+          a {
+            font-size: 0;
+
+            &:before {
+              display: block;
+              content: '';
+              height: 30px;
+              margin-top: 15px;
+              width: 30px
+            }
+          }
+
+          &.facebook {
+            a:before {
+              background: url('../images/facebook.svg') no-repeat;
+            }
+          }
+
+          &.twitter {
+            a:before {
+              background: url('../images/twitter.svg') no-repeat;
+            }
+          }
         }
       }
     }
     > span {
+      left: 37.5%;
       position: absolute;
-      left: 90%;
-      bottom: 10px;
+      top: 50%;
+
+      a {
+        color: $white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-family: 'CircularAir Light';
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  .nav > li > a {
+    padding-left: 0;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .simplenews-subscriber-form {
+    form {
+      margin-top: 0;
+    }
+
+    .form-item-message {
+      font-family: 'CircularAir Light';
+      font-size: 20px;
+    }
+
+    .form-group {
+      margin: 0;
+    }
+
+    .form-type-email {
+      margin: 10px 0 20px;
+
+      .form-email {
+        border: 1px solid $white;
+      }
+    }
+
+    .form-actions {
+      .button {
+        background: $white;
+        border: 0;
+        color: $subscribe-button;
+        font-size: 16px;
+
+        &:hover {
+          border: 0;
+          color: $subscribe-button;
+        }
+      }
     }
   }
 }

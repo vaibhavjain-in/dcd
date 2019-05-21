@@ -5495,7 +5495,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .breadcrumb {
-  display: none;
   padding: 8px 15px;
   margin-bottom: 24px;
   list-style: none;
@@ -8552,50 +8551,137 @@ form .form-actions {
 
 .footer {
   clear: both;
-  background: #0E144F;
+  background: -webkit-linear-gradient(287.53deg, #1049B2 2.8%, #0acaff 101.5%);
+  background: -o-linear-gradient(287.53deg, #1049B2 2.8%, #0acaff 101.5%);
+  background: linear-gradient(162.47deg, #1049B2 2.8%, #0acaff 101.5%);
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 0;
   position: relative;
 }
 
-.footer > div {
+.footer:after {
+  background-image: url("../images/footer.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.footer .region-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 180px;
+  padding: 40px 180px 150px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
+  position: relative;
+  z-index: 10;
 }
 
-.footer > div nav a, .footer > div section a {
+.footer .region-footer nav a, .footer .region-footer section a {
   color: inherit;
 }
 
-.footer > div section {
-  margin-top: 8px;
-  margin-left: -35%;
-}
-
-.footer > div section ul:not(.contextual-links) {
-  padding: 0;
+.footer .region-footer section ul:not(.contextual-links) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
-.footer > div section ul:not(.contextual-links) li {
-  font-size: 20px;
-  padding-right: 6px;
+.footer .region-footer section ul:not(.contextual-links) li a {
+  font-size: 0;
 }
 
-.footer > div > span {
+.footer .region-footer section ul:not(.contextual-links) li a:before {
+  display: block;
+  content: '';
+  height: 30px;
+  margin-top: 15px;
+  width: 30px;
+}
+
+.footer .region-footer section ul:not(.contextual-links) li.facebook a:before {
+  background: url("../images/facebook.svg") no-repeat;
+}
+
+.footer .region-footer section ul:not(.contextual-links) li.twitter a:before {
+  background: url("../images/twitter.svg") no-repeat;
+}
+
+.footer .region-footer > span {
+  left: 37.5%;
   position: absolute;
-  left: 90%;
-  bottom: 10px;
+  top: 50%;
+}
+
+.footer .region-footer > span a {
+  color: #ffffff;
+}
+
+.footer .region-footer > span a:hover {
+  text-decoration: none;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-family: 'CircularAir Light';
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.footer .nav > li > a {
+  padding-left: 0;
+}
+
+.footer .nav > li > a:hover {
+  background: transparent;
+}
+
+.footer .simplenews-subscriber-form form {
+  margin-top: 0;
+}
+
+.footer .simplenews-subscriber-form .form-item-message {
+  font-family: 'CircularAir Light';
+  font-size: 20px;
+}
+
+.footer .simplenews-subscriber-form .form-group {
+  margin: 0;
+}
+
+.footer .simplenews-subscriber-form .form-type-email {
+  margin: 10px 0 20px;
+}
+
+.footer .simplenews-subscriber-form .form-type-email .form-email {
+  border: 1px solid #ffffff;
+}
+
+.footer .simplenews-subscriber-form .form-actions .button {
+  background: #ffffff;
+  border: 0;
+  color: #0065bb;
+  font-size: 16px;
+}
+
+.footer .simplenews-subscriber-form .form-actions .button:hover {
+  border: 0;
+  color: #0065bb;
 }
 
 .path-node article.session {
@@ -8734,10 +8820,6 @@ body {
   padding-top: 80px;
 }
 
-body.path-frontpage {
-  padding-top: 9%;
-}
-
 #navbar {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -8829,10 +8911,6 @@ body.path-frontpage {
 
 .path-frontpage:not(.navbar-fixed) {
   padding-top: 0 !important;
-}
-
-.path-frontpage:not(.navbar-fixed) #navbar {
-  position: static;
 }
 
 .path-frontpage:not(.navbar-fixed) #block-frontbanner {
@@ -9588,41 +9666,21 @@ body.path-frontpage {
   }
 }
 
-@font-face {
-  font-family: 'CircularAir Black';
-  src: url("../assets/fonts/Circular-Air-Black.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'CircularAir Bold';
-  src: url("../assets/fonts/Circular-Air-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'CircularAir Book';
-  src: url("../assets/fonts/Circular-Air-Book.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'CircularAir Light';
-  src: url("../assets/fonts/Circular-Air-Light.ttf") format("truetype");
-}
-
-.path-frontpage .header {
-  display: none;
+.path-frontpage #navbar {
+  position: absolute;
+  top: -50%;
+  -webkit-transition: top 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: top 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: top 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .path-frontpage .row {
   margin: 0;
 }
 
-.path-frontpage.navbar-fixed .header {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
-  box-shadow: 0px 4px 4px rgba(217, 224, 231, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.path-frontpage.navbar-fixed #navbar {
+  position: fixed;
+  top: 0;
 }
 
 .path-frontpage .wrapper-volunteerform {
