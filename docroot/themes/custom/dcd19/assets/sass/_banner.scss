@@ -3,9 +3,9 @@
 
 body {
   padding-top: 80px;
-  &.path-frontpage {
-    padding-top: 200px;
-  }
+  // &.path-frontpage {
+  //   padding-top: 200px;
+  // }
   // @include transition(all 1s ease);
   // &.navbar-fixed {
   //   padding-top: 135px !important;
@@ -97,9 +97,9 @@ body {
 
 .path-frontpage:not(.navbar-fixed) {
   padding-top: 0 !important;
-  #navbar {
-    position: static;
-  }
+  // #navbar {
+  //   position: static;
+  // }
   #block-frontbanner {
     height: 560px;
     .banner-inner {

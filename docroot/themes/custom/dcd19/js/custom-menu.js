@@ -30,7 +30,7 @@
       $('.c-hamburger').removeClass('is-active');
     });
 
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 100) {
       $('body').addClass('navbar-fixed');
     }
     else {
@@ -39,7 +39,7 @@
   });
 
   $(window).scroll(function(event) {
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 100) {
       $('body').addClass('navbar-fixed');
     }
     else {
