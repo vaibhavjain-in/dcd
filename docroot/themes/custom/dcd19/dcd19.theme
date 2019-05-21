@@ -7,6 +7,7 @@
  */
 
 use Drupal\Component\Utility\Html;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Preprocess variables for html templates.
@@ -19,3 +20,18 @@ function dcd19_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = Html::cleanCssIdentifier(ltrim($path, '/'));
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ *
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+ function dcd19_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+   if ($form_id == 'user_register_form') {
+     $form['field_first_name']['#prefix'] = '<div class="form-element form-element--left">';
+     $form['actions']['#suffix'] = '</div>';
+     $form['actions']['submit']['#value'] = t('Submit');
+   }
+ }
