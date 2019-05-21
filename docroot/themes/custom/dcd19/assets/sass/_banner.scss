@@ -3,13 +3,6 @@
 
 body {
   padding-top: 80px;
-  // &.path-frontpage {
-  //   padding-top: 200px;
-  // }
-  // @include transition(all 1s ease);
-  // &.navbar-fixed {
-  //   padding-top: 135px !important;
-  // }
 }
 #navbar {
   @include transition(all 0.3s ease);
@@ -97,9 +90,7 @@ body {
 
 .path-frontpage:not(.navbar-fixed) {
   padding-top: 0 !important;
-  // #navbar {
-  //   position: static;
-  // }
+
   #block-frontbanner {
     height: 560px;
     .banner-inner {
