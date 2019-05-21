@@ -3,8 +3,10 @@
 @import "fonts";
 
 form {
-  max-width: 600px;
-  margin: 30px auto;
+  &:not(.user-register-form) {
+    max-width: 600px;
+    margin: 30px auto;
+  }
   .form-item {
     width: 100%;
     .form-control {
@@ -109,5 +111,23 @@ form {
     text-align: left;
     margin-top: 20px;
     width: 100%;
+  }
+
+  &.user-register-form {
+    display: flex;
+    justify-content: center;
+
+    .form-element {
+      margin: 0 50px;
+      padding: 0 20px;
+
+      &--right {
+        label {
+          font-family: 'CircularAir Bold';
+          font-size: 22px;
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
 }

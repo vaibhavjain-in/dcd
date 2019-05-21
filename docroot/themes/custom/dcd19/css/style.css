@@ -8088,7 +8088,7 @@ ul.nav.nav-tabs li.active a:hover {
   src: url("../assets/fonts/Circular-Air-Light.ttf") format("truetype");
 }
 
-form {
+form:not(.user-register-form) {
   max-width: 600px;
   margin: 30px auto;
 }
@@ -8212,6 +8212,26 @@ form .form-actions {
   text-align: left;
   margin-top: 20px;
   width: 100%;
+}
+
+form.user-register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+form.user-register-form .form-element {
+  margin: 0 50px;
+  padding: 0 20px;
+}
+
+form.user-register-form .form-element--right label {
+  font-family: 'CircularAir Bold';
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 
 .c-hamburger {
