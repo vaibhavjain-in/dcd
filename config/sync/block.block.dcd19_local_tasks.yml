@@ -2,6 +2,8 @@ uuid: b81b2d5e-e577-487c-a7c0-aedf4e2ecc69
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - dcd19
 _core:
@@ -19,4 +21,11 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
