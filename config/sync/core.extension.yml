@@ -7,6 +7,7 @@ module:
   block_class: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   ckeditor_responsive_plugin: 0
   color: 0
@@ -34,6 +35,7 @@ module:
   help: 0
   history: 0
   image: 0
+  image_captcha: 0
   layout_discovery: 0
   link: 0
   menu_ui: 0
@@ -53,6 +55,7 @@ module:
   quickedit: 0
   r4032login: 0
   rdf: 0
+  recaptcha: 0
   rules: 0
   search: 0
   shortcut: 0
