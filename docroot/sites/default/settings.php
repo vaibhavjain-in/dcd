@@ -775,3 +775,21 @@ if (file_exists('/var/www/site-php')) {
 }
 
 $config_directories['sync'] = '../config/sync';
+
+// ENV specific settings.
+if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
+  switch ($_ENV['AH_SITE_ENVIRONMENT']) {
+    case 'prod':
+      $settings['file_private_path'] = '/mnt/gfs/drupalcampdelhi/files-private';
+      break;
+    case 'test':
+      $settings['file_private_path'] = '/mnt/gfs/drupalcampdelhistg/files-private/';
+      break;
+    case 'dev':
+      $settings['file_private_path'] = '/mnt/gfs/drupalcampdelhidev/files-private/';
+      break;
+    default:
+      # code...
+      break;
+  }
+}
