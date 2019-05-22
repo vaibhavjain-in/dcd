@@ -1,8 +1,10 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: ''
+  url: 'http://localhost/themes/contrib/bootstrap/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -12,5 +14,6 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
+table_responsive: '-1'
+tooltip_enabled: 0
+table: ''

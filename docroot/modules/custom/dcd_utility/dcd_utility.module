@@ -11,6 +11,12 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Set fields to be disabled for all the forms.
+  if ($form_id == 'user_register_form') {
+  	$request = \Drupal::request();
+	if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+  	  $route->setDefault('_title', 'Register here for #DCD19');
+	}
+  }
   
   if ($form_id == 'contact_message_volunteering_form_drupal_camp_de_form') {
     $form['actions']['submit']['#value'] = t('Submit');
