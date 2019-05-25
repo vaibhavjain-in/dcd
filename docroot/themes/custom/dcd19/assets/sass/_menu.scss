@@ -318,3 +318,11 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 26px;
+    .icon-bar{
+      background-color: #2e71c2;
+    }
+  }
+}

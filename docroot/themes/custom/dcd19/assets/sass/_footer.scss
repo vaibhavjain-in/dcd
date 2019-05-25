@@ -89,6 +89,7 @@
     text-transform: capitalize;
     margin: 0 0 20px;
     padding: 0;
+    font-weight: bold;
   }
 
   .nav > li > a {
@@ -107,6 +108,7 @@
     .form-item-message {
       font-family: 'CircularAir Light';
       font-size: 20px;
+      font-weight: bold;
     }
 
     .form-group {
@@ -132,6 +134,75 @@
           border: 0;
           color: $subscribe-button;
         }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .footer{
+    .region-footer{
+      padding: 40px;
+      flex-wrap: wrap;
+      > span {
+        left: 37.5%;
+        position: absolute;
+        top: 66%;
+      }
+      section#block-simplenewssubscription {
+        width: 33%;
+      }
+    }
+    .simplenews-subscriber-form {
+      .form-group{
+        margin-top: -5px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .footer{
+    .region-footer{
+      > span {
+        left: 47.5%;
+        position: absolute;
+        top: 82%;
+      }
+      section#block-simplenewssubscription {
+        width: 100%;
+      }
+      section#block-dcd19-footerblock{
+        width: 100%;
+      }
+    }
+    h2{
+        text-align: left;
+        margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 375px) {
+.footer{
+  .region-footer{
+    > span {
+      left: 54.5%;
+      top: 79%;
+    }
+  }
+}
+}
+@media (max-width: 320px) {
+  .footer{
+    .simplenews-subscriber-form {
+      .form-actions {
+        .button{
+          margin-top: 20px;
+        }
+      }
+    }
+    .region-footer {
+      > span{
+        left: 63.5%;
+        top: 77%;
       }
     }
   }
