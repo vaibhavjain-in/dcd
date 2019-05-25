@@ -10134,7 +10134,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 100px;
 }
 
 .path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) {
@@ -10198,6 +10197,54 @@ body {
 .path-frontpage #block-views-block-announcements-block-1 > div .view-content > div > div:nth-child(2) p {
   font-family: CircularAir Light;
   font-size: 14px;
+}
+
+.path-frontpage .block-partners {
+  padding: 2em 0;
+}
+
+@media (min-width: 992px) {
+  .path-frontpage .block-partners {
+    padding: 2em 5em 5em;
+  }
+}
+
+.path-frontpage .block-partners .partners-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .path-frontpage .block-partners .partners-content-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.path-frontpage .block-partners .partners-content-wrapper img {
+  height: auto;
+  max-width: 100%;
+  width: 300px !important;
+}
+
+@media (min-width: 992px) {
+  .path-frontpage .block-partners .partners-content-wrapper img {
+    width: 200px !important;
+  }
 }
 
 @media (max-width: 768px) {
