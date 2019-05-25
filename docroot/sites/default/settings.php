@@ -781,15 +781,23 @@ if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
   switch ($_ENV['AH_SITE_ENVIRONMENT']) {
     case 'prod':
       $settings['file_private_path'] = '/mnt/gfs/drupalcampdelhi/files-private';
+      // Disable development config split in PRODUCTION.
+      $config['config_split.config_split.development']['status'] = FALSE;
       break;
     case 'test':
       $settings['file_private_path'] = '/mnt/gfs/drupalcampdelhistg/files-private/';
+      $config['config_split.config_split.development']['status'] = TRUE;
       break;
     case 'dev':
       $settings['file_private_path'] = '/mnt/gfs/drupalcampdelhidev/files-private/';
+      $config['config_split.config_split.development']['status'] = TRUE;
       break;
     default:
       # code...
       break;
   }
+}
+else {
+  // Local environment.
+  $config['config_split.config_split.development']['status'] = TRUE;
 }

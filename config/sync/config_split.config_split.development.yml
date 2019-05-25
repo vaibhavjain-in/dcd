@@ -1,0 +1,17 @@
+uuid: e229c219-88c5-4b46-adc4-219ce27171d2
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: 'Development Configurations'
+description: 'Configurations for Development environments (Local, DEV & STAGE Environments). Production environment uses the config in ../config/sync'
+folder: ../config/splits/development
+module:
+  dblog: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.performance
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
