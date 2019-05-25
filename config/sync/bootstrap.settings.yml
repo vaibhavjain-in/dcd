@@ -1,7 +1,7 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://localhost/themes/contrib/bootstrap/favicon.ico'
+  url: ''
   use_default: true
 schemas:
   bootstrap: 8000
