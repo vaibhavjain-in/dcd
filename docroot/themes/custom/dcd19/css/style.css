@@ -8725,6 +8725,10 @@ form.user-register-form .form-element--right label {
   border: 1px solid #ffffff;
 }
 
+.footer .simplenews-subscriber-form .form-type-email .description {
+  color: #ffffff;
+}
+
 .footer .simplenews-subscriber-form .form-actions .button {
   background: #ffffff;
   border: 0;

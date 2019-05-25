@@ -40,8 +40,8 @@ function dcd19_preprocess_html(&$variables) {
        '#type' => 'html_tag',
        '#tag' => 'div',
        '#value' => t("Don't have an account. Click here to <a href='@register'>register</a>", ["@register" => "/user/register"]),
-       '#weight' => 10
+       '#weight' => 99
      ];
-     $form['actions']['#weight'] = 10;
+     $form['actions']['#weight'] = 99;
    }
  }
