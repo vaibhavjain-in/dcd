@@ -1,0 +1,9 @@
+method: 1
+pattern: 163.com
+message: 'Error occured'
+_core:
+  default_config_hash: 0xE4emSSHTVKb88WL3yN2IahuH23p8VNAXMZNux6BKs
+actions: null
+form_build_id: form-s3Q8XVAwFYcL-ndOy1zkvIpERH0U2PQ1R0YG7YvQQu0
+form_token: s2-zsyMpkgs-N6xCDeV0QqQMZVgcrYId5qtB0Odk3yk
+form_id: domain_registration_admin_form
