@@ -21,6 +21,7 @@ dependencies:
     - field.field.user.user.field_twitter_link
     - field.field.user.user.user_picture
   module:
+    - link
     - user
 id: user.user.register
 targetEntityType: user
@@ -39,6 +40,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_drupal_profile:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_first_name:
     weight: 0
@@ -68,7 +77,6 @@ content:
 hidden:
   contact: true
   field_bio: true
-  field_drupal_profile: true
   field_facebook_link: true
   field_gender: true
   field_i_m_a: true

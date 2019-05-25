@@ -9,7 +9,7 @@ id: contact_message.sponsor.field_comments
 field_name: field_comments
 entity_type: contact_message
 bundle: sponsor
-label: Message
+label: Comments
 description: ''
 required: false
 translatable: false

@@ -9,16 +9,15 @@ label: 'Node title based pattern'
 type: 'canonical_entities:node'
 pattern: '/[node:title]'
 selection_criteria:
-  838c07f2-3070-4ee6-a444-ccf552cf9bcc:
+  619f9cc5-1396-4a4e-a205-89623647e95e:
     id: node_type
     bundles:
       page: page
-      session: session
       sponsors: sponsors
     negate: false
     context_mapping:
       node: node
-    selection_logic: and
+    uuid: 619f9cc5-1396-4a4e-a205-89623647e95e
 selection_logic: and
 weight: -5
 relationships: {  }

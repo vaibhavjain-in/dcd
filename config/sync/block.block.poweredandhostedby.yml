@@ -1,0 +1,25 @@
+uuid: c9c7c0e1-0a5f-4a65-bd87-804bfc15d29c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:68269b3f-1d51-4dad-b76f-5bd6c3ca3b25'
+  module:
+    - block_content
+  theme:
+    - dcd19
+id: poweredandhostedby
+theme: dcd19
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:68269b3f-1d51-4dad-b76f-5bd6c3ca3b25'
+settings:
+  id: 'block_content:68269b3f-1d51-4dad-b76f-5bd6c3ca3b25'
+  label: 'Powered and hosted by'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

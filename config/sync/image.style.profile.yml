@@ -1,0 +1,15 @@
+uuid: 887aa80e-5a76-4cab-bc60-5286262a5e7b
+langcode: en
+status: true
+dependencies: {  }
+name: profile
+label: 'Profile list'
+effects:
+  2cbbc190-bbda-48c6-b5e1-f858e823edb2:
+    uuid: 2cbbc190-bbda-48c6-b5e1-f858e823edb2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 112
+      height: 110
+      anchor: center-center

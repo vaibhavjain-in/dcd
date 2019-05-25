@@ -29,6 +29,7 @@ visibility:
     id: user_role
     roles:
       anonymous: anonymous
+      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
