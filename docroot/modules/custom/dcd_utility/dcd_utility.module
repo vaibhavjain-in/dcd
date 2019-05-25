@@ -1,23 +1,25 @@
 <?php
 
+/**
+ * @file
+ * Provides customization for dcd site.
+ */
+
+use Symfony\Cmf\Component\Routing\RouteObjectInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_form_FORM_ID_alter().
- *
- * @param $form
- * @param \Drupal\Core\Form\FormStateInterface $form_state
- * @param $form_id
  */
 function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Set fields to be disabled for all the forms.
   if ($form_id == 'user_register_form') {
-  	$request = \Drupal::request();
-	if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
-  	  $route->setDefault('_title', 'Register here for #DCD19');
-	}
+    $request = \Drupal::request();
+    if ($route = $request->attributes->get(RouteObjectInterface::ROUTE_OBJECT)) {
+      $route->setDefault('_title', 'Register here for #DCD19');
+    }
   }
-  
+
   if ($form_id == 'contact_message_volunteering_form_drupal_camp_de_form') {
     $form['actions']['submit']['#value'] = t('Submit');
     $form['actions']['preview']['#access'] = FALSE;
@@ -27,5 +29,17 @@ function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id
     $form['actions']['submit']['#value'] = t('Submit');
     $form['actions']['preview']['#access'] = FALSE;
   }
-}
 
+  // Cutomize sites login form.
+  if ($form_id == 'user_login_form') {
+    unset($form['name']['#description']);
+    unset($form['pass']['#description']);
+  }
+
+  // Remove the description field for simplenews form in footer.
+  if($form_id == 'simplenews_subscriptions_block_114da1d3-ef3e-47ea-8045-3f3431db6cf0') {
+    if(isset($form['mail']['widget'][0])) {
+      unset($form['mail']['widget'][0]['value']['#description']);
+    }
+  }
+}
