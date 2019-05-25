@@ -32,6 +32,7 @@
         "drupal/contact_block": "^1.4",
         "drupal/core": "^8.6.0",
         "drupal/ctools": "^3.2",
+        "drupal/devel": "^2.1",
         "drupal/domain_registration": "^1.4",
         "drupal/email_registration": "^1.0@RC",
         "drupal/entity_embed": "^1.0@beta",
