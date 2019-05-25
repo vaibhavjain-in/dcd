@@ -41,4 +41,11 @@ function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id
       '#weight' => 100,
     ];
   }
+
+  // Remove the description field for simplenews form in footer.
+  if($form_id == 'simplenews_subscriptions_block_114da1d3-ef3e-47ea-8045-3f3431db6cf0') {
+    if(isset($form['mail']['widget'][0])) {
+      unset($form['mail']['widget'][0]['value']['#description']);
+    }
+  }
 }
