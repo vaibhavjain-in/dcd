@@ -7,8 +7,6 @@
 
 use Symfony\Cmf\Component\Routing\RouteObjectInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Link;
-use Drupal\Core\Url;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -34,12 +32,8 @@ function dcd_utility_form_alter(&$form, FormStateInterface $form_state, $form_id
 
   // Cutomize sites login form.
   if ($form_id == 'user_login_form') {
-    $form['register_message'] = [
-      '#markup' => t('If you are not already registered for #DCD19. Register %here.', [
-        '%here' => Link::fromTextAndUrl(t('here'), Url::fromRoute('user.register'))->toString(),
-      ]),
-      '#weight' => 100,
-    ];
+    unset($form['name']['#description']);
+    unset($form['pass']['#description']);
   }
 
   // Remove the description field for simplenews form in footer.
