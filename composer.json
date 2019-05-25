@@ -27,6 +27,7 @@
         "drupal/bootstrap": "^3.17",
         "drupal/captcha": "^1.0",
         "drupal/ckeditor_responsive_plugin": "^1.0@beta",
+        "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
         "drupal/contact_block": "^1.4",
         "drupal/core": "^8.6.0",
