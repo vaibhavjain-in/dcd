@@ -3,8 +3,8 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: 'public://favicon_0_0.ico'
-  url: 'http://2019.drupalcampdelhi.com/sites/default/files/favicon_1.ico'
+  path: ''
+  url: 'http://2019.drupalcampdelhi.com/sites/default/files/favicon_0_0.ico'
   use_default: 0
 schemas:
   bootstrap: 8000
@@ -12,7 +12,7 @@ schemas:
 features:
   comment_user_picture: 1
   comment_user_verification: 1
-  favicon: 1
+  favicon: 0
   node_user_picture: 1
 logo:
   path: ''
@@ -29,5 +29,4 @@ region_wells:
   sidebar_first: ''
   sidebar_second: ''
   footer: ''
-table_responsive: '-1'
 table: ''
