@@ -1,8 +1,10 @@
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  autologout: 0
   automated_cron: 0
   backup_migrate: 0
+  ban: 0
   block: 0
   block_class: 0
   block_content: 0
@@ -39,6 +41,7 @@ module:
   image_captcha: 0
   layout_discovery: 0
   link: 0
+  login_security: 0
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0
@@ -59,6 +62,7 @@ module:
   recaptcha: 0
   rules: 0
   search: 0
+  seckit: 0
   shortcut: 0
   simplenews: 0
   social_login: 0
