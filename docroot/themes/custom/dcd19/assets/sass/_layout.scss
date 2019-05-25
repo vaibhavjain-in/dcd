@@ -25,3 +25,17 @@
     color: $col-subtitle2-text-color;
   }
 }
+@media (max-width: 768px){
+  .two-col-block{
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+}
+@media (max-width: 480px) {
+  .two-col-block{
+    .col-content-title{
+      font-size: 28px;
+    }
+  }
+}

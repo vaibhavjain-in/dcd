@@ -8068,6 +8068,18 @@ ul.nav.nav-tabs li.active a:hover {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+    font-size: 16px;
+  }
+}
+
 @font-face {
   font-family: 'CircularAir Black';
   src: url("../assets/fonts/Circular-Air-Black.ttf") format("truetype");
@@ -8569,6 +8581,15 @@ form.user-register-form .form-element--right label {
   }
 }
 
+@media (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 26px;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #2e71c2;
+  }
+}
+
 .footer {
   clear: both;
   background: -webkit-linear-gradient(287.53deg, #1049B2 2.8%, #0acaff 101.5%);
@@ -8661,6 +8682,7 @@ form.user-register-form .form-element--right label {
   text-transform: capitalize;
   margin: 0 0 20px;
   padding: 0;
+  font-weight: bold;
 }
 
 .footer .nav > li > a {
@@ -8678,6 +8700,7 @@ form.user-register-form .form-element--right label {
 .footer .simplenews-subscriber-form .form-item-message {
   font-family: 'CircularAir Light';
   font-size: 20px;
+  font-weight: bold;
 }
 
 .footer .simplenews-subscriber-form .form-group {
@@ -8702,6 +8725,60 @@ form.user-register-form .form-element--right label {
 .footer .simplenews-subscriber-form .form-actions .button:hover {
   border: 0;
   color: #0065bb;
+}
+
+@media (max-width: 768px) {
+  .footer .region-footer {
+    padding: 40px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footer .region-footer > span {
+    left: 37.5%;
+    position: absolute;
+    top: 66%;
+  }
+  .footer .region-footer section#block-simplenewssubscription {
+    width: 33%;
+  }
+  .footer .simplenews-subscriber-form .form-group {
+    margin-top: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .region-footer > span {
+    left: 47.5%;
+    position: absolute;
+    top: 82%;
+  }
+  .footer .region-footer section#block-simplenewssubscription {
+    width: 100%;
+  }
+  .footer .region-footer section#block-dcd19-footerblock {
+    width: 100%;
+  }
+  .footer h2 {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer .region-footer > span {
+    left: 54.5%;
+    top: 79%;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer .simplenews-subscriber-form .form-actions .button {
+    margin-top: 20px;
+  }
+  .footer .region-footer > span {
+    left: 63.5%;
+    top: 77%;
+  }
 }
 
 .path-node article.session {
@@ -9851,7 +9928,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   min-height: 550px;
@@ -9965,6 +10042,10 @@ body {
 
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta a {
   color: inherit;
+}
+
+.path-frontpage #block-dcd19-mapblockhomepage iframe {
+  width: 100%;
 }
 
 .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div {
@@ -10101,6 +10182,160 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .path-frontpage .first-banner .title {
+    font-size: 42px;
+  }
+  .path-frontpage .wrapper-volunteerform {
+    padding: 2em 1em;
+    display: block;
+  }
+  .path-frontpage .wrapper-volunteerform #block-aboutusvolunteerformhomepage {
+    width: 100%;
+    padding: 40px;
+  }
+  .path-frontpage .wrapper-volunteerform #block-aboutusvolunteerformhomepage .ckeditor-col-container .first-col p {
+    font-size: 22px;
+  }
+  .path-frontpage .wrapper-volunteerform #block-contactblock-2 {
+    width: 100%;
+    padding: 40px;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div {
+    display: block;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col > p:nth-child(1), .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col > p:nth-child(2) {
+    text-align: center;
+    font-size: 24px;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col blockquote {
+    padding: 60px;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col blockquote p {
+    font-size: 22px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container {
+    display: block;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .first-col {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .first-col p {
+    font-size: 22px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col {
+    width: 100%;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li {
+    width: 33%;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li img {
+    width: 140px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li p {
+    font-size: 24px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .submit-session-btn a {
+    font-size: 22px;
+  }
+  .path-frontpage #block-views-block-announcements-block-1 > div .view-content > div > div:nth-child(2) p {
+    font-size: 22px;
+  }
+  .path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li {
+    -webkit-box-flex: 45%;
+    -ms-flex: 45%;
+    flex: 45%;
+  }
+  .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+    width: 230px;
+    font-size: 22px;
+  }
+  .path-frontpage .first-banner .bottom-info {
+    top: 112px;
+  }
+  .path-frontpage .first-banner .bottom-info p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .path-frontpage .region-header .logo {
+    margin-top: 0;
+  }
+  .path-frontpage .first-banner .title {
+    font-size: 28px;
+  }
+  .path-frontpage .first-banner .bottom-info .date {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .path-frontpage .first-banner .bottom-info p {
+    font-size: 18px;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div {
+    display: block;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col > p:nth-child(1), .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col > p:nth-child(2) {
+    text-align: center;
+    font-size: 18px;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col blockquote {
+    padding: 40px;
+  }
+  .path-frontpage #block-dcd19-keynotespeakerhomepage > div > div .last-col blockquote p {
+    font-size: 18px;
+  }
+  .path-frontpage #block-views-block-announcements-block-1 > div .view-content > div {
+    width: 100%;
+  }
+  .path-frontpage #block-views-block-announcements-block-1 > div .view-content > div > div:nth-child(2) p {
+    font-size: 18px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container {
+    display: block;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .first-col p {
+    font-size: 18px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li {
+    width: 100%;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li img {
+    width: 140px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .ckeditor-col-container .last-col ul li p {
+    font-size: 18px;
+  }
+  .path-frontpage #block-dcd19-callforpapershomepage .submit-session-btn a {
+    font-size: 18px;
+  }
+  .path-frontpage .wrapper-volunteerform {
+    padding: 2em 1em;
+    display: block;
+  }
+  .path-frontpage .wrapper-volunteerform #block-aboutusvolunteerformhomepage .ckeditor-col-container .first-col p {
+    font-size: 18px;
+  }
+  .path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) {
+    padding: 0;
+  }
+  .path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li img {
+    width: 230px;
+  }
+  .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+    width: 200px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .path-frontpage .block-views-blockannouncements-block-1 .view-content {
+    padding: 0 2.8em;
+  }
+}
+
 .two-col-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10134,4 +10369,17 @@ body {
 .two-col-block .col-content-subtitle2 {
   font-size: 12px;
   color: #313131;
+}
+
+@media (max-width: 768px) {
+  .two-col-block {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .two-col-block .col-content-title {
+    font-size: 28px;
+  }
 }

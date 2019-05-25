@@ -131,7 +131,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
     min-height: 550px;
@@ -245,6 +245,9 @@
         }
       }
     }
+    iframe {
+      width: 100%;
+  }
   }
 
   #block-dcd19-keynotespeakerhomepage {
@@ -348,6 +351,249 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .path-frontpage{
+    .first-banner{
+      .title{
+        font-size:42px;
+      }
+    }
+    .wrapper-volunteerform{
+      padding: 2em 1em;
+      display: block;
+      #block-aboutusvolunteerformhomepage {
+        width: 100%;
+        padding: 40px;
+        .ckeditor-col-container{
+          .first-col{
+            p{
+              font-size: 22px;
+            }
+          }
+        }
+      }
+      #block-contactblock-2 {
+        width: 100%;
+        padding: 40px;
+      }
+    }
+    #block-dcd19-keynotespeakerhomepage {
+      > div {
+        > div {
+          display: block;
+          .last-col {
+            > p {
+                &:nth-child(1),&:nth-child(2) {
+                text-align: center;
+                font-size: 24px;
+                }
+            }
+            blockquote {
+              padding: 60px;
+              p{
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #block-dcd19-callforpapershomepage {
+      .ckeditor-col-container {
+        display: block;
+        .first-col {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 40px;
+          p{
+            font-size: 22px;
+          }
+        }
+        .last-col {
+          width: 100%;
+          ul {
+            li {
+              width: 33%;
+              img {
+                width: 140px;
+              }
+              p{
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+      .submit-session-btn {
+        a{
+          font-size: 22px;
+        }
+      }
+    }
+    #block-views-block-announcements-block-1 {
+      > div {
+        .view-content {
+          > div {
+            > div {
+              &:nth-child(2) {
+                p {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #block-dcd19-oursponsorshomepage {
+      > div {
+        ul:not(.contextual-links) {
+          li {
+            flex: 45%;
+          }
+        }
+      > p {
+        width: 230px;
+        font-size: 22px;
+      }
+    }
+  }
+    .first-banner{
+      .bottom-info{
+        top:112px;
+        p{
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .path-frontpage {
+    .region-header{
+      .logo{
+        margin-top: 0;
+      }
+    }
+    .first-banner {
+      .title{
+        font-size: 28px;
+      }
+      .bottom-info {
+        .date{
+          font-size: 20px;
+          margin-top: 30px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+    #block-dcd19-keynotespeakerhomepage {
+      > div {
+        > div {
+          display: block;
+          .last-col {
+            > p {
+                &:nth-child(1),&:nth-child(2) {
+                text-align: center;
+                font-size: 18px;
+                }
+            }
+            blockquote {
+              padding: 40px;
+              p{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #block-views-block-announcements-block-1 {
+      > div {
+        .view-content {
+          > div {
+            width: 100%;
+            > div {
+              &:nth-child(2) {
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #block-dcd19-callforpapershomepage {
+      .ckeditor-col-container {
+        display: block;
+        .first-col {
+          p{
+            font-size: 18px;
+          }
+        }
+        .last-col {
+          ul {
+            li {
+              width: 100%;
+              img {
+                width: 140px;
+              }
+              p{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      .submit-session-btn {
+        a{
+          font-size: 18px;
+        }
+      }
+    }
+    .wrapper-volunteerform{
+      padding: 2em 1em;
+      display: block;
+      #block-aboutusvolunteerformhomepage {
+        .ckeditor-col-container{
+          .first-col{
+            p{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    #block-dcd19-oursponsorshomepage {
+      > div {
+        ul:not(.contextual-links) {
+          padding: 0;
+          li {
+            img{
+              width: 230px;
+            }
+          }
+        }
+      > p {
+        width: 200px;
+        font-size: 18px;
+      }
+    }
+  }
+  }
+}
+@media (max-width: 375px) {
+  .path-frontpage {
+    .block-views-blockannouncements-block-1{
+      .view-content {
+        padding: 0 2.8em;
       }
     }
   }
