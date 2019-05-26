@@ -1,23 +1,27 @@
-uuid: f358aaa6-f8e3-476c-ac85-e8604290bdde
+uuid: e41956a9-e317-4ab9-acaa-e873946b06ed
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
+    - 'block_content:basic:92a41a96-5d62-4bfe-9f96-0bc447440637'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - dcd19
-id: dcd19_callforpapershomepage
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 block-partners'
+id: partners
 theme: dcd19
 region: content
-weight: -6
+weight: -2
 provider: null
-plugin: 'block_content:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
+plugin: 'block_content:92a41a96-5d62-4bfe-9f96-0bc447440637'
 settings:
-  id: 'block_content:5e8b26ec-bc5d-4605-98f3-203c4b45d107'
-  label: 'Call for Papers'
+  id: 'block_content:92a41a96-5d62-4bfe-9f96-0bc447440637'
+  label: Partners
   provider: block_content
   label_display: visible
   status: true

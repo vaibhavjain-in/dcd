@@ -16,7 +16,7 @@ third_party_settings:
 id: contactblock_2
 theme: dcd19
 region: content
-weight: -2
+weight: -4
 provider: null
 plugin: contact_block
 settings:

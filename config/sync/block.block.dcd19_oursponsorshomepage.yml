@@ -16,12 +16,12 @@ third_party_settings:
 id: dcd19_oursponsorshomepage
 theme: dcd19
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
 settings:
   id: 'block_content:2f906106-108b-44d5-a6c2-89754c1c9698'
-  label: 'Past Sponsors'
+  label: Sponsors
   provider: block_content
   label_display: visible
   status: true

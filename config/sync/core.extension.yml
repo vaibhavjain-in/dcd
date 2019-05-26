@@ -23,7 +23,7 @@ module:
   ctools: 0
   ctools_block: 0
   datetime: 0
-  dcd_utility: 10
+  dcd_utility: 0
   domain_registration: 0
   dynamic_page_cache: 0
   editor: 0
