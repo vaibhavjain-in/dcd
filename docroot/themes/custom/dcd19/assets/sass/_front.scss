@@ -137,8 +137,11 @@
     height: 100vh;
     position: relative;
     min-height: 550px;
+
     .logo {
-      margin-top: 20px;
+      img {
+        height: 200px;
+      }
     }
   }
 
