@@ -9990,8 +9990,8 @@ body {
   min-height: 550px;
 }
 
-.path-frontpage .region-header .logo {
-  margin-top: 20px;
+.path-frontpage .region-header .logo img {
+  height: 200px;
 }
 
 .path-frontpage #block-dcd19-firstbannerhomepage {
