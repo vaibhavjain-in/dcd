@@ -15,7 +15,7 @@ features:
   favicon: 0
   node_user_picture: 1
 logo:
-  path: ''
+  path: 'public://DCD-Logo-V2.png'
   url: ''
   use_default: 1
 region_wells:

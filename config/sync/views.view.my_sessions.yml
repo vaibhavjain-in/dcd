@@ -271,7 +271,20 @@ display:
       title: 'My Sessions'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'Haven''t submitted a session yet? <a href="/session/submit">Submit a session</a> and become a speaker at DCD today.'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments:
         uid:
