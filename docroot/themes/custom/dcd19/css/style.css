@@ -8240,20 +8240,58 @@ form.user-register-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  form.user-register-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
 form.user-register-form .form-element {
-  margin: 0 50px;
-  padding: 0 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  form.user-register-form .form-element {
+    padding: 0 20px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  form.user-register-form .form-element {
+    margin: 0 50px;
+  }
 }
 
 form.user-register-form .form-element--right label {
   font-family: 'CircularAir Bold';
   font-size: 22px;
   margin-bottom: 30px;
+}
+
+form.user-register-form .form-element--right iframe {
+  width: 100% !important;
+}
+
+form.node-session-form .field--name-field-co-presenter .btn:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage .cta:not(.field-add-more-submit), .path-frontpage form.node-session-form .field--name-field-co-presenter .cta:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:not(.field-add-more-submit), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right form.node-session-form .field--name-field-co-presenter .cta:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage #block-dcd19-oursponsorshomepage > div > p:not(.field-add-more-submit), .path-frontpage form.node-session-form .field--name-field-co-presenter #block-dcd19-oursponsorshomepage > div > p:not(.field-add-more-submit) {
+  background: transparent;
+  border: 0;
+  color: #009de0;
+  font-size: 14px;
+  float: right;
+  padding: 0;
 }
 
 .c-hamburger {

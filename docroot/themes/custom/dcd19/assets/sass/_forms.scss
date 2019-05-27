@@ -115,11 +115,24 @@ form {
 
   &.user-register-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
     .form-element {
-      margin: 0 50px;
-      padding: 0 20px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        padding: 0 20px;
+        width: 50%;
+      }
+
+      @media (min-width: 992px) {
+        margin: 0 50px;
+      }
 
       &--right {
         label {
@@ -127,6 +140,23 @@ form {
           font-size: 22px;
           margin-bottom: 30px;
         }
+
+        iframe {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  &.node-session-form {
+    .field--name-field-co-presenter {
+      .btn:not(.field-add-more-submit) {
+        background: transparent;
+        border: 0;
+        color: $blue;
+        font-size: $font-size-base;
+        float: right;
+        padding: 0;
       }
     }
   }
