@@ -7,11 +7,9 @@ dependencies:
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
     - node.type.session
-    - taxonomy.vocabulary.skill_level
   module:
     - node
     - options
-    - taxonomy
     - user
 id: session_accepted
 label: 'Session Accepted'
@@ -455,52 +453,6 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
-        field_ski_target_id:
-          id: field_ski_target_id
-          table: node__field_ski
-          field: field_ski_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_ski_target_id_op
-            label: 'Skill level'
-            description: ''
-            use_operator: false
-            operator: field_ski_target_id_op
-            identifier: field_ski_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_reviewer: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: skill_level
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -554,8 +506,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -589,8 +539,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
