@@ -120,8 +120,39 @@
       top: -100px;
       z-index: -1;
     }
-    .view-content {
-      padding: 0 5em;
+    .group-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 5rem;
+
+      @media (max-width: 375px) {
+        padding: 0 2.8em;
+      }
+
+      .views-row {
+        padding: 0.625rem 0;
+        width: 100%;
+
+        @media (min-width: 768px) {
+          padding-left: 1.875rem;
+          padding-right: 1.875rem;
+          width: 50%;
+        }
+      }
+
+      .views-field-title {
+        font-family: 'CircularAir Book';
+        font-size: $font-size-h3;
+      }
+
+      .views-field-body {
+        font-family: 'CircularAir Light';
+
+        @media (min-width: 768px) {
+          font-size: $font-size-base;
+        }
+      }
     }
   }
 
@@ -331,33 +362,6 @@
       }
     }
   }
-  #block-views-block-announcements-block-1 {
-    > div {
-      .view-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        > div {
-          width: 43%;
-          padding: 10px 0;
-          > div {
-            &:nth-child(1) {
-              span {
-                font-family: CircularAir Book;
-                font-size: $font-size-h3;
-              }
-            }
-            &:nth-child(2) {
-              p {
-                font-family: CircularAir Light;
-                font-size: $font-size-base;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 
   .block-partners {
     padding: 2em 0;
@@ -469,21 +473,7 @@
         }
       }
     }
-    #block-views-block-announcements-block-1 {
-      > div {
-        .view-content {
-          > div {
-            > div {
-              &:nth-child(2) {
-                p {
-                  font-size: 22px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+
     #block-dcd19-oursponsorshomepage {
       > div {
         ul:not(.contextual-links) {
@@ -549,22 +539,7 @@
         }
       }
     }
-    #block-views-block-announcements-block-1 {
-      > div {
-        .view-content {
-          > div {
-            width: 100%;
-            > div {
-              &:nth-child(2) {
-                p {
-                  font-size: 18px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+
     #block-dcd19-callforpapershomepage {
       .ckeditor-col-container {
         display: block;
@@ -622,14 +597,5 @@
       }
     }
   }
-  }
-}
-@media (max-width: 375px) {
-  .path-frontpage {
-    .block-views-blockannouncements-block-1{
-      .view-content {
-        padding: 0 2.8em;
-      }
-    }
   }
 }
