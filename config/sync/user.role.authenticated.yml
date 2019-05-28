@@ -13,6 +13,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access user profiles'
   - 'create session content'
+  - 'edit own session content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

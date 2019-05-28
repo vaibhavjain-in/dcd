@@ -61,7 +61,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: google-card
+          row_class: 'google-card row'
           default_row_class: true
       row:
         type: fields
