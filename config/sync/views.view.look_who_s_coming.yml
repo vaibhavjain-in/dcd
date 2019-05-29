@@ -57,7 +57,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 24
+          items_per_page: 48
           offset: 0
           id: 0
           total_pages: null
@@ -693,6 +693,7 @@ display:
         type: normal
         title: 'Look Who''s Coming'
         menu_name: main
+        weight: -45
     cache_metadata:
       max-age: -1
       contexts:
