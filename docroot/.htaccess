@@ -140,7 +140,8 @@ AddEncoding gzip svgz
 
   # Redirect to latest prod url.
   RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^2016.drupalcampdelhi.com$
+  RewriteCond %{HTTP_HOST} ^2016.drupalcampdelhi.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^2015.drupalcampdelhi.com$
   RewriteRule ^ http://2019.drupalcampdelhi.com [R=301,L]
 
   # For security reasons, deny access to other PHP files on public sites.
