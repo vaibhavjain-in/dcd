@@ -10307,7 +10307,11 @@ body {
   }
   .path-frontpage .wrapper-volunteerform {
     padding: 2em 1em;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .path-frontpage .wrapper-volunteerform #block-aboutusvolunteerformhomepage {
     width: 100%;
@@ -10383,6 +10387,9 @@ body {
   .path-frontpage .first-banner .title {
     font-size: 28px;
   }
+  .path-frontpage .first-banner .bottom-info {
+    top: 100px;
+  }
   .path-frontpage .first-banner .bottom-info .date {
     font-size: 20px;
     margin-top: 30px;
@@ -10423,16 +10430,9 @@ body {
   }
   .path-frontpage .wrapper-volunteerform {
     padding: 2em 1em;
-    display: block;
   }
   .path-frontpage .wrapper-volunteerform #block-aboutusvolunteerformhomepage .ckeditor-col-container .first-col p {
     font-size: 18px;
-  }
-  .path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) {
-    padding: 0;
-  }
-  .path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li img {
-    width: 230px;
   }
   .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
     width: 200px;
