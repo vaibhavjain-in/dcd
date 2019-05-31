@@ -403,7 +403,8 @@
     }
     .wrapper-volunteerform{
       padding: 2em 1em;
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
       #block-aboutusvolunteerformhomepage {
         width: 100%;
         padding: 40px;
@@ -509,6 +510,7 @@
         font-size: 28px;
       }
       .bottom-info {
+        top: 100px;
         .date{
           font-size: 20px;
           margin-top: 30px;
@@ -570,7 +572,6 @@
     }
     .wrapper-volunteerform{
       padding: 2em 1em;
-      display: block;
       #block-aboutusvolunteerformhomepage {
         .ckeditor-col-container{
           .first-col{
@@ -582,20 +583,12 @@
       }
     }
     #block-dcd19-oursponsorshomepage {
-      > div {
-        ul:not(.contextual-links) {
-          padding: 0;
-          li {
-            img{
-              width: 230px;
-            }
-          }
+        > div {
+        > p {
+          width: 200px;
+          font-size: 18px;
         }
-      > p {
-        width: 200px;
-        font-size: 18px;
       }
     }
-  }
   }
 }
