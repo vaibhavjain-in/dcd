@@ -12,6 +12,7 @@ dependencies:
     - field.field.user.user.field_i_m_a
     - field.field.user.user.field_i_want_to_attend_code_spri
     - field.field.user.user.field_i_want_to_attend_drupal_8_
+    - field.field.user.user.field_interested_in_trivia_night
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_link
     - field.field.user.user.field_organization
@@ -80,14 +81,14 @@ content:
     type: options_buttons
     region: content
   field_i_want_to_attend_code_spri:
-    weight: 14
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_i_want_to_attend_drupal_8_:
-    weight: 13
+  field_interested_in_trivia_night:
+    weight: 14
     settings:
       display_label: true
     third_party_settings: {  }
@@ -139,6 +140,7 @@ content:
 hidden:
   contact: true
   field_facebook_link: true
+  field_i_want_to_attend_drupal_8_: true
   field_linkedin_link: true
   field_organization: true
   field_twitter_link: true

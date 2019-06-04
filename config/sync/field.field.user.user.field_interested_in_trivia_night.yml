@@ -1,0 +1,24 @@
+uuid: 84f654c5-a373-4528-986e-13a90f0273aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_interested_in_trivia_night
+  module:
+    - user
+id: user.user.field_interested_in_trivia_night
+field_name: field_interested_in_trivia_night
+entity_type: user
+bundle: user
+label: 'I''m interested in Trivia Nights'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

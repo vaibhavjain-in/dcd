@@ -12,6 +12,7 @@ dependencies:
     - field.field.user.user.field_i_m_a
     - field.field.user.user.field_i_want_to_attend_code_spri
     - field.field.user.user.field_i_want_to_attend_drupal_8_
+    - field.field.user.user.field_interested_in_trivia_night
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_link
     - field.field.user.user.field_organization
@@ -91,6 +92,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_interested_in_trivia_night:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_last_name:
     type: string
