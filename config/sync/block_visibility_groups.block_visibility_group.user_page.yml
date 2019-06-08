@@ -1,0 +1,23 @@
+uuid: 23ade68e-d18a-4ce1-aeb8-c39ff10bb97d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: user_page
+label: 'User Page'
+logic: and
+conditions:
+  aa22cede-be5a-4248-9309-e87722890308:
+    id: request_path
+    pages: "/user/*\r\n<front>"
+    negate: true
+    context_mapping: {  }
+    uuid: aa22cede-be5a-4248-9309-e87722890308
+  e3bcaf26-f959-4c65-b664-42742dcca7e2:
+    id: request_path
+    pages: '/user/*/*'
+    negate: false
+    context_mapping: {  }
+    uuid: e3bcaf26-f959-4c65-b664-42742dcca7e2
+allow_other_conditions: true
