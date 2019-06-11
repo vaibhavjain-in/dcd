@@ -11,7 +11,7 @@ dependencies:
     - node.type.sponsors
     - taxonomy.vocabulary.sponsorship_type
   content:
-    - 'taxonomy_term:sponsorship_type:d55223ee-1ce4-4054-b2ec-435c551ace8b'
+    - 'taxonomy_term:sponsorship_type:ef27a5b7-6a16-4f02-a409-d69b8cd8e883'
   module:
     - image
     - link
@@ -312,7 +312,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Sponsors
+      title: 'Our Sponsors'
       header: {  }
       footer: {  }
       empty: {  }
@@ -590,7 +590,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            6: 6
+            1441: 1441
           group: 1
           exposed: false
           expose:

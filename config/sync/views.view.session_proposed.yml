@@ -426,6 +426,7 @@ display:
           operator: or
           value:
             proposed: proposed
+            accepted: accepted
           group: 1
           exposed: false
           expose:

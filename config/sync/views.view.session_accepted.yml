@@ -463,6 +463,20 @@ display:
           reduce_duplicates: false
           plugin_id: list_field
       sorts:
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: field_track
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
         created:
           id: created
           table: node_field_data
@@ -506,6 +520,15 @@ display:
           required: false
           entity_type: node
           entity_field: uid
+          plugin_id: standard
+        field_track:
+          id: field_track
+          table: node__field_track
+          field: field_track
+          relationship: none
+          group_type: group
+          admin_label: 'field_track: Taxonomy term'
+          required: false
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
