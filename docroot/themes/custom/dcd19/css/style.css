@@ -278,11 +278,10 @@ th {
   .navbar {
     display: none;
   }
-  .btn > .caret, .path-frontpage .cta > .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta > .caret, .path-frontpage #block-dcd19-oursponsorshomepage > div > p > .caret,
+  .btn > .caret, .path-frontpage .cta > .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta > .caret,
   .dropup > .btn > .caret,
   .path-frontpage .dropup > .cta > .caret,
-  .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .dropup > .cta > .caret,
-  .path-frontpage #block-dcd19-oursponsorshomepage > div.dropup > p > .caret {
+  .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .dropup > .cta > .caret {
     border-top-color: #000 !important;
   }
   .label {
@@ -3254,16 +3253,16 @@ fieldset[disabled]
 
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
 .input-group-lg > .form-control-static.input-group-addon,
-.input-group-lg > .input-group-btn > .form-control-static.btn, .path-frontpage .input-group-lg > .input-group-btn > .form-control-static.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .form-control-static.cta, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-lg > div.input-group-btn > p.form-control-static, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
+.input-group-lg > .input-group-btn > .form-control-static.btn, .path-frontpage .input-group-lg > .input-group-btn > .form-control-static.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .form-control-static.cta, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-static.btn, .path-frontpage .input-group-sm > .input-group-btn > .form-control-static.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .form-control-static.cta, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-sm > div.input-group-btn > p.form-control-static {
+.input-group-sm > .input-group-btn > .form-control-static.btn, .path-frontpage .input-group-sm > .input-group-btn > .form-control-static.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .form-control-static.cta {
   padding-left: 0;
   padding-right: 0;
 }
 
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn, .path-frontpage .input-group-sm > .input-group-btn > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .cta, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-sm > div.input-group-btn > p {
+.input-group-sm > .input-group-btn > .btn, .path-frontpage .input-group-sm > .input-group-btn > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .cta {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3318,7 +3317,7 @@ select[multiple].input-sm,
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn, .path-frontpage .input-group-lg > .input-group-btn > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .cta, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-lg > div.input-group-btn > p {
+.input-group-lg > .input-group-btn > .btn, .path-frontpage .input-group-lg > .input-group-btn > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .cta {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3392,7 +3391,7 @@ select[multiple].input-lg,
   pointer-events: none;
 }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .path-frontpage .input-group-lg > .input-group-btn > .cta + .form-control-feedback, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .cta + .form-control-feedback, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-lg > div.input-group-btn > p + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .path-frontpage .input-group-lg > .input-group-btn > .cta + .form-control-feedback, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .cta + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
   width: 46px;
@@ -3400,7 +3399,7 @@ select[multiple].input-lg,
   line-height: 46px;
 }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .path-frontpage .input-group-sm > .input-group-btn > .cta + .form-control-feedback, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .cta + .form-control-feedback, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-sm > div.input-group-btn > p + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .path-frontpage .input-group-sm > .input-group-btn > .cta + .form-control-feedback, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .cta + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
   width: 30px;
@@ -3633,7 +3632,7 @@ select[multiple].input-lg,
   }
 }
 
-.btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+.btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3655,31 +3654,29 @@ select[multiple].input-lg,
   user-select: none;
 }
 
-.btn:focus, .path-frontpage .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:focus, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:focus, .btn.focus, .path-frontpage .focus.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .focus.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p.focus, .btn:active:focus, .path-frontpage .cta:active:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:active:focus, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:active:focus, .btn:active.focus, .path-frontpage .cta:active.focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:active.focus, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:active.focus, .btn.active:focus, .path-frontpage .active.cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .active.cta:focus, .path-frontpage #block-dcd19-oursponsorshomepage > div > p.active:focus, .btn.active.focus, .path-frontpage .active.focus.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .active.focus.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p.active.focus {
+.btn:focus, .path-frontpage .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:focus, .btn.focus, .path-frontpage .focus.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .focus.cta, .btn:active:focus, .path-frontpage .cta:active:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:active:focus, .btn:active.focus, .path-frontpage .cta:active.focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:active.focus, .btn.active:focus, .path-frontpage .active.cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .active.cta:focus, .btn.active.focus, .path-frontpage .active.focus.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .active.focus.cta {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.btn:hover, .path-frontpage .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:hover, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:hover, .btn:focus, .path-frontpage .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:focus, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:focus, .btn.focus, .path-frontpage .focus.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .focus.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p.focus {
+.btn:hover, .path-frontpage .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:hover, .btn:focus, .path-frontpage .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:focus, .btn.focus, .path-frontpage .focus.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .focus.cta {
   color: #333;
   text-decoration: none;
 }
 
-.btn:active, .path-frontpage .cta:active, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:active, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:active, .btn.active, .path-frontpage .active.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .active.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p.active {
+.btn:active, .path-frontpage .cta:active, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:active, .btn.active, .path-frontpage .active.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .active.cta {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.btn.disabled, .path-frontpage .disabled.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .disabled.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p.disabled, .btn[disabled], .path-frontpage .cta[disabled], .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta[disabled], .path-frontpage #block-dcd19-oursponsorshomepage > div > p[disabled],
+.btn.disabled, .path-frontpage .disabled.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .disabled.cta, .btn[disabled], .path-frontpage .cta[disabled], .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta[disabled],
 fieldset[disabled] .btn,
 fieldset[disabled] .path-frontpage .cta,
 .path-frontpage fieldset[disabled] .cta,
 fieldset[disabled] .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right fieldset[disabled] .cta,
-fieldset[disabled] .path-frontpage #block-dcd19-oursponsorshomepage > div > p,
-.path-frontpage fieldset[disabled] #block-dcd19-oursponsorshomepage > div > p {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right fieldset[disabled] .cta {
   cursor: not-allowed;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -4038,21 +4035,21 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .path-frontpage .btn-group-lg > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-lg > p {
+.btn-lg, .btn-group-lg > .btn, .path-frontpage .btn-group-lg > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg > .cta {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn, .path-frontpage .btn-group-sm > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-sm > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-sm > p {
+.btn-sm, .btn-group-sm > .btn, .path-frontpage .btn-group-sm > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-sm > .cta {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-xs, .btn-group-xs > .btn, .path-frontpage .btn-group-xs > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-xs > p {
+.btn-xs, .btn-group-xs > .btn, .path-frontpage .btn-group-xs > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .cta {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -4280,50 +4277,41 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 
-.btn-group > .btn, .path-frontpage .btn-group > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p,
+.btn-group > .btn, .path-frontpage .btn-group > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta,
 .btn-group-vertical > .btn,
 .path-frontpage .btn-group-vertical > .cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta {
   position: relative;
   float: left;
 }
 
-.btn-group > .btn:hover, .path-frontpage .btn-group > .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:hover, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:hover, .btn-group > .btn:focus, .path-frontpage .btn-group > .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:focus, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:focus, .btn-group > .btn:active, .path-frontpage .btn-group > .cta:active, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:active, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:active, .btn-group > .btn.active, .path-frontpage .btn-group > .active.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .active.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p.active,
+.btn-group > .btn:hover, .path-frontpage .btn-group > .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:hover, .btn-group > .btn:focus, .path-frontpage .btn-group > .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:focus, .btn-group > .btn:active, .path-frontpage .btn-group > .cta:active, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:active, .btn-group > .btn.active, .path-frontpage .btn-group > .active.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .active.cta,
 .btn-group-vertical > .btn:hover,
 .path-frontpage .btn-group-vertical > .cta:hover,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:hover,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p:hover,
 .btn-group-vertical > .btn:focus,
 .path-frontpage .btn-group-vertical > .cta:focus,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:focus,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p:focus,
 .btn-group-vertical > .btn:active,
 .path-frontpage .btn-group-vertical > .cta:active,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:active,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p:active,
 .btn-group-vertical > .btn.active,
 .path-frontpage .btn-group-vertical > .active.cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .active.cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p.active {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .active.cta {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group .path-frontpage .cta + .btn, .path-frontpage .btn-group .cta + .btn, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .cta + .btn, .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .btn, .path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > p + .btn, .btn-group .path-frontpage .btn + .cta, .path-frontpage .btn-group .btn + .cta, .btn-group .path-frontpage .cta + .cta, .path-frontpage .btn-group .cta + .cta, .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > p + .cta, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .btn + .cta, .path-frontpage .btn-group #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .cta + .cta, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage .btn-group #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group #block-dcd19-oursponsorshomepage > div > p + .cta, .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > .btn + p, .path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > .btn + p, .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > .cta + p, .path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > .cta + p, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > .cta + p, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group #block-dcd19-oursponsorshomepage > div > .cta + p, .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + p, .path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > p + p,
+.btn-group .btn + .btn, .btn-group .path-frontpage .cta + .btn, .path-frontpage .btn-group .cta + .btn, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .cta + .btn, .btn-group .path-frontpage .btn + .cta, .path-frontpage .btn-group .btn + .cta, .btn-group .path-frontpage .cta + .cta, .path-frontpage .btn-group .cta + .cta, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .btn + .cta, .path-frontpage .btn-group #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .cta + .cta,
 .btn-group .btn + .btn-group,
 .btn-group .path-frontpage .cta + .btn-group,
 .path-frontpage .btn-group .cta + .btn-group,
 .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn-group,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .cta + .btn-group,
-.btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .btn-group,
-.path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > p + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .path-frontpage .btn-group + .cta,
 .path-frontpage .btn-group .btn-group + .cta,
 .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group + .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group .btn-group + .cta,
-.btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > .btn-group + p,
-.path-frontpage .btn-group #block-dcd19-oursponsorshomepage > div > .btn-group + p,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -4341,32 +4329,32 @@ tbody.collapse.in {
   clear: both;
 }
 
-.btn-toolbar .btn, .btn-toolbar .path-frontpage .cta, .path-frontpage .btn-toolbar .cta, .btn-toolbar .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-toolbar .cta, .btn-toolbar .path-frontpage #block-dcd19-oursponsorshomepage > div > p, .path-frontpage .btn-toolbar #block-dcd19-oursponsorshomepage > div > p,
+.btn-toolbar .btn, .btn-toolbar .path-frontpage .cta, .path-frontpage .btn-toolbar .cta, .btn-toolbar .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-toolbar .cta,
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
   float: left;
 }
 
-.btn-toolbar > .btn, .path-frontpage .btn-toolbar > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-toolbar > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-toolbar > p,
+.btn-toolbar > .btn, .path-frontpage .btn-toolbar > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-toolbar > .cta,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .path-frontpage .btn-group > .cta:not(:first-child):not(:last-child):not(.dropdown-toggle), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:not(:first-child):not(:last-child):not(.dropdown-toggle), .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .path-frontpage .btn-group > .cta:not(:first-child):not(:last-child):not(.dropdown-toggle), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .path-frontpage .btn-group > .cta:first-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:first-child, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:first-child {
+.btn-group > .btn:first-child, .path-frontpage .btn-group > .cta:first-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:first-child {
   margin-left: 0;
 }
 
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .path-frontpage .btn-group > .cta:first-child:not(:last-child):not(.dropdown-toggle), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:first-child:not(:last-child):not(.dropdown-toggle), .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .path-frontpage .btn-group > .cta:first-child:not(:last-child):not(.dropdown-toggle), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .path-frontpage .btn-group > .cta:last-child:not(:first-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:last-child:not(:first-child), .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .path-frontpage .btn-group > .cta:last-child:not(:first-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4376,17 +4364,17 @@ tbody.collapse.in {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .path-frontpage .btn-group > .btn-group:not(:first-child):not(:last-child) > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .btn-group:not(:first-child):not(:last-child) > .cta, .path-frontpage #block-dcd19-oursponsorshomepage.btn-group > div.btn-group:not(:first-child):not(:last-child) > p {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .path-frontpage .btn-group > .btn-group:not(:first-child):not(:last-child) > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .btn-group:not(:first-child):not(:last-child) > .cta {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .path-frontpage .btn-group > .btn-group:first-child:not(:last-child) > .cta:last-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .btn-group:first-child:not(:last-child) > .cta:last-child, .path-frontpage #block-dcd19-oursponsorshomepage.btn-group > div.btn-group:first-child:not(:last-child) > p:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .path-frontpage .btn-group > .btn-group:first-child:not(:last-child) > .cta:last-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .btn-group:first-child:not(:last-child) > .cta:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .path-frontpage .btn-group > .btn-group:last-child:not(:first-child) > .cta:first-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .btn-group:last-child:not(:first-child) > .cta:first-child, .path-frontpage #block-dcd19-oursponsorshomepage.btn-group > div.btn-group:last-child:not(:first-child) > p:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .path-frontpage .btn-group > .btn-group:last-child:not(:first-child) > .cta:first-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .btn-group:last-child:not(:first-child) > .cta:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4396,12 +4384,12 @@ tbody.collapse.in {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, .path-frontpage .btn-group > .cta + .dropdown-toggle, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta + .dropdown-toggle, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group > p + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .path-frontpage .btn-group > .cta + .dropdown-toggle, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group > .cta + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .path-frontpage .btn-group-lg.btn-group > .cta + .dropdown-toggle, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg.btn-group > .cta + .dropdown-toggle, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-lg.btn-group > p + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .path-frontpage .btn-group-lg.btn-group > .cta + .dropdown-toggle, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg.btn-group > .cta + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4416,16 +4404,16 @@ tbody.collapse.in {
   box-shadow: none;
 }
 
-.btn .caret, .path-frontpage .cta .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta .caret, .path-frontpage #block-dcd19-oursponsorshomepage > div > p .caret {
+.btn .caret, .path-frontpage .cta .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .path-frontpage .btn-group-lg > .cta .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg > .cta .caret, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-lg > p .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .path-frontpage .btn-group-lg > .cta .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg > .cta .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .path-frontpage .btn-group-lg > .cta .caret, .path-frontpage .dropup .btn-group-lg > .cta .caret, .dropup .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg > .cta .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .dropup .btn-group-lg > .cta .caret, .dropup .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-lg > p .caret, .path-frontpage .dropup #block-dcd19-oursponsorshomepage > div.btn-group-lg > p .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .path-frontpage .btn-group-lg > .cta .caret, .path-frontpage .dropup .btn-group-lg > .cta .caret, .dropup .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-lg > .cta .caret, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .dropup .btn-group-lg > .cta .caret {
   border-width: 0 5px 5px;
 }
 
@@ -4433,12 +4421,10 @@ tbody.collapse.in {
 .btn-group-vertical > .btn,
 .path-frontpage .btn-group-vertical > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
 .path-frontpage .btn-group-vertical > .btn-group > .cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage.btn-group-vertical > div.btn-group > p {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group > .cta {
   display: block;
   float: none;
   width: 100%;
@@ -4457,54 +4443,51 @@ tbody.collapse.in {
 
 .btn-group-vertical > .btn-group > .btn,
 .path-frontpage .btn-group-vertical > .btn-group > .cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage.btn-group-vertical > div.btn-group > p {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group > .cta {
   float: none;
 }
 
-.btn-group-vertical > .btn + .btn, .path-frontpage .btn-group-vertical > .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta + .btn, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p + .btn, .path-frontpage .btn-group-vertical > .btn + .cta, .path-frontpage .btn-group-vertical > .cta + .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p + .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > .btn + p, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > .cta + p, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div.btn-group-vertical > .cta + p, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p + p,
+.btn-group-vertical > .btn + .btn, .path-frontpage .btn-group-vertical > .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta + .btn, .path-frontpage .btn-group-vertical > .btn + .cta, .path-frontpage .btn-group-vertical > .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta + .cta,
 .btn-group-vertical > .btn + .btn-group,
 .path-frontpage .btn-group-vertical > .cta + .btn-group,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta + .btn-group,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 .path-frontpage .btn-group-vertical > .btn-group + .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group + .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > .btn-group + p,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .path-frontpage .btn-group-vertical > .cta:not(:first-child):not(:last-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:not(:first-child):not(:last-child), .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .path-frontpage .btn-group-vertical > .cta:not(:first-child):not(:last-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn:first-child:not(:last-child), .path-frontpage .btn-group-vertical > .cta:first-child:not(:last-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:first-child:not(:last-child), .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .path-frontpage .btn-group-vertical > .cta:first-child:not(:last-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn:last-child:not(:first-child), .path-frontpage .btn-group-vertical > .cta:last-child:not(:first-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:last-child:not(:first-child), .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-vertical > p:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .path-frontpage .btn-group-vertical > .cta:last-child:not(:first-child), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .cta:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .path-frontpage .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .cta, .path-frontpage #block-dcd19-oursponsorshomepage.btn-group-vertical > div.btn-group:not(:first-child):not(:last-child) > p {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .path-frontpage .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .cta {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .path-frontpage .btn-group-vertical > .btn-group:first-child:not(:last-child) > .cta:last-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group:first-child:not(:last-child) > .cta:last-child, .path-frontpage #block-dcd19-oursponsorshomepage.btn-group-vertical > div.btn-group:first-child:not(:last-child) > p:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .path-frontpage .btn-group-vertical > .btn-group:first-child:not(:last-child) > .cta:last-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group:first-child:not(:last-child) > .cta:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .path-frontpage .btn-group-vertical > .btn-group:last-child:not(:first-child) > .cta:first-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group:last-child:not(:first-child) > .cta:first-child, .path-frontpage #block-dcd19-oursponsorshomepage.btn-group-vertical > div.btn-group:last-child:not(:first-child) > p:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .path-frontpage .btn-group-vertical > .btn-group:last-child:not(:first-child) > .cta:first-child, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-vertical > .btn-group:last-child:not(:first-child) > .cta:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4516,14 +4499,14 @@ tbody.collapse.in {
   border-collapse: separate;
 }
 
-.btn-group-justified > .btn, .path-frontpage .btn-group-justified > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-justified > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-justified > p,
+.btn-group-justified > .btn, .path-frontpage .btn-group-justified > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-justified > .cta,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
 
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .path-frontpage .cta, .path-frontpage .btn-group-justified > .btn-group .cta, .btn-group-justified > .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-justified > .btn-group .cta, .btn-group-justified > .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p, .path-frontpage .btn-group-justified > .btn-group #block-dcd19-oursponsorshomepage > div > p {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .path-frontpage .cta, .path-frontpage .btn-group-justified > .btn-group .cta, .btn-group-justified > .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-justified > .btn-group .cta {
   width: 100%;
 }
 
@@ -4531,19 +4514,16 @@ tbody.collapse.in {
   left: auto;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .path-frontpage [data-toggle="buttons"] > .cta input[type="radio"], .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right [data-toggle="buttons"] > .cta input[type="radio"], .path-frontpage #block-dcd19-oursponsorshomepage > div[data-toggle="buttons"] > p input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], .path-frontpage [data-toggle="buttons"] > .cta input[type="radio"], .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right [data-toggle="buttons"] > .cta input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
 .path-frontpage [data-toggle="buttons"] > .cta input[type="checkbox"],
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right [data-toggle="buttons"] > .cta input[type="checkbox"],
-.path-frontpage #block-dcd19-oursponsorshomepage > div[data-toggle="buttons"] > p input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
 .path-frontpage [data-toggle="buttons"] > .btn-group > .cta input[type="radio"],
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right [data-toggle="buttons"] > .btn-group > .cta input[type="radio"],
-.path-frontpage #block-dcd19-oursponsorshomepage[data-toggle="buttons"] > div.btn-group > p input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
 .path-frontpage [data-toggle="buttons"] > .btn-group > .cta input[type="checkbox"],
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right [data-toggle="buttons"] > .btn-group > .cta input[type="checkbox"],
-.path-frontpage #block-dcd19-oursponsorshomepage[data-toggle="buttons"] > div.btn-group > p input[type="checkbox"] {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right [data-toggle="buttons"] > .btn-group > .cta input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -4606,7 +4586,7 @@ tbody.collapse.in {
 
 .input-group-addon.input-sm,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn, .path-frontpage .input-group-sm > .input-group-btn > .input-group-addon.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .input-group-addon.cta, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-sm > div.input-group-btn > p.input-group-addon {
+.input-group-sm > .input-group-btn > .input-group-addon.btn, .path-frontpage .input-group-sm > .input-group-btn > .input-group-addon.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-sm > .input-group-btn > .input-group-addon.cta {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
@@ -4614,7 +4594,7 @@ tbody.collapse.in {
 
 .input-group-addon.input-lg,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn, .path-frontpage .input-group-lg > .input-group-btn > .input-group-addon.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .input-group-addon.cta, .path-frontpage #block-dcd19-oursponsorshomepage.input-group-lg > div.input-group-btn > p.input-group-addon {
+.input-group-lg > .input-group-btn > .input-group-addon.btn, .path-frontpage .input-group-lg > .input-group-btn > .input-group-addon.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-lg > .input-group-btn > .input-group-addon.cta {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
@@ -4630,20 +4610,16 @@ tbody.collapse.in {
 .input-group-btn:first-child > .btn,
 .path-frontpage .input-group-btn:first-child > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:first-child > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn:first-child > p,
 .input-group-btn:first-child > .btn-group > .btn,
 .path-frontpage .input-group-btn:first-child > .btn-group > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:first-child > .btn-group > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage.input-group-btn:first-child > div.btn-group > p,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .path-frontpage .input-group-btn:last-child > .cta:not(:last-child):not(.dropdown-toggle),
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:last-child > .cta:not(:last-child):not(.dropdown-toggle),
-.path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn:last-child > p:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
 .path-frontpage .input-group-btn:last-child > .btn-group:not(:last-child) > .cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:last-child > .btn-group:not(:last-child) > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage.input-group-btn:last-child > div.btn-group:not(:last-child) > p {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:last-child > .btn-group:not(:last-child) > .cta {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4657,20 +4633,16 @@ tbody.collapse.in {
 .input-group-btn:last-child > .btn,
 .path-frontpage .input-group-btn:last-child > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:last-child > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn:last-child > p,
 .input-group-btn:last-child > .btn-group > .btn,
 .path-frontpage .input-group-btn:last-child > .btn-group > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:last-child > .btn-group > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage.input-group-btn:last-child > div.btn-group > p,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
 .path-frontpage .input-group-btn:first-child > .cta:not(:first-child),
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:first-child > .cta:not(:first-child),
-.path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn:first-child > p:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
 .path-frontpage .input-group-btn:first-child > .btn-group:not(:first-child) > .cta,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:first-child > .btn-group:not(:first-child) > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage.input-group-btn:first-child > div.btn-group:not(:first-child) > p {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:first-child > .btn-group:not(:first-child) > .cta {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4685,15 +4657,15 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 
-.input-group-btn > .btn, .path-frontpage .input-group-btn > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p {
+.input-group-btn > .btn, .path-frontpage .input-group-btn > .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta {
   position: relative;
 }
 
-.input-group-btn > .btn + .btn, .path-frontpage .input-group-btn > .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta + .btn, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p + .btn, .path-frontpage .input-group-btn > .btn + .cta, .path-frontpage .input-group-btn > .cta + .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div.input-group-btn > p + .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > .btn + p, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > .cta + p, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div.input-group-btn > .cta + p, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p + p {
+.input-group-btn > .btn + .btn, .path-frontpage .input-group-btn > .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta + .btn, .path-frontpage .input-group-btn > .btn + .cta, .path-frontpage .input-group-btn > .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta + .cta {
   margin-left: -1px;
 }
 
-.input-group-btn > .btn:hover, .path-frontpage .input-group-btn > .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta:hover, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p:hover, .input-group-btn > .btn:focus, .path-frontpage .input-group-btn > .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta:focus, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p:focus, .input-group-btn > .btn:active, .path-frontpage .input-group-btn > .cta:active, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta:active, .path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn > p:active {
+.input-group-btn > .btn:hover, .path-frontpage .input-group-btn > .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta:hover, .input-group-btn > .btn:focus, .path-frontpage .input-group-btn > .cta:focus, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta:focus, .input-group-btn > .btn:active, .path-frontpage .input-group-btn > .cta:active, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn > .cta:active {
   z-index: 2;
 }
 
@@ -4701,7 +4673,6 @@ tbody.collapse.in {
 .input-group-btn:first-child > .btn,
 .path-frontpage .input-group-btn:first-child > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:first-child > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn:first-child > p,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
@@ -4710,7 +4681,6 @@ tbody.collapse.in {
 .input-group-btn:last-child > .btn,
 .path-frontpage .input-group-btn:last-child > .cta,
 .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .input-group-btn:last-child > .cta,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.input-group-btn:last-child > p,
 .input-group-btn:last-child > .btn-group {
   z-index: 2;
   margin-left: -1px;
@@ -5254,12 +5224,12 @@ tbody.collapse.in {
   margin-bottom: 6px;
 }
 
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .path-frontpage .btn-group-sm > .navbar-btn.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-sm > .navbar-btn.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-sm > p.navbar-btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .path-frontpage .btn-group-sm > .navbar-btn.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-sm > .navbar-btn.cta {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .path-frontpage .btn-group-xs > .navbar-btn.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .navbar-btn.cta, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-xs > p.navbar-btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .path-frontpage .btn-group-xs > .navbar-btn.cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .navbar-btn.cta {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -5694,7 +5664,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: none;
 }
 
-.btn .label, .path-frontpage .cta .label, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta .label, .path-frontpage #block-dcd19-oursponsorshomepage > div > p .label {
+.btn .label, .path-frontpage .cta .label, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta .label {
   position: relative;
   top: -1px;
 }
@@ -5772,16 +5742,15 @@ a.label:hover, a.label:focus {
   display: none;
 }
 
-.btn .badge, .path-frontpage .cta .badge, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta .badge, .path-frontpage #block-dcd19-oursponsorshomepage > div > p .badge {
+.btn .badge, .path-frontpage .cta .badge, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta .badge {
   position: relative;
   top: -1px;
 }
 
-.btn-xs .badge, .btn-group-xs > .btn .badge, .path-frontpage .btn-group-xs > .cta .badge, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .cta .badge, .path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-xs > p .badge,
+.btn-xs .badge, .btn-group-xs > .btn .badge, .path-frontpage .btn-group-xs > .cta .badge, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .cta .badge,
 .btn-group-xs > .btn .badge,
 .path-frontpage .btn-group-xs > .cta .badge,
-.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .cta .badge,
-.path-frontpage #block-dcd19-oursponsorshomepage > div.btn-group-xs > p .badge {
+.path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn-group-xs > .cta .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6988,12 +6957,12 @@ button.close {
   clear: both;
 }
 
-.modal-footer .btn + .btn, .modal-footer .path-frontpage .cta + .btn, .path-frontpage .modal-footer .cta + .btn, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .cta + .btn, .modal-footer .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .btn, .path-frontpage .modal-footer #block-dcd19-oursponsorshomepage > div > p + .btn, .modal-footer .path-frontpage .btn + .cta, .path-frontpage .modal-footer .btn + .cta, .modal-footer .path-frontpage .cta + .cta, .path-frontpage .modal-footer .cta + .cta, .modal-footer .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage .modal-footer #block-dcd19-oursponsorshomepage > div > p + .cta, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn + .cta, .path-frontpage .modal-footer #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .cta + .cta, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage .modal-footer #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer #block-dcd19-oursponsorshomepage > div > p + .cta, .modal-footer .path-frontpage #block-dcd19-oursponsorshomepage > div > .btn + p, .path-frontpage .modal-footer #block-dcd19-oursponsorshomepage > div > .btn + p, .modal-footer .path-frontpage #block-dcd19-oursponsorshomepage > div > .cta + p, .path-frontpage .modal-footer #block-dcd19-oursponsorshomepage > div > .cta + p, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > .cta + p, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer #block-dcd19-oursponsorshomepage > div > .cta + p, .modal-footer .path-frontpage #block-dcd19-oursponsorshomepage > div > p + p, .path-frontpage .modal-footer #block-dcd19-oursponsorshomepage > div > p + p {
+.modal-footer .btn + .btn, .modal-footer .path-frontpage .cta + .btn, .path-frontpage .modal-footer .cta + .btn, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .cta + .btn, .modal-footer .path-frontpage .btn + .cta, .path-frontpage .modal-footer .btn + .cta, .modal-footer .path-frontpage .cta + .cta, .path-frontpage .modal-footer .cta + .cta, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn + .cta, .path-frontpage .modal-footer #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .modal-footer .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .cta + .cta {
   margin-left: 5px;
   margin-bottom: 0;
 }
 
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .path-frontpage .cta + .btn, .path-frontpage .modal-footer .btn-group .cta + .btn, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn-group .cta + .btn, .modal-footer .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .btn, .path-frontpage .modal-footer .btn-group #block-dcd19-oursponsorshomepage > div > p + .btn, .modal-footer .btn-group .path-frontpage .btn + .cta, .path-frontpage .modal-footer .btn-group .btn + .cta, .modal-footer .btn-group .path-frontpage .cta + .cta, .path-frontpage .modal-footer .btn-group .cta + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage .modal-footer .btn-group #block-dcd19-oursponsorshomepage > div > p + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn-group .btn + .cta, .path-frontpage .modal-footer .btn-group #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn-group .cta + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > p + .cta, .path-frontpage .modal-footer .btn-group #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > p + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > .btn + p, .path-frontpage .modal-footer .btn-group #block-dcd19-oursponsorshomepage > div > .btn + p, .modal-footer .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > .cta + p, .path-frontpage .modal-footer .btn-group #block-dcd19-oursponsorshomepage > div > .cta + p, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right #block-dcd19-oursponsorshomepage > div > .cta + p, .modal-footer .btn-group .path-frontpage #block-dcd19-oursponsorshomepage > div > p + p, .path-frontpage .modal-footer .btn-group #block-dcd19-oursponsorshomepage > div > p + p {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .path-frontpage .cta + .btn, .path-frontpage .modal-footer .btn-group .cta + .btn, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .btn, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn-group .cta + .btn, .modal-footer .btn-group .path-frontpage .btn + .cta, .path-frontpage .modal-footer .btn-group .btn + .cta, .modal-footer .btn-group .path-frontpage .cta + .cta, .path-frontpage .modal-footer .btn-group .cta + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .btn + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn-group .btn + .cta, .path-frontpage .modal-footer .btn-group #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .modal-footer .btn-group .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta + .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .modal-footer .btn-group .cta + .cta {
   margin-left: -1px;
 }
 
@@ -7528,7 +7497,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.carousel-caption .btn, .carousel-caption .path-frontpage .cta, .path-frontpage .carousel-caption .cta, .carousel-caption .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .carousel-caption .cta, .carousel-caption .path-frontpage #block-dcd19-oursponsorshomepage > div > p, .path-frontpage .carousel-caption #block-dcd19-oursponsorshomepage > div > p {
+.carousel-caption .btn, .carousel-caption .path-frontpage .cta, .path-frontpage .carousel-caption .cta, .carousel-caption .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .carousel-caption .cta {
   text-shadow: none;
 }
 
@@ -8056,26 +8025,26 @@ ul.nav.nav-tabs li.active a:hover {
   }
 }
 
-.btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+.btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta {
   font-size: 14px;
   background: #0E144F;
   color: #ffffff;
   padding: 10px 20px;
 }
 
-.btn:hover, .path-frontpage .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:hover, .path-frontpage #block-dcd19-oursponsorshomepage > div > p:hover {
+.btn:hover, .path-frontpage .cta:hover, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:hover {
   border: 1px solid white;
   color: white;
 }
 
 @media (max-width: 768px) {
-  .btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+  .btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta {
     font-size: 22px;
   }
 }
 
 @media (max-width: 480px) {
-  .btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta, .path-frontpage #block-dcd19-oursponsorshomepage > div > p {
+  .btn, .path-frontpage .cta, .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta {
     font-size: 16px;
   }
 }
@@ -8285,7 +8254,7 @@ form.user-register-form .form-element--right iframe {
   width: 100% !important;
 }
 
-form.node-session-form .field--name-field-co-presenter .btn:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage .cta:not(.field-add-more-submit), .path-frontpage form.node-session-form .field--name-field-co-presenter .cta:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:not(.field-add-more-submit), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right form.node-session-form .field--name-field-co-presenter .cta:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage #block-dcd19-oursponsorshomepage > div > p:not(.field-add-more-submit), .path-frontpage form.node-session-form .field--name-field-co-presenter #block-dcd19-oursponsorshomepage > div > p:not(.field-add-more-submit) {
+form.node-session-form .field--name-field-co-presenter .btn:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage .cta:not(.field-add-more-submit), .path-frontpage form.node-session-form .field--name-field-co-presenter .cta:not(.field-add-more-submit), form.node-session-form .field--name-field-co-presenter .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right .cta:not(.field-add-more-submit), .path-frontpage #block-dcd19-mapblockhomepage .two-col-block .col-right form.node-session-form .field--name-field-co-presenter .cta:not(.field-add-more-submit) {
   background: transparent;
   border: 0;
   color: #009de0;
@@ -10203,7 +10172,18 @@ body {
   font-size: 14px;
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div {
+.path-frontpage #block-dcd19-oursponsorshomepage h2:not(.block-title) {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .path-frontpage #block-dcd19-oursponsorshomepage h2:not(.block-title) {
+    font-size: 24px;
+  }
+}
+
+.path-frontpage #block-dcd19-oursponsorshomepage .sponsors-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10214,43 +10194,29 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li {
-  -webkit-box-flex: 33%;
-  -ms-flex: 33%;
-  flex: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 50px 0;
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div ul:not(.contextual-links) li img {
-  width: 200px;
+@media (min-width: 768px) {
+  .path-frontpage #block-dcd19-oursponsorshomepage .sponsors-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 50px;
+  }
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div > p {
-  width: 200px;
+.path-frontpage #block-dcd19-oursponsorshomepage .sponsors-list .sponsor {
+  margin: 0 0 20px;
 }
 
-.path-frontpage #block-dcd19-oursponsorshomepage > div > p a {
-  color: inherit;
+@media (min-width: 768px) {
+  .path-frontpage #block-dcd19-oursponsorshomepage .sponsors-list .sponsor {
+    margin: 0 50px;
+  }
 }
 
 .path-frontpage .block-partners {

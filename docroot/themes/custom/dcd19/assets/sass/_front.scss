@@ -334,30 +334,30 @@
     }
   }
   #block-dcd19-oursponsorshomepage {
-    > div {
+    h2:not(.block-title) {
+      font-size: 20px;
+      margin: 30px 0;
+
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    .sponsors-list {
       display: flex;
       flex-direction: column;
       align-items: center;
-      ul:not(.contextual-links) {
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        li {
-          flex: 33%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 50px 0;
-          img {
-            width: 200px;
-          }
-        }
+      justify-content: center;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        margin: 50px;
       }
-      > p {
-        @extend .btn;
-        width: 200px;
-        a {
-          color: inherit;
+
+      .sponsor {
+        margin: 0 0 20px;
+        @media (min-width: 768px) {
+          margin: 0 50px;
         }
       }
     }
