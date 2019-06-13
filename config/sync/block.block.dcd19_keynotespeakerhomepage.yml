@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:c22dad50-083a-4121-8457-690d462f36d7'
   module:
     - block_content
+    - block_visibility_groups
     - system
   theme:
     - dcd19
@@ -17,7 +18,7 @@ provider: null
 plugin: 'block_content:c22dad50-083a-4121-8457-690d462f36d7'
 settings:
   id: 'block_content:c22dad50-083a-4121-8457-690d462f36d7'
-  label: 'Keynote Speaker'
+  label: 'Keynote Speakers'
   provider: block_content
   label_display: visible
   status: true
@@ -28,4 +29,9 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
     context_mapping: {  }
